@@ -1,8 +1,7 @@
-import Slider from "react-slick";
 import { Section } from "../Section";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
 
 const customersList = [
   {
@@ -10,7 +9,7 @@ const customersList = [
     logo: "/assets/logo.png",
   },
   {
-    name: "Cámara de Comercio exterior",
+    name: "Cámara de Comercio Exterior de Jujuy",
     logo: "/assets/logo.png",
   },
   {
@@ -18,54 +17,28 @@ const customersList = [
     logo: "/assets/logo.png",
   },
   {
-    name: "Otro cliente",
+    name: "El Galpón",
     logo: "/assets/logo.png",
   },
   {
-    name: "Otro cliente",
+    name: "CAPSE",
     logo: "/assets/logo.png",
   },
   {
-    name: "Otro cliente",
+    name: "RPM",
     logo: "/assets/logo.png",
   },
 ];
 
 export const Customers = () => {
   return (
-    <Section>
+    <Section client:load>
       <p className="text-xl text-font-light">Ya confiaron en nosotros</p>
 
-      <Slider
-        adaptiveHeight={true}
-        arrows={false}
-        dots={false}
-        autoplay={true}
-        slidesToShow={4}
-        slidesToScroll={1}
-        speed={2000}
-        autoPlaySpeed={1}
-        cssEase="linear"
-        responsive={[
-          {
-            breakpoint: 1000,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ]}
-      >
+      <Swiper slidesPerView={3}>
         {customersList.map((item) => {
           return (
-            <div key={item.name}>
+            <SwiperSlide key={item.name}>
               <div className="flex flex-col items-center mb-2">
                 <img
                   src={item.logo}
@@ -74,10 +47,10 @@ export const Customers = () => {
                 />
               </div>
               <p className="text-font-light text-center">{item.name}</p>
-            </div>
+            </SwiperSlide>
           );
         })}
-      </Slider>
+      </Swiper>
     </Section>
   );
 };

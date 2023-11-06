@@ -14,7 +14,23 @@ export const Portfolio = () => {
         </p>
       </div>
 
-      <h3>Aca mostramos los proyectos</h3>
+      <div className="w-full flex flex-row overflow-x-scroll">
+        <img
+          src="/assets/camcomexjujuy.png"
+          alt="Sitio web de la Cámara de comercio exterior de Jujuy"
+          className="w-[800px]"
+        />
+        <img
+          src="/assets/camcomexjujuy.png"
+          alt="Sitio web de la Cámara de comercio exterior de Jujuy"
+          className="w-[800px]"
+        />
+        <img
+          src="/assets/camcomexjujuy.png"
+          alt="Sitio web de la Cámara de comercio exterior de Jujuy"
+          className="w-[800px]"
+        />
+      </div>
     </Section>
   );
 };
