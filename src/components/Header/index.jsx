@@ -1,0 +1,33 @@
+import { Section } from "../Section";
+
+export const Header = () => {
+  return (
+    <Section>
+      <div className="flex flex-row items-center justify-center">
+        <img
+          src="/assets/crystal-logo.png"
+          alt="Logo Crystal Desarrollo"
+          className="h-[32px] mr-2"
+        />
+        <h1 className="text-xl font-bold">Crystal Desarrollo</h1>
+      </div>
+
+      {/* <nav>
+        <ul className="flex flex-row gap-4">
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Nosotros</a>
+          </li>
+          <li>
+            <a href="#services">Servicios</a>
+          </li>
+          <li>
+            <a href="#customers">Clientes</a>
+          </li>
+        </ul>
+      </nav> */}
+    </Section>
+  );
+};
