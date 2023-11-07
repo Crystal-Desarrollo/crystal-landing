@@ -14,12 +14,12 @@ export const ContactUs = () => {
         </h2>
       </div>
 
-      <div class="w-full lg:w-[60vw] mt-8">
+      <div className="w-full lg:w-[60vw] mt-8">
         <a
           href="https://cal.com/crystal-desarrollo/contanos-tu-idea?date=2023-11-07&month=2023-11"
           target="_blank"
         >
-          <button class="rounded-xl border p-4 h-[4rem] md:h-[7rem] lg:px-16 text-2xl font-bold text-white cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out w-full hover:bg-primary hover:text-white">
+          <button className="rounded-xl border p-4 h-[4rem] md:h-[7rem] lg:px-16 text-2xl font-bold text-white cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out w-full hover:bg-primary hover:text-white">
             Empecemos hoy mismo
           </button>
         </a>
