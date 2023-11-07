@@ -1,4 +1,5 @@
 import { Section } from "../Section";
+import bolt from "../../assets/bolt.svg";
 
 export const Hero = () => {
   return (
@@ -16,7 +17,7 @@ export const Hero = () => {
             decoding="async"
             data-nimg="1"
             className="w-[16px] lg:w-[20px] xl:w-[30px] inline-block ml-4"
-            src="/assets/bolt.svg"
+            src={bolt.src}
             alt="icono de rayo"
           ></img>
         </h3>
@@ -34,7 +35,7 @@ export const Hero = () => {
         </a>
         <a
           className="px-4 py-2 border-2 border-primary rounded-md font-semibold text-xl"
-          href="#projects"
+          href="/#projects"
         >
           Proyectos
         </a>

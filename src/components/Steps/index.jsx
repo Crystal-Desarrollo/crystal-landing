@@ -2,6 +2,10 @@ import { Section } from "../Section";
 import ArrowRight from "../../icons/arrow-right.jsx";
 import Underline from "../../icons/underline.jsx";
 
+import one from "../../assets/1.svg";
+import two from "../../assets/2.svg";
+import three from "../../assets/3.svg";
+
 export const Steps = () => {
   return (
     <Section>
@@ -16,7 +20,7 @@ export const Steps = () => {
         <ul className="flex gap-16 flex-col lg:flex-row items-center justify-center">
           <li className="mb-8 relative">
             <Step
-              image="/assets/1.svg"
+              image={one.src}
               title="Diseño"
               description="Escuchamos tus necesidades y buscamos la mejor forma de ayudarte usando la tecnología."
             />
@@ -24,7 +28,7 @@ export const Steps = () => {
           </li>
           <li className="mb-8 relative">
             <Step
-              image="/assets/2.svg"
+              image={two.src}
               title="Desarrollo"
               description="Desarrollamos tu proyecto y te mostramos los avances para que puedas aportar tu visión."
             />
@@ -32,7 +36,7 @@ export const Steps = () => {
           </li>
           <li className="mb-8">
             <Step
-              image="/assets/3.svg"
+              image={three.src}
               title="Entrega"
               description="Te brindamos manuales de uso y capacitamos a todo tu equipo en el uso del sistema."
             />
@@ -45,7 +49,7 @@ export const Steps = () => {
 
 const Step = ({ title, description, image }) => {
   return (
-    <div class="relative flex flex-col text-center w-[300px] xl:w-[400px]">
+    <div className="relative flex flex-col text-center w-[300px] xl:w-[400px]">
       <img
         alt="Design"
         loading="eager"
@@ -53,12 +57,12 @@ const Step = ({ title, description, image }) => {
         height="50"
         decoding="async"
         data-nimg="1"
-        class="w-[80px] h-[120px] lg:w-[100px] lg:h-[140px]"
+        className="w-[80px] h-[120px] lg:w-[100px] lg:h-[140px]"
         src={image}
       />
-      <div class="absolute bottom-[-40px] left-0 right-0 flex flex-col items-center space-y-2 justify-center p-2">
-        <span class="text-2xl font-bold">{title}</span>
-        <span class="text-font-light">{description}</span>
+      <div className="absolute bottom-[-40px] left-0 right-0 flex flex-col items-center space-y-2 justify-center p-2">
+        <span className="text-2xl font-bold">{title}</span>
+        <span className="text-font-light">{description}</span>
       </div>
     </div>
   );

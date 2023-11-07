@@ -2,6 +2,8 @@ import { Section } from "../Section";
 import Heart from "../../icons/heart";
 import FunArrow from "../../icons/fun-arrow.jsx";
 
+import camcomexjujuy from "../../assets/camcomexjujuy.png";
+
 export const Portfolio = () => {
   return (
     <Section id="projects">
@@ -19,17 +21,17 @@ export const Portfolio = () => {
       <div className="relative">
         <div className="w-full flex flex-row overflow-x-scroll">
           <img
-            src="/assets/camcomexjujuy.png"
+            src={camcomexjujuy.src}
             alt="Sitio web de la Cámara de comercio exterior de Jujuy"
             className="w-[800px]"
           />
           <img
-            src="/assets/camcomexjujuy.png"
+            src={camcomexjujuy.src}
             alt="Sitio web de la Cámara de comercio exterior de Jujuy"
             className="w-[800px]"
           />
           <img
-            src="/assets/camcomexjujuy.png"
+            src={camcomexjujuy.src}
             alt="Sitio web de la Cámara de comercio exterior de Jujuy"
             className="w-[800px]"
           />

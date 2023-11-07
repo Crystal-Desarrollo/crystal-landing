@@ -1,4 +1,5 @@
 import { Section } from "../Section";
+import favicon from "../../assets/crystal-logo.png";
 
 export const Footer = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-2 items-center md:items-start">
           <p className="text-xl">
             <img
-              src="/favicon.png"
+              src={favicon.src}
               alt="Logo de Crystal Desarrollo"
               className="h-[32px] inline-block"
             />
