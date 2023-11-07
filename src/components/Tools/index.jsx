@@ -15,7 +15,7 @@ export const Tools = () => {
         </p>
       </div>
 
-      <div className="flex flex-row items-center gap-8">
+      <div className="flex flex-row items-center gap-8 flex-wrap justify-center">
         <img src={figma.src} alt="Logo Figma" className="h-12 white-logo" />
         <img
           src={tailwind.src}

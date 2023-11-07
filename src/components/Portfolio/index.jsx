@@ -18,29 +18,29 @@ export const Portfolio = () => {
         <p className="text-5xl font-bold text-center relative">
           Lo que hacemos
         </p>
-        <FunArrow className="rotate-180 absolute left-[-20%] bottom-[-80%] flex flex-row items-center gap-2" />
+        <FunArrow className="rotate-180 absolute md:left-[-20%] bottom-[-80%] flex flex-row items-center gap-2" />
       </div>
 
       <div className="w-full flex flex-row overflow-x-scroll">
         <img
           src={camcomexjujuy.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-6xl"
+          className="max-w-3xl md:max-w-6xl"
         />
         <img
           src={espaciopurmamarca.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-6xl"
+          className="max-w-3xl md:max-w-6xl"
         />
         <img
           src={capse.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-4xl mr-48"
+          className="max-w-3xl md:max-w-4xl mr-48"
         />
         <img
           src={expojuy.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-6xl"
+          className="max-w-3xl md:max-w-6xl"
         />
       </div>
     </Section>
