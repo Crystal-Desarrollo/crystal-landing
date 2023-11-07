@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  padding: 0.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  margin: 1.3rem 0rem;
+  width: 10rem;
+  height: auto;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.datos {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding: 0.5rem;
+  max-width: 600px;
+  border: 0.05rem solid #543c8b;
+  border-radius: 0.5rem;
+}
+.datos p {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.datos .tituloCBU {
+  display: inline-block;
+}
+
+.datos .cbu {
+  width: 100%;
+  height: auto;
+}
+
+.datos .cbu input {
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+}
+.datos .cbu button {
+  margin: 1rem auto;
+  display: block;
+  padding: 0.7rem;
+  background-color: #543c8b;
+
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: white;
+}
+.datos .cbu button:hover {
+  border: 0.07rem solid #543c8b;
+  color: #543c8b;
+  background: white;
+  transition: 0.3s all ease;
+}
+footer {
+  height: 7rem;
+  background-color: #aec0c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  background: #aec0c9;
+  color: #543c8b;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+footer p a {
+  background: #aec0c9;
+  color: #543c8b;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+footer p i {
+  background: #aec0c9;
+  color: #9c2a2a;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
