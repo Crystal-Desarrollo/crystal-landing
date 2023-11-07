@@ -7,4 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [react(), tailwind()],
   site: 'https://crystal-desarrollo.com',
+  devOptions: {
+    tailwindConfig: './tailwind.config.js',
+  }
 });

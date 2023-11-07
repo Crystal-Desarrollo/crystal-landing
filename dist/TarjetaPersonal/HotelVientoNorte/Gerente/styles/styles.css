@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* 
+Colores
+  marron oscuro: #745731
+  marron claro: #D5CDC1
+  naranja: #B53E21:
+  blanco: #fff 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+
+  align-items: center;
+  background-color: #fff;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+overflow: hidden;
+}
+
+main .tarjeta {
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+main .tarjeta .contenedorImagen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+main .tarjeta .contenedorImagen .containerRecMarr{
+  width: 50%;
+  height: 5.3rem;
+  margin-top: 4rem;
+  margin-bottom: -7.9rem;
+  align-self: flex-start;
+  background-color: #D5CDC1;
+  z-index: 1;
+}
+
+main .tarjeta .contenedorImagen img {
+  width: 30rem;
+  height: auto;
+  align-self: center;
+  z-index: 3;
+}
+
+main .tarjeta .banner {
+background-color: #fff;
+height: 2rem;
+}
+
+main .contenedorRedes {
+  width: 100%;
+  margin: 2rem 0rem;
+  display: flex;
+  background-color: #fff;
+}
+
+
+main .contenedorRedes .contenedorEnlaces{
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+main .contenedorRedes .contenedorEnlaces .redes {
+  width: 30rem;
+  height: 5rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #D5CDC1;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+main .contenedorRedes .contenedorEnlaces .redes .icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem 2rem 0rem 1rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #745731;
+
+}
+
+main .contenedorRedes .contenedorEnlaces .redes .redicon{
+  color: #B53E21;
+}
+
+main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #745731;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+main .contenedorRedes .contenedorEnlaces .redes:hover {
+  background: #ada598;
+  border: none;
+  transition: 0.3s all ease;
+}
+
+main .tarjeta .contenedorQR {
+  width: 100%;
+  max-width: 64rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0bbad;
+}
+
+.textoadicional{
+  width:24rem;
+  height: 7rem;
+  padding: 1rem;
+  border-left: 0.8rem solid #B53E21;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.textoadicional p{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #745731;
+}
+
+.tarjeta .footer {
+  margin-top: 3rem;
+  height: 5rem;
+  width: 100%;
+  max-width: 48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #745731;
+}
+
+.tarjeta .footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+
+}
+
+.tarjeta .footer i {
+  color: #B53E21;
+}
+
+.tarjeta .footer a {
+  color: white;
+}
+
+
+@media screen and (max-width: 550px){
+  
+  main .tarjeta .contenedorImagen .containerRecMarr{
+    height: 4.6rem;
+    margin-top: 4rem;
+    margin-bottom: -6.6rem;
+  }
+  
+  main .tarjeta .contenedorImagen img {
+    width: 25rem;
+  }
+
+  main .contenedorRedes .contenedorEnlaces .redes {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  
+  main .contenedorRedes .contenedorEnlaces .redes .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0rem 1.5rem 0rem 1rem;
+    font-size: 2rem;  
+  }
+  
+  main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+    width: 2.5rem;
+    height: 2.5rem;  
+    font-size: 1.5rem;
+  }
+  
+    
+  .textoadicional{
+    width:16rem;
+    height: 7rem;
+    padding: 0.5rem;
+    border-left: 0.5rem solid #B53E21;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .textoadicional p{
+    font-size: 1.1rem;
+  }
+  
+  .tarjeta .footer {
+    height: 5.5rem;
+  }
+  
+  .tarjeta .footer p {
+    font-weight: 500;
+  }
+  
+}
+
+
+@media screen and (max-width: 360px){
+  
+  main .tarjeta .contenedorImagen .containerRecMarr{
+    height: 3.8rem;
+    margin-top: 4rem;
+    margin-bottom: -5.4rem;
+  }
+  
+  main .tarjeta .contenedorImagen img {
+    width: 20rem;
+  }
+
+  main .contenedorRedes .contenedorEnlaces .redes {
+    width: 17rem;
+    height: 4.5rem;
+    padding: 0rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  
+  main .contenedorRedes .contenedorEnlaces .redes .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0rem 1rem 0rem 0.5rem;
+    font-size: 2rem;  
+  }
+  
+  main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+    width: 2.5rem;
+    height: 2.5rem;  
+    font-size: 1.5rem;
+  }
+  
+    
+  .textoadicional{
+    width:16rem;
+    height: 7rem;
+    padding: 0.5rem;
+    border-left: 0.5rem solid #B53E21;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .textoadicional p{
+    font-size: 1.1rem;
+  }
+  
+  .tarjeta .footer {
+    height: 5.5rem;
+  }
+  
+  .tarjeta .footer p {
+    font-weight: 500;
+  }
+  
+}

@@ -1,0 +1,124 @@
+body {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 150%;
+  margin: 0 auto;
+}
+
+.btn {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 5px 0px #373c3c;
+}
+
+.hola {
+  text-decoration: underline blue;
+}
+
+.separador {
+  background-color: transparent;
+  color: transparent;
+}
+
+h4 {
+  font-family: 'Ink Free', sans-serif;
+  font-size: 2.3rem;
+}
+
+.descripcion {
+  font-family: 'Ink Free', sans-serif;
+  font-size: 1.5rem;
+}
+
+.instagram:hover {
+  background-color: #E1306C;
+  border-color: #E1306C;
+  color: #FFFFFF;
+}
+
+.instagram {
+  background-color: #E4405F;
+  border-color: #E1306C;
+  color: #FFFFFF;
+}
+
+.mercadopago:hover {
+  background-color: #808080;
+  border-color: #808080;
+  color: #FFFFFF;
+}
+
+.mercadopago {
+  background-color: #808080;
+  border-color: #808080;
+  color: #FFFFFF;
+}
+
+.mercado-pago {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+@media (max-width: 873px) {
+  .btn {
+    font-size: 1rem;
+  }
+  .mb-0 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .descripcion {
+    font-family: 'Ink Free', sans-serif;
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-family: 'Ink Free', sans-serif;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .descripcion {
+    font-family: 'Ink Free', sans-serif;
+    font-size: 0.9rem;
+  }
+  h4 {
+    font-family: 'Ink Free', sans-serif;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.rounded-circle {
+  border: 3px solid #252850;
+  overflow: hidden;
+  margin-top: 1px;
+  background-color: #252850;
+}

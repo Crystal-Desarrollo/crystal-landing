@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222831;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .tarjeta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .tarjeta .contenedorImagen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .tarjeta .contenedorImagen img {
+  width: 100%;
+  height: auto;
+  max-width: 64rem;
+}
+
+main .tarjeta .banner {
+  width: 100%;
+  max-width: 64rem;
+  height: 5rem;
+  background-color: #000;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main .contenedorRedes {
+  padding: 1.5rem 0rem;
+  width: 100%;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+}
+
+main .contenedorRedes .redes {
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  text-decoration: none;
+  background: #c0bbad;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #222831;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+main .contenedorRedes .redes .fa-brands {
+  color: #222831;
+  font-size: 1.6rem;
+  margin: 0rem 1.5rem;
+}
+
+main .contenedorRedes .redes .ubicacion {
+  color: #222831;
+  font-size: 2rem;
+  margin: 0rem 1.5rem;
+}
+
+main .contenedorRedes .redes:hover {
+  background: #222831;
+  border: 0.07rem solid #00adb5;
+  transition: 0.3s all ease;
+  color: #00adb5;
+}
+
+main .contenedorRedes .redes:hover .fa-brands {
+  color: #00adb5;
+  transition: 0.3s all ease;
+}
+
+main .contenedorRedes .redes:hover .ubicacion {
+  color: #00adb5;
+  transition: 0.3s all ease;
+}
+
+main .tarjeta .contenedorQR {
+  width: 100%;
+  max-width: 64rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0bbad;
+}
+
+main .contenedorQR p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main .contenedorQR .imagenQR {
+  margin-top: 1.5rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+
+footer {
+  margin-top: 2.5rem;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+footer i {
+  color: #b23d28;
+}
+footer a {
+  color: white;
+}
