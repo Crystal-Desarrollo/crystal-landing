@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="Es-la">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Datos de cuenta de psicólogo Mariano Barrera para transferencias referidas al estacionamiento de Mi cochera & Mi lavadero"
+    />
+    <!--Font Awesome iconos Inicio-->
+    <script
+      src="https://kit.fontawesome.com/2fe6538f6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome iconos Fin-->
+    <title>Psicólogo Mariano Barrera - Datos de cuenta</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        src="src/assets/img/logoMarianoBarrera.png"
+        alt="imagen logo de psicologo mariano barrera"
+      />
+      <h1>Datos de cuenta</h1>
+      <div class="datos">
+        <p><b>Titular de cuenta:</b> Mariano Barrera</p>
+        <p><b>Banco:</b> Mercado Pago</p>
+        <p><b>CUIT:</b> 20-37729527-8</p>
+        <p><b>Tipo de cuenta:</b> cuenta Mercado Pago</p>
+        <div class="cbu">
+          <p class="tituloCBU"><b>CVU:</b></p>
+          <input
+            id="myInp"
+            type="text"
+            value="0000003100065296791607"
+            readonly
+          />
+          <button id="btnCopy">Copiar CBU</button>
+        </div>
+      </div>
+    </main>
+    <!--<footer>-->
+    <!--  <p>-->
+    <!--    Hecho con <i class="fa-solid fa-heart"></i> por-->
+    <!--    <a href="https://www.crystal-desarrollo.com" target="_blank"-->
+    <!--      >Crystal Desarrollo</a-->
+    <!--    >-->
+    <!--  </p>-->
+    <!--</footer>-->
+  </body>
+
+  <script type="text/javascript">
+    const myInp = document.getElementById("myInp");
+    const btnCopy = document.getElementById("btnCopy");
+
+    btnCopy.onclick = function () {
+      myInp.select();
+
+      document.execCommand("Copy");
+
+      alert("El CBU se ha copiado exitosamente");
+    };
+  </script>
+</html>

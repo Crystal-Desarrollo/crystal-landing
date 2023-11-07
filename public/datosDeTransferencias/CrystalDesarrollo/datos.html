@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Es-la">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Datos de cuenta de LEMUN SRL para transferencias referidas al estacionamiento de Mi cochera & Mi lavadero"
+    />
+    <!--Font Awesome iconos Inicio-->
+    <script
+      src="https://kit.fontawesome.com/2fe6538f6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome iconos Fin-->
+    <title>Datos de cuenta</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        src="src/assets/img/logo.png"
+        alt="logo de la empresa Mi cochera & Mi lavadero"
+      />
+      <h1>Datos de cuenta</h1>
+      <div class="datos">
+        <p><b>Titular de cuenta:</b> MUNOZ GUSTAVO FACUNDO</p>
+        <p><b>Banco:</b> BBVA SUCURSAL JUJUY</p>
+        <p><b>CUIT:</b> 20-36225911-9</p>
+        <p><b>Tipo de cuenta:</b> Caja de ahorro N°256-61865/3</p>
+        <p><b>Alias:</b> FILO.PARIS.BAR</p>
+        <div class="cbu">
+          <p class="tituloCBU"><b>CBU:</b></p>
+          <input
+            id="myInp"
+            type="text"
+            value="0170256140000006186531"
+            readonly
+          />
+          <button id="btnCopy">Copiar CBU</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Hecho con <i class="fa-solid fa-heart"></i> por
+        <a href="https://www.crystal-desarrollo.com" target="_blank"
+          >Crystal Desarrollo</a
+        >
+      </p>
+    </footer>
+  </body>
+
+  <script type="text/javascript">
+    const myInp = document.getElementById("myInp");
+    const btnCopy = document.getElementById("btnCopy");
+
+    btnCopy.onclick = function () {
+      myInp.select();
+
+      document.execCommand("Copy");
+
+      alert("El CBU se ha copiado exitosamente");
+    };
+  </script>
+</html>
