@@ -24,7 +24,7 @@ import {ContactUs} from '../components/ContactUs/index'
     <Header/>
     <Hero/>
     <Steps/>
-    <Customers/>
+    <Customers client:only="react"/>
     <Portfolio/>
     <ContactUs/>
     <Tools/>
@@ -41,4 +41,8 @@ import {ContactUs} from '../components/ContactUs/index'
 	  filter: brightness(0) invert(1);
 	}
 
+	.slick-track{
+		display: flex !important;
+		align-items: center !important;
+	}
 </style>

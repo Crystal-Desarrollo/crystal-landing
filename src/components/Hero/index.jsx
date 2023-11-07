@@ -1,5 +1,4 @@
 import { Section } from "../Section";
-import Rocket from "../../icons/rocket";
 
 export const Hero = () => {
   return (
@@ -16,18 +15,29 @@ export const Hero = () => {
             height="50"
             decoding="async"
             data-nimg="1"
-            class="w-[16px] lg:w-[20px] xl:w-[30px] inline-block ml-4"
+            className="w-[16px] lg:w-[20px] xl:w-[30px] inline-block ml-4"
             src="/assets/bolt.svg"
+            alt="icono de rayo"
           ></img>
         </h3>
+        <h4 className="text-font-light text-center text-md">
+          Rápido, fácil y a medida para vos. ¡Somos tu solución digital!
+        </h4>
       </div>
       <div className="flex flex-row gap-4 items-center justify-center">
-        <button className="px-4 py-2 bg-primary border-2 border-primary rounded-md font-semibold text-xl">
+        <a
+          className="px-4 py-2 bg-primary border-2 border-primary rounded-md font-semibold text-xl"
+          href="https://cal.com/crystal-desarrollo/contanos-tu-idea?date=2023-11-07&month=2023-11"
+          target="_blank"
+        >
           Empecemos
-        </button>
-        <button className="px-4 py-2 border-2 border-primary rounded-md font-semibold  text-xl">
+        </a>
+        <a
+          className="px-4 py-2 border-2 border-primary rounded-md font-semibold text-xl"
+          href="#projects"
+        >
           Proyectos
-        </button>
+        </a>
       </div>
     </Section>
   );

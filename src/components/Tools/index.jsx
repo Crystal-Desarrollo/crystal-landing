@@ -4,7 +4,7 @@ export const Tools = () => {
   return (
     <Section>
       <div className="flex flex-col items-center gap-2 mb-4">
-        <p className="text-xl text-font-light text-center">
+        <p className="text-2xl text-font-light text-center">
           Usamos las herramientas líderes en la industria
         </p>
       </div>
@@ -30,7 +30,17 @@ export const Tools = () => {
           alt="Logo React"
           className="h-16 white-logo"
         />
+        <img src="/assets/c.png" alt="Logo C#" className="h-16 white-logo" />
+        <img
+          src="/assets/java.png"
+          alt="Logo Java"
+          className="h-16 white-logo"
+        />
       </div>
+
+      <p className="text-font-light text-center text-md">
+        Si necesitás algo que no está en la lista ¡no dudes en consultarnos!
+      </p>
     </Section>
   );
 };
