@@ -25,12 +25,12 @@ export const Portfolio = () => {
         <img
           src={camcomexjujuy.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-3xl md:max-w-6xl"
+          className="max-w-3xl md:max-w-4xl"
         />
         <img
           src={espaciopurmamarca.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-3xl md:max-w-6xl"
+          className="max-w-3xl md:max-w-4xl"
         />
         <img
           src={capse.src}
@@ -40,7 +40,7 @@ export const Portfolio = () => {
         <img
           src={expojuy.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-3xl md:max-w-6xl"
+          className="max-w-3xl md:max-w-4xl"
         />
       </div>
     </Section>

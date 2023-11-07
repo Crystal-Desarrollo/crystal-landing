@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import star from "../../assets/star.svg";
-import camcomex from "../../assets/sponsors/camcomex.png";
+import camcomex from "../../assets/sponsors/camcomexjujuy.png";
 import quantum from "../../assets/sponsors/quantum.png";
 import expojuy from "../../assets/sponsors/expojuy.png";
 import elgalpon from "../../assets/sponsors/el_galpon.png";
@@ -21,24 +21,27 @@ const customersList = [
   {
     name: "Cámara de Comercio Exterior de Jujuy",
     logo: camcomex,
+    size: "h-16",
   },
   {
     name: "ExpoJuy",
     logo: expojuy,
+    size: "h-16",
   },
   {
     name: "El Galpón",
     logo: elgalpon,
-    size: "h-32",
+    size: "h-24",
   },
   {
     name: "CAPSE",
     logo: capce,
+    size: "h-16",
   },
   {
     name: "Russet",
     logo: russet,
-    size: "h-32",
+    size: "h-24",
   },
 ];
 
@@ -51,7 +54,7 @@ export const Customers = () => {
         <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
       </p>
 
-      <div className="w-full max-w-7xl mx-auto h-full items-center">
+      <div className="w-full px-8 mx-auto h-full items-center">
         <Slider
           infinite={true}
           arrows={false}
