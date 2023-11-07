@@ -11,10 +11,22 @@ export const FAQ = () => {
           </p>
         </div>
         <div className="w-full flex flex-col">
-          <Collapse />
-          <Collapse />
-          <Collapse />
-          <Collapse />
+          <Collapse
+            question="¿Cómo trabajamos juntos en el proceso de desarrollo?"
+            answer="Nuestro proceso incluye consultas iniciales para comprender tus necesidades, diseño y desarrollo iterativo con tu retroalimentación constante, pruebas exhaustivas y finalmente, la implementación en tu servidor o alojamiento web."
+          />
+          <Collapse
+            question="¿Pueden mantener y actualizar mi sitio web después de la entrega?"
+            answer="Sí, ofrecemos servicios de mantenimiento y actualización de sitios web para garantizar que tu sitio esté siempre funcionando de manera óptima y actualizado con las últimas tecnologías."
+          />
+          <Collapse
+            question="¿Pueden ayudarme a migrar mi sitio web actual a una nueva plataforma? "
+            answer="Sí, ofrecemos servicios de migración de sitios web, lo que te permite cambiar a una plataforma más moderna y personalizada sin perder datos ni funcionalidades."
+          />
+          <Collapse
+            question="¿Cómo gestionan los problemas técnicos o las interrupciones en el sitio web después del lanzamiento?"
+            answer="Ofrecemos soporte técnico continuo y solucionamos problemas rápidamente. También implementamos monitoreo constante para prevenir problemas antes de que ocurran."
+          />
         </div>
       </div>
       <div className="flex flex-col items-center gap-6">
@@ -37,7 +49,7 @@ export const FAQ = () => {
   );
 };
 
-export const Collapse = () => {
+export const Collapse = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -46,7 +58,7 @@ export const Collapse = () => {
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between"
       >
-        <h4 className="text-font-light font-medium">Lorem Ipsum ?</h4>
+        <h4 className="text-font-light font-medium">{question}</h4>
         <svg
           className={`transform w-5 h-5 text-gray-500 ${
             open ? "rotate-180" : ""
@@ -60,15 +72,7 @@ export const Collapse = () => {
       </button>
       {open && (
         <div className="mt-3 text-gray-600">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p>{answer}</p>
         </div>
       )}
     </div>
