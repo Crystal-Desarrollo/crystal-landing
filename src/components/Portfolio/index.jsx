@@ -22,31 +22,31 @@ export const Portfolio = () => {
         <FunArrow className="rotate-180 absolute md:left-[-20%] bottom-[-80%] flex flex-row items-center gap-2" />
       </div>
 
-      <div className="w-full flex flex-row overflow-x-scroll gap-32 mt-8 px-8 scrollbar">
+      <div className="w-full flex flex-row items-center overflow-x-scroll gap-32 mt-8 px-8 scrollbar snap-x">
         <img
           src={camcomexjujuy.src}
           alt="Sitio web de la Cámara de comercio exterior de Jujuy"
-          className="max-w-xl md:max-w-2xl"
+          className="snap-center max-w-lg md:max-w-2xl"
         />
         <img
           src={espaciopurmamarca.src}
           alt="Sitio web de Espacio Purmamarca"
-          className="max-w-xl md:max-w-2xl"
+          className="snap-center max-w-lg md:max-w-2xl"
         />
-        {/*<img*/}
-        {/*  src={capse.src}*/}
-        {/*  alt="Sitio web de CAPSE"*/}
-        {/*  className="max-w-xl md:max-w-4xl mr-48"*/}
-        {/*/>*/}
         <img
           src={expojuy.src}
           alt="Sitio web de la ExpoJuy Edición 2022"
-          className="max-w-xl md:max-w-2xl"
+          className="snap-center max-w-lg md:max-w-2xl"
         />
         <img
           src={aapdpp.src}
           alt="Sitio web de la Asociación Argentina de Profesionales de Derecho Procesal Penal"
-          className="max-w-xl md:max-w-2xl"
+          className="snap-center max-w-lg md:max-w-2xl"
+        />
+        <img
+          src={capse.src}
+          alt="Sitio web de CAPSE"
+          className="snap-center max-w-lg md:max-w-2xl"
         />
       </div>
     </Section>
