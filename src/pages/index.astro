@@ -50,4 +50,29 @@ import { FAQ } from '../components/FAQ/index'
 		display: flex !important;
 		align-items: center !important;
 	}
+
+	/* Customize the scrollbar width */
+	.scrollbar::-webkit-scrollbar {
+		height: 8px;
+		cursor: pointer;
+		transition: 200ms ease-in-out;
+	}
+
+	/* Customize the scrollbar track */
+	.scrollbar::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+
+	/* Customize the scrollbar thumb */
+	.scrollbar::-webkit-scrollbar-thumb {
+		background: #888;
+		width: 1px;
+		height: 1px;
+		border-radius: 4px;
+	}
+
+	/* Optionally, you can style the scrollbar on hover */
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		background: #666;
+	}
 </style>

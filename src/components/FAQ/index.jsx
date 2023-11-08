@@ -56,9 +56,9 @@ export const Collapse = ({ question, answer }) => {
     <div className="item px-6 py-6 w-full">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between"
+        className="w-full flex flex-row justify-between"
       >
-        <h4 className="text-font-light font-medium">{question}</h4>
+        <h4 className="text-font-light font-medium text-start">{question}</h4>
         <svg
           className={`transform w-5 h-5 text-gray-500 ${
             open ? "rotate-180" : ""
