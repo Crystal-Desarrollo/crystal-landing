@@ -89,9 +89,14 @@ main .contenedorRedes .contenedorEnlaces .wppCompuestoTurquesa {
 }
 
 main .contenedorRedes .contenedorEnlaces .wppCompuesto p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-left: 1rem;
+}
+main .contenedorRedes .contenedorEnlaces .wppCompuestoGris p {
   color: #6d6e70;
+}
+main .contenedorRedes .contenedorEnlaces .wppCompuestoTurquesa p {
+  color: #fff;
 }
 
 main .contenedorRedes .contenedorEnlaces .redes {
@@ -168,6 +173,15 @@ main .tarjeta .imgOndaInferior {
 }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 460px) {
+  main .tarjeta .imgBidon {
+    height: auto;
+    min-height: 80vh;
+    max-width: 60%;
+    right: -4.5rem;
+  }
+}
+
 @media screen and (max-width: 430px) {
   main .tarjeta .contenedorImagen img {
     width: 8rem;
