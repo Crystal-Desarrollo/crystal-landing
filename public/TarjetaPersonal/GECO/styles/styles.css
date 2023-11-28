@@ -79,7 +79,7 @@ main .contenedorRedes .redes {
   align-items: center;
   justify-content: flex-start;
   color: #222831;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -98,7 +98,10 @@ main .contenedorRedes .redes .ubicacion {
 main .contenedorRedes .fondoRojo {
   color: #fff;
   background-color: #A91C1D;
-  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 main .contenedorRedes .redes:hover {
@@ -183,9 +186,7 @@ padding: 0.5rem 1rem;
 }
 @media screen and (max-width:345px){
   main .contenedorRedes .redes .fa-brands {
-    color: #222831;
-    font-size: 2rem;
-    margin: 0rem 0.5rem;
+border-radius: 0.5rem;
   }
   
   main .contenedorRedes .redes .ubicacion {
