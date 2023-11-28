@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+/*Paleta de colores
+primario: #222831;
+secundario: #393E46;
+terciario: #00ADB5;
+ternario: #00FFF5;
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222831;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center ;
+}
+
+main .tarjeta {
+  width: 100%;
+  max-width: 64rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+main .tarjeta .contenedorImagen {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main .tarjeta .contenedorImagen .imagenPersonal {
+  width: 70%;
+  height: auto;
+}
+
+main .tarjeta .contenedorImagen .fondoSuperior {
+width: 10%;
+right: 0rem;
+position: absolute;
+}
+
+main .contenedorRedes {
+  padding: 1.5rem 0rem;
+  width: 100%;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  gap: 1.5rem;
+}
+
+main .contenedorRedes .redes {
+  width: 80%;
+  height: auto;
+  padding: 1.5rem;
+  text-decoration: none;
+  border: 0.1rem solid #A91C1D;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #222831;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main .contenedorRedes .redes .fa-brands {
+  color: #222831;
+  font-size: 2rem;
+  margin: 0rem 1.5rem;
+}
+
+main .contenedorRedes .redes .ubicacion {
+  color: #222831;
+  font-size: 2rem;
+  margin: 0rem 1.5rem;
+}
+
+main .contenedorRedes .fondoRojo {
+  color: #fff;
+  background-color: #A91C1D;
+  padding-left: 3rem;
+}
+
+main .contenedorRedes .redes:hover {
+  background: #a3a2a2;
+  transition: 0.3s all ease;
+}
+
+main .contenedorRedes .fondoRojo:hover {
+  background-color: #6a1111;
+  transition: 0.3s all ease;
+}
+
+main .tarjeta .contacto{
+  width: 100%;
+  min-height: 15rem;
+  margin: 2.5rem 0rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main .tarjeta .contacto .imgIzquierda{
+position: absolute;
+width: 10%;
+top: 0rem;
+left: 0rem;
+}
+
+main .tarjeta .contacto .imgDerecha{
+position: absolute;
+width: 10%;
+bottom: 0rem;
+right: 0rem;
+}
+
+main .tarjeta .contacto p{
+font-size: 2rem;
+color: #676767;
+}
+main .tarjeta .contacto h3{
+font-size: 2rem;
+color: #676767;
+}
+
+footer {
+
+  padding: 2.5rem 1rem;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #676767;
+  max-width: 64rem;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+footer i {
+  color: #b23d28;
+}
+
+footer a {
+  color: white;
+}
+
+
+@media screen and (max-width:424px){
+  main .contenedorRedes .redes {
+font-size: 1.5rem;
+padding: 0.5rem 1rem;
+  }
+}
+@media screen and (max-width:345px){
+  main .contenedorRedes .redes .fa-brands {
+    color: #222831;
+    font-size: 2rem;
+    margin: 0rem 0.5rem;
+  }
+  
+  main .contenedorRedes .redes .ubicacion {
+    color: #222831;
+    font-size: 2rem;
+    margin: 0rem 0.5rem;
+  }
+
+  main .tarjeta .contacto p{
+    font-size: 1.5rem;
+    }
+    main .tarjeta .contacto h3{
+    font-size: 1.5rem;
+    }
+}
