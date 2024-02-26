@@ -1,27 +1,21 @@
 import { Section } from "../Section";
 import figma from "../../assets/tools/figma.webp";
-import laravel from "../../assets/tools/laravel.png";
-import react from "../../assets/tools/react.png";
+import laravel from "../../assets/tools/laravel.webp";
+import react from "../../assets/tools/react.webp";
 import tailwind from "../../assets/tools/tailwind.webp";
-import c from "../../assets/tools/c.png";
-import java from "../../assets/tools/java.png";
+import c from "../../assets/tools/c.webp";
+import java from "../../assets/tools/java.webp";
 
 export const Tools = () => {
   return (
     <Section>
       <div className="flex flex-col items-center gap-2 mb-4">
-        <p className="text-2xl text-font-light text-center">
-          Usamos las herramientas líderes en la industria
-        </p>
+        <p className="text-2xl text-font-light text-center">Usamos las herramientas líderes en la industria</p>
       </div>
 
       <div className="flex flex-row items-center gap-8 flex-wrap justify-center">
         <img src={figma.src} alt="Logo Figma" className="h-12 white-logo" />
-        <img
-          src={tailwind.src}
-          alt="Logo Tailwind"
-          className="h-12 white-logo"
-        />
+        <img src={tailwind.src} alt="Logo Tailwind" className="h-12 white-logo" />
         <img src={laravel.src} alt="Logo Laravel" className="h-16 white-logo" />
         <img src={react.src} alt="Logo React" className="h-16 white-logo" />
         <img src={c.src} alt="Logo C#" className="h-16 white-logo" />

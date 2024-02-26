@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import star from "../../assets/star.svg";
-import camcomex from "../../assets/sponsors/camcomexjujuy.png";
-import quantum from "../../assets/sponsors/quantum.png";
-import expojuy from "../../assets/sponsors/expojuy.png";
-import elgalpon from "../../assets/sponsors/el_galpon.png";
-import capce from "../../assets/sponsors/capce.png";
-import russet from "../../assets/sponsors/russet.png";
+import camcomex from "../../assets/sponsors/camcomexjujuy.webp";
+import quantum from "../../assets/sponsors/quantum.webp";
+import expojuy from "../../assets/sponsors/expojuy.webp";
+import elgalpon from "../../assets/sponsors/el_galpon.webp";
+import capce from "../../assets/sponsors/capce.webp";
+import russet from "../../assets/sponsors/russet.webp";
 
 const customersList = [
   {
