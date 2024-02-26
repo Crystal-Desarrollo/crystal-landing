@@ -1,78 +1,75 @@
 ---
-import {Header} from '../components/Header/index'
-import {Hero} from '../components/Hero/index'
-import {Steps} from '../components/Steps/index'
-import {Customers} from '../components/Customers/index'
-import {Footer} from '../components/Footer/index'
-import {Portfolio} from '../components/Portfolio/index'
-import {Tools} from '../components/Tools/index'
-import {ContactUs} from '../components/ContactUs/index'
-import { FAQ } from '../components/FAQ/index'
+import i18next, { changeLanguage } from "i18next";
+import { Header } from "../components/Header/index";
+import { Hero } from "../components/Hero/index";
+import { Steps } from "../components/Steps/index";
+import { Customers } from "../components/Customers/index";
+import { Footer } from "../components/Footer/index";
+import { Portfolio } from "../components/Portfolio/index";
+import { Tools } from "../components/Tools/index";
+import { ContactUs } from "../components/ContactUs/index";
+import { FAQ } from "../components/FAQ/index";
+
+changeLanguage("es");
 ---
 
-
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Crystal desarrollo - Diseño y desarrollo de software" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Crystal Desarrollo</title>
-	</head>
-	<body>
-    <Header/>
-    <Hero/>
-    <Steps/>
-    <Customers client:only="react"/>
-    <Portfolio/>
-    <Tools/>
-		<FAQ client:load/>
-		<ContactUs/>
-    <Footer/>
-	</body>
+<html lang={i18next.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Crystal desarrollo - Diseño y desarrollo de software" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Crystal Desarrollo</title>
+  </head>
+  <body>
+    <Header />
+    <Hero />
+    <Steps />
+    <Customers client:only="react" />
+    <Portfolio />
+    <Tools />
+    <FAQ client:load />
+    <ContactUs />
+    <Footer />
+    <style is:global>
+      body {
+        background-color: black;
+      }
+
+      .white-logo {
+        filter: brightness(0) invert(1);
+      }
+
+      .slick-track {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      /* Customize the scrollbar width */
+      .scrollbar::-webkit-scrollbar {
+        height: 8px;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+      }
+
+      /* Customize the scrollbar track */
+      .scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Customize the scrollbar thumb */
+      .scrollbar::-webkit-scrollbar-thumb {
+        background: #888;
+        width: 1px;
+        height: 1px;
+        border-radius: 4px;
+      }
+
+      /* Optionally, you can style the scrollbar on hover */
+      .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #666;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-	body{
-    	background-color: black;
-  	}
-
-	.white-logo {
-	  filter: brightness(0) invert(1);
-	}
-
-	.slick-track{
-		display: flex !important;
-		align-items: center !important;
-	}
-
-	/* Customize the scrollbar width */
-	.scrollbar::-webkit-scrollbar {
-		height: 8px;
-		cursor: pointer;
-		transition: 200ms ease-in-out;
-	}
-
-	/* Customize the scrollbar track */
-	.scrollbar::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	}
-
-	/* Customize the scrollbar thumb */
-	.scrollbar::-webkit-scrollbar-thumb {
-		background: #888;
-		width: 1px;
-		height: 1px;
-		border-radius: 4px;
-	}
-
-	/* Optionally, you can style the scrollbar on hover */
-	.scrollbar::-webkit-scrollbar-thumb:hover {
-		background: #666;
-	}
-</style>
