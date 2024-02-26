@@ -1,4 +1,8 @@
 {
+  "site": {
+    "title": "Crystal Desarrollo",
+    "description": "Desarrollamos soluciones digitales a medida para empresas y startups. Diseño web, desarrollo de aplicaciones móviles, sistemas de gestión y más."
+  },
   "home": {
     "hero": {
       "preTitle": "Transformamos tus ideas en",

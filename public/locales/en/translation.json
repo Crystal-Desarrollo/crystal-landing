@@ -1,4 +1,8 @@
 {
+  "site": {
+    "title": "Crystal Desarrollo",
+    "description": "We develop custom digital solutions for companies and startups. Web design, mobile app development, management systems, and more."
+  },
   "home": {
     "hero": {
       "preTitle": "We convert your ideas into",
