@@ -14,12 +14,12 @@ export const Tools = () => {
       </div>
 
       <div className="flex flex-row items-center gap-8 flex-wrap justify-center">
-        <img src={figma.src} alt="Logo Figma" className="h-12 white-logo" />
-        <img src={tailwind.src} alt="Logo Tailwind" className="h-12 white-logo" />
-        <img src={laravel.src} alt="Logo Laravel" className="h-16 white-logo" />
-        <img src={react.src} alt="Logo React" className="h-16 white-logo" />
-        <img src={c.src} alt="Logo C#" className="h-16 white-logo" />
-        <img src={java.src} alt="Logo Java" className="h-16 white-logo" />
+        <img src={figma.src} alt="Logo Figma" className="h-12 white-logo hover:animate-spin-counter-clockwise" />
+        <img src={tailwind.src} alt="Logo Tailwind" className="h-12 white-logo hover:animate-spin-counter-clockwise" />
+        <img src={laravel.src} alt="Logo Laravel" className="h-16 white-logo hover:animate-spin-counter-clockwise" />
+        <img src={react.src} alt="Logo React" className="h-16 white-logo hover:animate-spin-counter-clockwise" />
+        <img src={c.src} alt="Logo C#" className="h-16 white-logo hover:animate-spin-counter-clockwise" />
+        <img src={java.src} alt="Logo Java" className="h-16 white-logo hover:animate-spin-counter-clockwise" />
       </div>
 
       <p className="text-font-light text-center text-md">
