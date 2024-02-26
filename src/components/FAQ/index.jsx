@@ -39,7 +39,7 @@ export const FAQ = () => {
           Estamos ansiosos por responderlas
         </p>
         <a
-          href="https://cal.com/crystal-desarrollo/contanos-tu-idea?date=2023-11-07&month=2023-11"
+          href="https://cal.com/crystal-desarrollo/contanos-tu-idea"
           className="bg-primary text-white px-8 py-4 flex items-center rounded-md font-semibold text-lg hover:scale-105 ease-in-out duration-300"
         >
           ¡Agenda tu reunión!

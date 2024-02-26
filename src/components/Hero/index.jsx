@@ -28,7 +28,7 @@ export const Hero = () => {
       <div className="flex flex-row gap-4 items-center justify-center">
         <a
           className="px-4 py-2 bg-primary border-2 border-primary rounded-md font-semibold text-xl"
-          href="https://cal.com/crystal-desarrollo/contanos-tu-idea?date=2023-11-07&month=2023-11"
+          href="https://cal.com/crystal-desarrollo/contanos-tu-idea"
           target="_blank"
         >
           Empecemos
