@@ -7,5 +7,21 @@
       "cta": "Get in touch",
       "cta2": "Our work"
     }
+  },
+  "steps": {
+    "subtitle": "Our process",
+    "title": "3 Steps to success",
+    "step1": {
+      "title": "Design",
+      "description": "We listen to your needs and search for the best way to help you using technology."
+    },
+    "step2": {
+      "title": "Development",
+      "description": "We develop the solution that best suits your needs, using the latest technologies."
+    },
+    "step3": {
+      "title": "Launch",
+      "description": "We launch the solution and provide support to ensure its success."
+    }
   }
 }

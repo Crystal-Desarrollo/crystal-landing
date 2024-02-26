@@ -7,5 +7,21 @@
       "cta": "Empecemos",
       "cta2": "Nuestro trabajo"
     }
+  },
+  "steps": {
+    "subtitle": "Nuestro trabajo",
+    "title": "En 3 simples pasos",
+    "step1": {
+      "title": "Diseño",
+      "description": "Escuchamos tus necesidades y buscamos la mejor forma de ayudarte usando la tecnología."
+    },
+    "step2": {
+      "title": "Desarrollo",
+      "description": "Desarrollamos tu proyecto y te mostramos los avances para que puedas aportar tu visión."
+    },
+    "step3": {
+      "title": "Entrega",
+      "description": "Te brindamos manuales de uso y capacitamos a todo tu equipo en el uso del sistema."
+    }
   }
 }
