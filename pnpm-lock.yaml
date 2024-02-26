@@ -38,6 +38,9 @@ dependencies:
   keen-slider:
     specifier: ^5.5.1
     version: 5.5.1
+  photoswipe:
+    specifier: ^5.4.3
+    version: 5.4.3
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -4421,6 +4424,11 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+    dev: false
+
+  /photoswipe@5.4.3:
+    resolution: {integrity: sha512-9UC6oJBK4oXFZ5HcdlcvGkfEHsVrmE4csUdCQhEjHYb3PvPLO3PG7UhnPuOgjxwmhq5s17Un5NUdum01LgBDng==}
+    engines: {node: '>= 0.12.0'}
     dev: false
 
   /picocolors@1.0.0:
