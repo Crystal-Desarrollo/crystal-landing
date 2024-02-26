@@ -5,10 +5,12 @@ import { localizePath } from "astro-i18next";
 
 export const Hero = () => {
   return (
-    <Section className="relative">
+    <Section>
       <div className="flex flex-col items-center max-w-prose gap-2">
-        <h2 className="text-font-light text-center text-xl">{t("home.hero.preTitle")}</h2>
-        <h3 className="text-5xl text-center font-bold leading-snug">
+        <h2 className="text-font-light text-center text-xl animate-fade-in-up animate-delay-200 ">
+          {t("home.hero.preTitle")}
+        </h2>
+        <h3 className="text-5xl text-center font-bold leading-snug animate-fade-in-up">
           {t("home.hero.title")}
           <img
             loading="eager"
@@ -16,12 +18,14 @@ export const Hero = () => {
             height="50"
             decoding="async"
             data-nimg="1"
-            className="w-[16px] lg:w-[20px] xl:w-[30px] inline-block ml-4"
+            className="w-[16px] lg:w-[20px] xl:w-[30px] inline-block ml-4 animate-fade-in-up animate-delay-300"
             src={bolt.src}
             alt="icono de rayo"
           ></img>
         </h3>
-        <h4 className="text-font-light text-center text-md">{t("home.hero.subtitle")}</h4>
+        <h4 className="text-font-light text-center text-md  animate-fade-in-up animate-delay-200 ">
+          {t("home.hero.subtitle")}
+        </h4>
       </div>
       <div className="flex flex-row gap-4 items-center justify-center">
         <a
