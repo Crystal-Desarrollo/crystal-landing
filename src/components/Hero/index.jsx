@@ -1,6 +1,7 @@
 import { Section } from "../Section";
 import bolt from "../../assets/bolt.svg";
-import { t } from "i18next";
+import i18n, { t } from "i18next";
+import { localizePath } from "astro-i18next";
 
 export const Hero = () => {
   return (
@@ -30,7 +31,10 @@ export const Hero = () => {
         >
           {t("home.hero.cta")}
         </a>
-        <a className="px-4 py-2 border-2 border-primary rounded-md font-semibold text-xl" href="/#projects">
+        <a
+          className="px-4 py-2 border-2 border-primary rounded-md font-semibold text-xl"
+          href={localizePath("/#projects", i18n.language)}
+        >
           {t("home.hero.cta2")}
         </a>
       </div>
