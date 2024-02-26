@@ -30,5 +30,38 @@
   "ourWork": {
     "title": "What we do",
     "preTitle": "We love"
+  },
+  "tools": {
+    "title": "We use industry-leading tools",
+    "subtitle": "If you need something that's not on the list, feel free to ask us!"
+  },
+  "faqs": {
+    "title": "The answers you're looking for",
+    "q1": {
+      "question": "How do we work together in the development process?",
+      "answer": "Our process includes initial consultations to understand your needs, design and iterative development with your constant feedback, thorough testing, and finally, implementation on your server or web hosting."
+    },
+    "q2": {
+      "question": "Can you maintain and update my website after delivery?",
+      "answer": "Yes, we offer website maintenance and update services to ensure your site is always running optimally and updated with the latest technologies."
+    },
+    "q3": {
+      "question": "Can you help me migrate my current website to a new platform?",
+      "answer": "Yes, we offer website migration services, allowing you to switch to a more modern and customized platform without losing data or functionality."
+    },
+    "q4": {
+      "question": "How do you handle technical issues or interruptions on the website after launch?",
+      "answer": "We provide continuous technical support and promptly resolve issues. We also implement constant monitoring to prevent problems before they occur."
+    },
+    "aside": {
+      "title": "Got any questions?",
+      "subTitle": "We're eager to answer them",
+      "cta": "Schedule your meeting now!"
+    }
+  },
+  "contact": {
+    "title": "Let's Grab Coffee",
+    "subtitle": "and kickstart your project",
+    "cta": "Let's Get Started Today"
   }
 }

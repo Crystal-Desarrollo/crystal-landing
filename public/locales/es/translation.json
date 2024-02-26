@@ -30,5 +30,38 @@
   "ourWork": {
     "preTitle": "Amamos",
     "title": "Lo que hacemos"
+  },
+  "tools": {
+    "title": "Usamos las herramientas líderes en la industria",
+    "subtitle": "Si necesitás algo que no está en la lista ¡no dudes en consultarnos!"
+  },
+  "faqs": {
+    "title": "Las respuestas que buscás",
+    "q1": {
+      "question": "¿Cómo trabajamos juntos en el proceso de desarrollo?",
+      "answer": "Nuestro proceso incluye consultas iniciales para comprender tus necesidades, diseño y desarrollo iterativo con tu retroalimentación constante, pruebas exhaustivas y finalmente, la implementación en tu servidor o alojamiento web."
+    },
+    "q2": {
+      "question": "¿Pueden mantener y actualizar mi sitio web después de la entrega?",
+      "answer": "Sí, ofrecemos servicios de mantenimiento y actualización de sitios web para garantizar que tu sitio esté siempre funcionando de manera óptima y actualizado con las últimas tecnologías."
+    },
+    "q3": {
+      "question": "¿Pueden ayudarme a migrar mi sitio web actual a una nueva plataforma?",
+      "answer": "Sí, ofrecemos servicios de migración de sitios web, lo que te permite cambiar a una plataforma más moderna y personalizada sin perder datos ni funcionalidades."
+    },
+    "q4": {
+      "question": "¿Cómo gestionan los problemas técnicos o las interrupciones en el sitio web después del lanzamiento?",
+      "answer": "Ofrecemos soporte técnico continuo y solucionamos problemas rápidamente. También implementamos monitoreo constante para prevenir problemas antes de que ocurran."
+    },
+    "aside": {
+      "title": "¿Te quedó alguna duda?",
+      "subTitle": "Estamos ansiosos por responderlas",
+      "cta": "¡Agenda tu reunión!"
+    }
+  },
+  "contact": {
+    "title": "Tomemos un café",
+    "subtitle": "y empecemos a trabajar en tu proyecto",
+    "cta": "Empecemos hoy mismo"
   }
 }

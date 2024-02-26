@@ -1,5 +1,5 @@
 ---
-import i18next, { changeLanguage } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import { Header } from "../components/Header/index";
 import { Hero } from "../components/Hero/index";
 import { Steps } from "../components/Steps/index";
@@ -29,7 +29,21 @@ changeLanguage("es");
     <Customers client:only="react" />
     <Portfolio />
     <Tools />
-    <FAQ client:load />
+    <FAQ
+      client:only="react"
+      title={t("faqs.title")}
+      q1={t("faqs.q1.question")}
+      a1={t("faqs.q1.answer")}
+      q2={t("faqs.q2.question")}
+      a2={t("faqs.q2.answer")}
+      q3={t("faqs.q3.question")}
+      a3={t("faqs.q3.answer")}
+      q4={t("faqs.q4.question")}
+      a4={t("faqs.q4.answer")}
+      asideTitle={t("faqs.aside.title")}
+      asideSubtitle={t("faqs.aside.subTitle")}
+      asideCta={t("faqs.aside.cta")}
+    />
     <ContactUs />
     <Footer />
     <style is:global>
