@@ -23,5 +23,12 @@
       "title": "Launch",
       "description": "We launch the solution and provide support to ensure its success."
     }
+  },
+  "customers": {
+    "title": "Companies that trust us"
+  },
+  "ourWork": {
+    "title": "What we do",
+    "preTitle": "We love"
   }
 }

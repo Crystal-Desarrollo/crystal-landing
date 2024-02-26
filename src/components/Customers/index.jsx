@@ -1,5 +1,6 @@
 import { Section } from "../Section";
 import Slider from "react-slick";
+import { t } from "i18next";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,10 +48,10 @@ const customersList = [
 
 export const Customers = () => {
   return (
-    <Section client:load>
+    <Section>
       <p className="text-xl text-font-light mb-4 flex flex-row items-center gap-4">
         <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
-        Clientes que confían en nosotros
+        {t("steps.title")}
         <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
       </p>
 
@@ -92,9 +93,7 @@ export const Customers = () => {
                   <img
                     src={item.logo.src}
                     alt={`Logo de ${item.name}`}
-                    className={`white-logo mx-auto opacity-70 ${
-                      item.size || "h-16"
-                    }`}
+                    className={`white-logo mx-auto opacity-70 ${item.size || "h-16"}`}
                   />
                 )}
               </div>

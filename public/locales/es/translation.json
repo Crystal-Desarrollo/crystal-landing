@@ -23,5 +23,12 @@
       "title": "Entrega",
       "description": "Te brindamos manuales de uso y capacitamos a todo tu equipo en el uso del sistema."
     }
+  },
+  "customers": {
+    "title": "Clientes que confían en nosotros"
+  },
+  "ourWork": {
+    "preTitle": "Amamos",
+    "title": "Lo que hacemos"
   }
 }
