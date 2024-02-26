@@ -1,6 +1,5 @@
 import { Section } from "../Section";
 import Slider from "react-slick";
-import { t } from "i18next";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -46,12 +45,12 @@ const customersList = [
   },
 ];
 
-export const Customers = () => {
+export const Customers = ({ title }) => {
   return (
     <Section>
       <p className="text-xl text-font-light mb-4 flex flex-row items-center gap-4">
         <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
-        {t("steps.title")}
+        {title}
         <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
       </p>
 
