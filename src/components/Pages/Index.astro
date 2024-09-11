@@ -10,6 +10,7 @@ import { Tools } from "@/components/Tools/index";
 import { ContactUs } from "@/components/ContactUs/index";
 import { FAQ } from "@/components/FAQ/index";
 import { WhatsAppButton } from "@/components/Whatsapp/index";
+import { OurServices } from "../OurServices";
 ---
 
 <!doctype html>
@@ -45,6 +46,7 @@ import { WhatsAppButton } from "@/components/Whatsapp/index";
     <Hero />
     <Steps />
     <Customers client:only="react" title={t("customers.title")} />
+    <OurServices />
     <Portfolio />
     <Tools />
     <FAQ
