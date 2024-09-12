@@ -32,6 +32,19 @@
   "customers": {
     "title": "Companies that trust us"
   },
+  "services":{
+    "preTitle": "We are constantly evolving",
+    "title": "Our specialties",
+    "description": "We love to get involved in new challenges, which is why we specialize in developing tailor-made systems to make your company grow without limits, always guaranteeing a high end final result at the level of the best.",
+    "cardWebTitle": "Websites",
+    "cardWebDescriptrion": "100% personalized and looking to convey your unique style",
+    "cardSoftwareTitle": "Enterprise Softwares",
+    "cardSoftwareDescription": "Designed for you to manage your company from anywhere",
+    "cardDevelopmentTitle": "Custom Apps",
+    "cardDevelopmentDescription": "Tailor-made for the way your company or business works",
+    "cardSolutionsTitle": "Enterprise Technology Solutions",
+    "cardSolutionsDescription": "Comprehensive infrastructure solutions, including network installation, video surveillance systems and equipment maintenance"
+  },
   "ourWork": {
     "title": "Our work",
     "preTitle": "We are proud of"
