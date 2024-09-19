@@ -1,5 +1,5 @@
-import { useState } from "react";
-import chat from "../../assets/chat.svg";
+import { useState } from 'react'
+import chat from '../../assets/chat.svg'
 
 export const FAQ = ({ title, q1, a1, q2, a2, q3, a3, q4, a4, asideTitle, asideSubtitle, asideCta }) => {
   return (
@@ -28,23 +28,24 @@ export const FAQ = ({ title, q1, a1, q2, a2, q3, a3, q4, a4, asideTitle, asideSu
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export const Collapse = ({ question, answer }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="item px-6 py-6 w-full">
-      <button onClick={() => setOpen(!open)} className="w-full flex flex-row justify-between">
+      <button type="button" onClick={() => setOpen(!open)} className="w-full flex flex-row justify-between">
         <h4 className="text-font-light font-medium text-start">{question}</h4>
         <svg
-          className={`transform w-5 h-5 text-gray-500 ${open ? "rotate-180" : ""}`}
+          className={`transform w-5 h-5 text-gray-500 ${open ? 'rotate-180' : ''}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path d="M19 9l-7 7-7-7"></path>
+          <title>Caret icon</title>
+          <path d="M19 9l-7 7-7-7" />
         </svg>
       </button>
       {open && (
@@ -53,5 +54,5 @@ export const Collapse = ({ question, answer }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}

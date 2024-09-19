@@ -1,57 +1,57 @@
-import { Section } from "../Section";
-import Slider from "react-slick";
+import Slider from 'react-slick'
+import { Section } from '../Section'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-import star from "../../assets/star.svg";
-import camcomex from "../../assets/sponsors/camcomexjujuy.webp";
-import quantum from "../../assets/sponsors/quantum.webp";
-import expojuy from "../../assets/sponsors/expojuy.webp";
-import elgalpon from "../../assets/sponsors/el_galpon.webp";
-import capce from "../../assets/sponsors/capce.webp";
-import russet from "../../assets/sponsors/russet.webp";
+import camcomex from '../../assets/sponsors/camcomexjujuy.webp'
+import capce from '../../assets/sponsors/capce.webp'
+import elgalpon from '../../assets/sponsors/el_galpon.webp'
+import expojuy from '../../assets/sponsors/expojuy.webp'
+import quantum from '../../assets/sponsors/quantum.webp'
+import russet from '../../assets/sponsors/russet.webp'
+import star from '../../assets/star.svg'
 
 const customersList = [
   {
-    name: "Quantum Fit",
+    name: 'Quantum Fit',
     logo: quantum,
-    size: "h-32",
+    size: 'h-32',
   },
   {
-    name: "Cámara de Comercio Exterior de Jujuy",
+    name: 'Cámara de Comercio Exterior de Jujuy',
     logo: camcomex,
-    size: "h-16",
+    size: 'h-16',
   },
   {
-    name: "ExpoJuy",
+    name: 'ExpoJuy',
     logo: expojuy,
-    size: "h-16",
+    size: 'h-16',
   },
   {
-    name: "El Galpón",
+    name: 'El Galpón',
     logo: elgalpon,
-    size: "h-24",
+    size: 'h-24',
   },
   {
-    name: "CAPSE",
+    name: 'CAPSE',
     logo: capce,
-    size: "h-16",
+    size: 'h-16',
   },
   {
-    name: "Russet",
+    name: 'Russet',
     logo: russet,
-    size: "h-24",
+    size: 'h-24',
   },
-];
+]
 
 export const Customers = ({ title }) => {
   return (
     <Section>
       <p className="text-xl text-font-light mb-4 flex flex-row items-center gap-4">
-        <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
+        <img src={star.src} className="h-8" alt="icono estrella" role="presentation" aria-hidden="true" />
         {title}
-        <img src={star.src} className="h-8" alt="icono estrella" role="icon" />
+        <img src={star.src} className="h-8" alt="icono estrella" role="presentation" aria-hidden="true" />
       </p>
 
       <div className="w-full px-8 mx-auto h-full items-center">
@@ -92,14 +92,14 @@ export const Customers = ({ title }) => {
                   <img
                     src={item.logo.src}
                     alt={`Logo de ${item.name}`}
-                    className={`white-logo mx-auto opacity-70 ${item.size || "h-16"}`}
+                    className={`white-logo mx-auto opacity-70 ${item.size || 'h-16'}`}
                   />
                 )}
               </div>
-            );
+            )
           })}
         </Slider>
       </div>
     </Section>
-  );
-};
+  )
+}

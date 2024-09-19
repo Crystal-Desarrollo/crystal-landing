@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
 
 /* 
 Colores
@@ -12,7 +12,7 @@ Colores
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -28,7 +28,7 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-overflow: hidden;
+  overflow: hidden;
 }
 
 main .tarjeta {
@@ -49,13 +49,13 @@ main .tarjeta .contenedorImagen {
   background-color: #fff;
 }
 
-main .tarjeta .contenedorImagen .containerRecMarr{
+main .tarjeta .contenedorImagen .containerRecMarr {
   width: 50%;
   height: 5.3rem;
   margin-top: 4rem;
   margin-bottom: -7.9rem;
   align-self: flex-start;
-  background-color: #D5CDC1;
+  background-color: #d5cdc1;
   z-index: 1;
 }
 
@@ -67,8 +67,8 @@ main .tarjeta .contenedorImagen img {
 }
 
 main .tarjeta .banner {
-background-color: #fff;
-height: 2rem;
+  background-color: #fff;
+  height: 2rem;
 }
 
 main .contenedorRedes {
@@ -78,15 +78,13 @@ main .contenedorRedes {
   background-color: #fff;
 }
 
-
-main .contenedorRedes .contenedorEnlaces{
+main .contenedorRedes .contenedorEnlaces {
   width: 100%;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 main .contenedorRedes .contenedorEnlaces .redes {
@@ -100,12 +98,11 @@ main .contenedorRedes .contenedorEnlaces .redes {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #D5CDC1;
+  background-color: #d5cdc1;
   color: #fff;
   font-size: 2rem;
   font-weight: 400;
 }
-
 
 main .contenedorRedes .contenedorEnlaces .redes .icon {
   width: 3rem;
@@ -116,14 +113,13 @@ main .contenedorRedes .contenedorEnlaces .redes .icon {
   align-items: center;
   justify-content: center;
   color: #745731;
-
 }
 
-main .contenedorRedes .contenedorEnlaces .redes .redicon{
-  color: #B53E21;
+main .contenedorRedes .contenedorEnlaces .redes .redicon {
+  color: #b53e21;
 }
 
-main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+main .contenedorRedes .contenedorEnlaces .redes .circleIcon {
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -152,18 +148,18 @@ main .tarjeta .contenedorQR {
   background-color: #c0bbad;
 }
 
-.textoadicional{
-  width:24rem;
+.textoadicional {
+  width: 24rem;
   height: 7rem;
   padding: 1rem;
-  border-left: 0.8rem solid #B53E21;
+  border-left: 0.8rem solid #b53e21;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.textoadicional p{
+.textoadicional p {
   font-size: 1.3rem;
   font-weight: 600;
   color: #745731;
@@ -185,26 +181,23 @@ main .tarjeta .contenedorQR {
   font-size: 1.1rem;
   font-weight: 400;
   color: #fff;
-
 }
 
 .tarjeta .footer i {
-  color: #B53E21;
+  color: #b53e21;
 }
 
 .tarjeta .footer a {
   color: white;
 }
 
-
-@media screen and (max-width: 550px){
-  
-  main .tarjeta .contenedorImagen .containerRecMarr{
+@media screen and (max-width: 550px) {
+  main .tarjeta .contenedorImagen .containerRecMarr {
     height: 4.6rem;
     margin-top: 4rem;
     margin-bottom: -6.6rem;
   }
-  
+
   main .tarjeta .contenedorImagen img {
     width: 25rem;
   }
@@ -215,56 +208,51 @@ main .tarjeta .contenedorQR {
     font-size: 1.5rem;
     font-weight: 400;
   }
-  
-  
+
   main .contenedorRedes .contenedorEnlaces .redes .icon {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0rem 1.5rem 0rem 1rem;
-    font-size: 2rem;  
+    font-size: 2rem;
   }
-  
-  main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+
+  main .contenedorRedes .contenedorEnlaces .redes .circleIcon {
     width: 2.5rem;
-    height: 2.5rem;  
+    height: 2.5rem;
     font-size: 1.5rem;
   }
-  
-    
-  .textoadicional{
-    width:16rem;
+
+  .textoadicional {
+    width: 16rem;
     height: 7rem;
     padding: 0.5rem;
-    border-left: 0.5rem solid #B53E21;
+    border-left: 0.5rem solid #b53e21;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
-  
-  .textoadicional p{
+
+  .textoadicional p {
     font-size: 1.1rem;
   }
-  
+
   .tarjeta .footer {
     height: 5.5rem;
   }
-  
+
   .tarjeta .footer p {
     font-weight: 500;
   }
-  
 }
 
-
-@media screen and (max-width: 360px){
-  
-  main .tarjeta .contenedorImagen .containerRecMarr{
+@media screen and (max-width: 360px) {
+  main .tarjeta .contenedorImagen .containerRecMarr {
     height: 3.8rem;
     margin-top: 4rem;
     margin-bottom: -5.4rem;
   }
-  
+
   main .tarjeta .contenedorImagen img {
     width: 20rem;
   }
@@ -276,43 +264,40 @@ main .tarjeta .contenedorQR {
     font-size: 1.3rem;
     font-weight: 500;
   }
-  
-  
+
   main .contenedorRedes .contenedorEnlaces .redes .icon {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0rem 1rem 0rem 0.5rem;
-    font-size: 2rem;  
+    font-size: 2rem;
   }
-  
-  main .contenedorRedes .contenedorEnlaces .redes .circleIcon{
+
+  main .contenedorRedes .contenedorEnlaces .redes .circleIcon {
     width: 2.5rem;
-    height: 2.5rem;  
+    height: 2.5rem;
     font-size: 1.5rem;
   }
-  
-    
-  .textoadicional{
-    width:16rem;
+
+  .textoadicional {
+    width: 16rem;
     height: 7rem;
     padding: 0.5rem;
-    border-left: 0.5rem solid #B53E21;
+    border-left: 0.5rem solid #b53e21;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
-  
-  .textoadicional p{
+
+  .textoadicional p {
     font-size: 1.1rem;
   }
-  
+
   .tarjeta .footer {
     height: 5.5rem;
   }
-  
+
   .tarjeta .footer p {
     font-weight: 500;
   }
-  
 }

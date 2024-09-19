@@ -1,15 +1,11 @@
-import { Section } from "../Section";
-import logo from "../../assets/crystal-logo.png";
+import logo from '../../assets/crystal-logo.png'
+import { Section } from '../Section'
 
 export const Header = () => {
   return (
     <Section>
       <div className="flex flex-row items-center justify-center">
-        <img
-          src={logo.src}
-          alt="Logo Crystal Desarrollo"
-          className="h-[32px] mr-2"
-        />
+        <img src={logo.src} alt="Logo Crystal Desarrollo" className="h-[32px] mr-2" />
         <h1 className="text-xl font-bold">Crystal Desarrollo</h1>
       </div>
 
@@ -30,5 +26,5 @@ export const Header = () => {
         </ul>
       </nav> */}
     </Section>
-  );
-};
+  )
+}

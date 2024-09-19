@@ -29,37 +29,37 @@ body {
 }
 
 h4 {
-  font-family: 'Ink Free', sans-serif;
+  font-family: "Ink Free", sans-serif;
   font-size: 2.3rem;
 }
 
 .descripcion {
-  font-family: 'Ink Free', sans-serif;
+  font-family: "Ink Free", sans-serif;
   font-size: 1.5rem;
 }
 
 .instagram:hover {
-  background-color: #E1306C;
-  border-color: #E1306C;
-  color: #FFFFFF;
+  background-color: #e1306c;
+  border-color: #e1306c;
+  color: #ffffff;
 }
 
 .instagram {
-  background-color: #E4405F;
-  border-color: #E1306C;
-  color: #FFFFFF;
+  background-color: #e4405f;
+  border-color: #e1306c;
+  color: #ffffff;
 }
 
 .mercadopago:hover {
   background-color: #808080;
   border-color: #808080;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .mercadopago {
   background-color: #808080;
   border-color: #808080;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .mercado-pago {
@@ -84,11 +84,11 @@ h4 {
     margin-bottom: 1rem;
   }
   .descripcion {
-    font-family: 'Ink Free', sans-serif;
+    font-family: "Ink Free", sans-serif;
     font-size: 1.3rem;
   }
   h4 {
-    font-family: 'Ink Free', sans-serif;
+    font-family: "Ink Free", sans-serif;
     font-size: 2rem;
   }
 }
@@ -100,11 +100,11 @@ h4 {
     margin-bottom: 1rem;
   }
   .descripcion {
-    font-family: 'Ink Free', sans-serif;
+    font-family: "Ink Free", sans-serif;
     font-size: 0.9rem;
   }
   h4 {
-    font-family: 'Ink Free', sans-serif;
+    font-family: "Ink Free", sans-serif;
     font-size: 2rem;
   }
 }
