@@ -1,20 +1,29 @@
 ---
 import { t } from "i18next";
-import FunArrow from "../../assets/icons/fun-arrow.jsx";
-import Heart from "../../assets/icons/heart.jsx";
-import { Section } from "../Section.jsx";
+import IconFunArrow from "../../assets/icons/fun-arrow.svg";
+import IconHeart from "../../assets/icons/heart.svg";
+import Section from "../section.astro";
 import Gallery from "./Gallery.astro";
 ---
 
-<Section id="projects" className="relative">
+<Section id="projects" class="relative">
   <div class="flex flex-col items-center gap-2 mb-12 relative">
     <p class="text-xl text-font-light flex flex-row items-center">
       {t("ourWork.preTitle")}
-      <Heart className="ml-1 h-8" />
+      <img
+        src={IconHeart.src}
+        alt="Icon heart"
+        role="presentation"
+        class="ml-1 h-8"
+      />
     </p>
     <p class="text-5xl font-bold text-center relative">{t("ourWork.title")}</p>
-    <FunArrow
-      className="rotate-[150deg] absolute md:left-[40%] bottom-[-80%] flex flex-row items-center gap-2"
+
+    <img
+      src={IconFunArrow.src}
+      alt="Icon heart"
+      role="presentation"
+      class="rotate-[150deg] absolute md:left-[40%] bottom-[-80%] flex flex-row items-center gap-2"
     />
   </div>
 

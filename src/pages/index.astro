@@ -1,8 +1,104 @@
 ---
-import Index from '@/components/Pages/Index.astro'
-import { changeLanguage } from 'i18next'
+import ContactUs from "@/components/contact-us.astro";
+import Customers from "@/components/customers";
+import FAQs from "@/components/faqs/faqs.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hero from "@/components/hero.astro";
+import Portfolio from "@/components/portfolio/index.astro";
+import Steps from "@/components/steps/steps.astro";
+import Tools from "@/components/tools.astro";
+import WhatsAppButton from "@/components/whatsapp-button.astro";
+import i18next, { t } from "i18next";
 
-changeLanguage('es')
+import { changeLanguage } from "i18next";
+
+changeLanguage("es");
 ---
 
-<Index />
+<!doctype html>
+<html lang={i18next.language} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={t("site.description")} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://crystal-desarrollo.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t("site.title")} />
+    <meta property="og:description" content={t("site.description")} />
+    <meta property="og:image" content="/favicon.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="www.crystal-desarrollo.com" />
+    <meta property="twitter:url" content="https://crystal-desarrollo.com/" />
+    <meta name="twitter:title" content={t("site.title")} />
+    <meta name="twitter:description" content={t("site.description")} />
+    <meta name="twitter:image" content="/favicon.png" />
+
+    <meta name="keywords" content={t("site.keywords")} />
+    <meta name="author" content="Crystal Desarrollo" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{t("site.title")}</title>
+  </head>
+  <body>
+    <Header />
+    <Hero />
+    <Steps />
+    <Customers client:only="react" title={t("customers.title")} />
+    <Portfolio />
+    <Tools />
+    <FAQs
+      title={t("faqs.title")}
+      asideTitle={t("faqs.aside.title")}
+      asideSubtitle={t("faqs.aside.subTitle")}
+      asideCta={t("faqs.aside.cta")}
+    />
+    <ContactUs />
+    <WhatsAppButton />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: black;
+  }
+
+  .white-logo {
+    filter: brightness(0) invert(1);
+  }
+
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Customize the scrollbar width */
+  .scrollbar::-webkit-scrollbar {
+    height: 8px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+  }
+
+  /* Customize the scrollbar track */
+  .scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Customize the scrollbar thumb */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 1px;
+    height: 1px;
+    border-radius: 4px;
+  }
+
+  /* Optionally, you can style the scrollbar on hover */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+</style>

@@ -1,0 +1,37 @@
+---
+import { t } from "i18next";
+import CoffeeIcon from "../assets/icons/coffee.svg";
+import Section from "./section.astro";
+---
+
+<Section>
+  <div class="flex flex-col items-center max-w-prose gap-2">
+    <h3
+      class="text-5xl text-center font-bold leading-snug flex flex-row items-center"
+    >
+      {t("contact.title")}
+      <img
+        src={CoffeeIcon.src}
+        alt="Coffe icon"
+        role="presentation"
+        class="ml-4"
+      />
+    </h3>
+    <h2 class="text-font-light text-center text-xl">{t("contact.subtitle")}</h2>
+  </div>
+
+  <div class="w-full lg:w-[60vw] mt-8">
+    <a
+      href="https://cal.com/crystal-desarrollo/contanos-tu-idea"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <button
+        type="button"
+        class="rounded-xl border p-4 h-[4rem] md:h-[7rem] lg:px-16 text-2xl font-bold text-white cta-btn cursor-pointer hover:scale-105 transition duration-300 ease-out w-full hover:bg-primary hover:text-white"
+      >
+        {t("contact.cta")}
+      </button>
+    </a>
+  </div>
+</Section>
