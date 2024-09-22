@@ -1,6 +1,6 @@
 import { t } from 'i18next'
 
-import { Coffee } from '../../icons/coffee'
+import { Coffee } from '../../assets/icons/coffee'
 import { Section } from '../Section'
 
 export const ContactUs = () => {

@@ -1,6 +1,6 @@
 import { t } from 'i18next'
-import ArrowRight from '../../icons/arrow-right.jsx'
-import Underline from '../../icons/underline.jsx'
+import ArrowRight from '../../assets/icons/arrow-right.jsx'
+import Underline from '../../assets/icons/underline.jsx'
 import { Section } from '../Section'
 
 import one from '../../assets/1.svg'
