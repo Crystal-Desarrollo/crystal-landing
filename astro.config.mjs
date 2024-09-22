@@ -7,9 +7,6 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   integrations: [astroI18next(), react(), tailwind()],
   site: 'https://crystal-desarrollo.com',
-  devOptions: {
-    tailwindConfig: './tailwind.config.js',
-  },
   i18n: {
     locales: ['es', 'en'],
     defaultLocale: 'es',
