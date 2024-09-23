@@ -5,12 +5,13 @@ import FAQs from "@/components/faqs/faqs.astro";
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
 import Hero from "@/components/hero.astro";
-import Portfolio from "@/components/portfolio/index.astro";
+import Portfolio from "@/components/portfolio/portfolio.astro";
 import Steps from "@/components/steps/steps.astro";
 import Tools from "@/components/tools.astro";
 import WhatsAppButton from "@/components/whatsapp-button.astro";
-import i18next, { t } from "i18next";
+import OurServices from "@/components/our-services.astro";
 
+import i18next, { t } from "i18next";
 import { changeLanguage } from "i18next";
 
 changeLanguage("es");
@@ -49,6 +50,7 @@ changeLanguage("es");
     <Hero />
     <Steps />
     <Customers client:only="react" title={t("customers.title")} />
+    <OurServices />
     <Portfolio />
     <Tools />
     <FAQs

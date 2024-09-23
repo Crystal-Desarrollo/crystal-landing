@@ -32,6 +32,19 @@
   "customers": {
     "title": "Clientes que confían en nosotros"
   },
+  "services":{
+    "preTitle": "En constante evolución",
+    "title": "Nuestra especialidad",
+    "description": "Nos encanta involucrarnos en nuevos desafíos, por eso nos especializamos en desarrollar sistemas a medida para hacer que tu empresa crezca sin límites, garantizando siempre un resultado final de calidad y al nivel de los mejores.",
+    "cardWebTitle": "Páginas Web",
+    "cardWebDescriptrion": "100% personalizadas y buscando transmitir tu estilo único",
+    "cardSoftwareTitle": "Sistemas Empresariales",
+    "cardSoftwareDescription": "Pensados para que administres tu empresa desde cualquier lugar",
+    "cardDevelopmentTitle": "Aplicaciones a Medida",
+    "cardDevelopmentDescription": "Diseñadas a medida para la forma de funcionar de tu empresa o negocio",
+    "cardSolutionsTitle": "Soluciones Tecnológicas Empresariales",
+    "cardSolutionsDescription": "Soluciones integrales en infraestructura, incluyendo instalación de redes, sistemas de videovigilancia y mantenimiento de equipos"
+  },
   "ourWork": {
     "preTitle": "Amamos",
     "title": "Lo que hacemos"
