@@ -2,8 +2,6 @@
 import chat from "@/assets/icons/chat.svg";
 import { Collapse } from "./Collapse";
 import { t } from "i18next";
-
-const { title, asideTitle, asideSubtitle, asideCta } = Astro.props;
 ---
 
 <div
@@ -12,7 +10,7 @@ const { title, asideTitle, asideSubtitle, asideCta } = Astro.props;
   <div class="w-full">
     <div class="w-full flex flex-col items-center gap-6 mb-12 relative">
       <p class="text-5xl font-bold text-pretty text-center relative text-white">
-        {title}
+        {t("faqs.title")}
       </p>
     </div>
     <div class="w-full flex flex-col">
@@ -42,14 +40,16 @@ const { title, asideTitle, asideSubtitle, asideCta } = Astro.props;
     <img alt="icono de mensaje" src={chat.src} />
 
     <p class="text-3xl font-bold text-center relative text-white">
-      {asideTitle}
+      {t("faqs.aside.title")}
     </p>
-    <p class="text-xl text-font-light text-center">{asideSubtitle}</p>
+    <p class="text-xl text-font-light text-center">
+      {t("faqs.aside.subTitle")}
+    </p>
     <a
       href="https://cal.com/crystal-desarrollo/contanos-tu-idea"
       class="bg-primary text-white px-8 py-4 flex items-center rounded-md font-semibold text-lg hover:scale-105 ease-in-out duration-300"
     >
-      {asideCta}
+      {t("faqs.aside.cta")}
     </a>
   </div>
 </div>

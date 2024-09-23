@@ -1,5 +1,5 @@
 ---
-import { localizePath } from "astro-i18next";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import i18n, { t } from "i18next";
 import IconBolt from "@/assets/icons/bolt.svg";
 import Section from "./section.astro";
@@ -44,7 +44,7 @@ import Section from "./section.astro";
     </a>
     <a
       class="px-4 py-2 border-2 border-primary rounded-md font-semibold text-xl"
-      href={localizePath("/#projects", i18n.language)}
+      href={getRelativeLocaleUrl(i18n.language, "/#projects")}
     >
       {t("home.hero.cta2")}
     </a>
