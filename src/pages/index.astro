@@ -1,19 +1,19 @@
 ---
-import ContactUs from '@/components/contact-us.astro'
-import Customers from '@/components/customers'
-import FAQs from '@/components/faqs/faqs.astro'
-import Footer from '@/components/footer.astro'
-import Header from '@/components/header.astro'
-import Hero from '@/components/hero.astro'
-import OurServices from '@/components/our-services.astro'
-// import Portfolio from "@/components/portfolio/projects.astro";
-import Steps from '@/components/steps/steps.astro'
-import Tools from '@/components/tools.astro'
-import WhatsAppButton from '@/components/whatsapp-button.astro'
+import ContactUs from "@/components/contact-us.astro";
+import Customers from "@/components/customers";
+import FAQs from "@/components/faqs/faqs.astro";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import Hero from "@/components/hero.astro";
+import OurServices from "@/components/our-services.astro";
+import Projects from "@/components/projects/projects.astro";
+import Steps from "@/components/steps/steps.astro";
+import Tools from "@/components/tools.astro";
+import WhatsAppButton from "@/components/whatsapp-button.astro";
 
-import Layout from '@/layouts/layout.astro'
+import Layout from "@/layouts/layout.astro";
 
-import { t } from 'i18next'
+import { t } from "i18next";
 ---
 
 <Layout>
@@ -22,7 +22,7 @@ import { t } from 'i18next'
   <Steps />
   <Customers client:only="react" title={t("customers.title")} />
   <OurServices />
-  <!--<Portfolio />-->
+  <Projects />
   <Tools />
   <FAQs />
   <ContactUs />
