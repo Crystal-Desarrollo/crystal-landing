@@ -10,7 +10,7 @@ export const Header = () => {
           alt="Logo Crystal Desarrollo"
           className="h-[32px] mr-2"
         />
-        <h1 className="text-xl font-bold">Crystal Desarrollo</h1>
+        <h1 className="text-xl font-bold">Crystal Desarrollo S.R.L.</h1>
       </div>
 
       {/* <nav>
