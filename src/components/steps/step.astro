@@ -1,0 +1,22 @@
+---
+const { image, title, description } = Astro.props;
+---
+
+<div class="relative flex flex-col text-center w-[300px] xl:w-[400px]">
+  <img
+    alt="Design"
+    loading="eager"
+    width="50"
+    height="50"
+    decoding="async"
+    data-nimg="1"
+    class="w-[80px] h-[120px] lg:w-[100px] lg:h-[140px]"
+    src={image}
+  />
+  <div
+    class="absolute bottom-[-40px] left-0 right-0 flex flex-col items-center space-y-2 justify-center p-2"
+  >
+    <span class="text-2xl font-bold">{title}</span>
+    <span class="text-font-light">{description}</span>
+  </div>
+</div>

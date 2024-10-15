@@ -5,7 +5,6 @@ body {
 .container {
   max-width: 150%;
   margin: 0 auto;
-
 }
 
 .btn {
@@ -13,8 +12,6 @@ body {
   font-size: 1.2rem;
   border-radius: 1rem;
   transition: all 0.2s;
-
-  
 }
 
 .btn:hover {
@@ -26,41 +23,40 @@ body {
   text-decoration: underline blue;
 }
 
-.separador{
+.separador {
   background-color: transparent;
   color: transparent;
 }
 
-h4{
-  font-family: 'Amatic SC', cursive;
+h4 {
+  font-family: "Amatic SC", cursive;
   font-size: 2.3rem;
 }
 
-.descripcion{
-  font-family: 'Indie Flower', cursive;
+.descripcion {
+  font-family: "Indie Flower", cursive;
   font-size: 1.5rem;
 }
-.btn-primary:hover{
-  background-color: #E1306C;
-  border-color: #E1306C;
-  color: #FFFFFF;
+.btn-primary:hover {
+  background-color: #e1306c;
+  border-color: #e1306c;
+  color: #ffffff;
 }
 
-.btn-primary{
-  background-color: #E4405F;
-  border-color: #E1306C;
-  color: #FFFFFF;
+.btn-primary {
+  background-color: #e4405f;
+  border-color: #e1306c;
+  color: #ffffff;
 }
 
 @media (max-width: 873px) {
   .btn {
     font-size: 1rem;
   }
-  .mb-0{
+  .mb-0 {
     font-size: 0.9rem;
   }
 }
-
 
 @media (max-width: 991.98px) {
   .row > div {
@@ -68,12 +64,12 @@ h4{
     max-width: 100%;
     margin-bottom: 1rem;
   }
-  .descripcion{
-    font-family: 'Indie Flower', cursive;
+  .descripcion {
+    font-family: "Indie Flower", cursive;
     font-size: 1.3rem;
   }
-  h4{
-    font-family: 'Amatic SC', cursive;
+  h4 {
+    font-family: "Amatic SC", cursive;
     font-size: 2rem;
   }
 }
@@ -84,15 +80,14 @@ h4{
     max-width: 100%;
     margin-bottom: 1rem;
   }
-  .descripcion{
-    font-family: 'Indie Flower', cursive;
+  .descripcion {
+    font-family: "Indie Flower", cursive;
     font-size: 0.9rem;
   }
-  h4{
-    font-family: 'Amatic SC', cursive;
+  h4 {
+    font-family: "Amatic SC", cursive;
     font-size: 2rem;
   }
-  
 }
 
 @media (min-width: 992px) {
