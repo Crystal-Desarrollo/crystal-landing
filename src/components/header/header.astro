@@ -1,0 +1,43 @@
+---
+import { t } from 'i18next'
+import logo from '../../assets/crystal-logo.png'
+---
+
+<div class="w-full flex flex-col text-white justify-center items-center fixed gap-6 z-10 bg-black h-28">
+  <div class="flex flex-row items-center justify-center">
+    <img
+      src={logo.src}
+      alt="Logo Crystal Desarrollo"
+      class="h-[32px] mr-2"
+    />
+    <h1 class="text-xl font-bold">Crystal Desarrollo S.R.L.</h1>
+  </div>
+  <nav class="w-full flex justify-center items-center">
+    <ul class="flex flex-row gap-x-10">
+      <li>
+        <a class="text-lg relative overflow-hidden group text-center" href="#home">
+          {t("nav.home")}
+          <span class="absolute inset-x-0 -bottom-2 h-0.5 bg-white origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        </a>
+      </li>
+      <li>
+        <a class="text-lg relative overflow-hidden group text-center" href="#services">
+          {t("nav.services")}
+          <span class="absolute inset-x-0 -bottom-2 h-0.5 bg-white origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        </a>
+      </li>
+      <li>
+        <a class="text-lg relative overflow-hidden group text-center" href="#projects">
+          {t("nav.projects")}
+          <span class="absolute inset-x-0 -bottom-2 h-0.5 bg-white origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        </a>
+      </li>
+      <li>
+        <a class="text-lg relative overflow-hidden group text-center" href="#contact">
+          {t("nav.contact")}
+          <span class="absolute inset-x-0 -bottom-2 h-0.5 bg-white origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

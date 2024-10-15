@@ -1,8 +1,9 @@
 ---
-import { t, changeLanguage } from "i18next";
+import { changeLanguage, t } from 'i18next'
+import Header from '../components/header/header.astro'
 
-const locale = Astro.currentLocale;
-changeLanguage(locale);
+const locale = Astro.currentLocale
+changeLanguage(locale)
 ---
 
 <!doctype html>
@@ -33,11 +34,18 @@ changeLanguage(locale);
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{t("site.title")}</title>
   </head>
-  <body>
+  <body id="home">
+  <Header />
+  <div class="pt-32">
     <slot />
+  </div>
   </body>
 
   <style is:global>
+    *{
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: black;
     }
