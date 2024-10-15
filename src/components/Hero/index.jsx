@@ -5,7 +5,7 @@ import { localizePath } from "astro-i18next";
 
 export const Hero = () => {
   return (
-    <Section>
+    <Section id="home" className="pt-52">
       <div className="flex flex-col items-center max-w-prose gap-2">
         <h2 className="text-font-light text-center text-xl animate-fade-in-up animate-delay-200 ">
           {t("home.hero.preTitle")}

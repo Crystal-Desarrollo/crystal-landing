@@ -1,4 +1,10 @@
 {
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact Us"
+  },
   "site": {
     "title": "Crystal Development SRL",
     "description": "We develop custom digital solutions for companies and startups. Web design, mobile app development, management systems, and more.",

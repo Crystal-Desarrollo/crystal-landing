@@ -5,7 +5,7 @@ import { Coffee } from "../../icons/coffee";
 
 export const ContactUs = () => {
   return (
-    <Section>
+    <Section id="contact">
       <div className="flex flex-col items-center max-w-prose gap-2">
         <h3 className="text-5xl text-center font-bold leading-snug flex flex-row items-center">
           {t("contact.title")}
