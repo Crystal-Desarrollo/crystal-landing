@@ -4,16 +4,14 @@ import { Collapse } from "./Collapse";
 import { t } from "i18next";
 ---
 
-<div
-  class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-8"
->
-  <div class="w-full">
+
+  <div class="w-full flex flex-col items-center">
     <div class="w-full flex flex-col items-center gap-6 mb-12 relative">
       <p class="text-5xl font-bold text-pretty text-center relative text-white">
         {t("faqs.title")}
       </p>
     </div>
-    <div class="w-full flex flex-col">
+    <div class="w-full max-w-4xl flex flex-col">
       <Collapse
         client:only="react"
         question={t("faqs.q1.question")}
@@ -36,20 +34,5 @@ import { t } from "i18next";
       />
     </div>
   </div>
-  <div class="flex flex-col items-center gap-6">
-    <img alt="icono de mensaje" src={chat.src} />
 
-    <p class="text-3xl font-bold text-center relative text-white">
-      {t("faqs.aside.title")}
-    </p>
-    <p class="text-xl text-font-light text-center">
-      {t("faqs.aside.subTitle")}
-    </p>
-    <a
-      href="https://cal.com/crystal-desarrollo/contanos-tu-idea"
-      class="bg-primary text-white px-8 py-4 flex items-center rounded-md font-semibold text-lg hover:scale-105 ease-in-out duration-300"
-    >
-      {t("faqs.aside.cta")}
-    </a>
-  </div>
-</div>
+
