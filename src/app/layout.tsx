@@ -3,7 +3,6 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import {Header} from "@/partials/home/header";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
 import React from "react";
 
 const geistSans = Geist({
@@ -21,25 +20,13 @@ export const metadata: Metadata = {
     description: "Building amazing digital experiences",
 };
 
-export default async function LocaleLayout({
-                                               children,
-                                               params
-                                           }: {
-    children: React.ReactNode;
-    params: { locale: string };
-}) {
-    const {locale} = await params;
-
-    // Providing all messages to the client
-    // side is the easiest way to get started
-    const messages = await getMessages();
-
+export default async function LocaleLayout({children}: { children: React.ReactNode; }) {
     return (
-        <html lang={locale}>
+        <html>
         <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider>
             <div
                 className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16 relative"
             >
