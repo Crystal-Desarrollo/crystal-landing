@@ -1,20 +1,24 @@
-'use client';
+"use client";
 
-import {useLocale} from 'next-intl';
-import {useRouter} from 'next/navigation';
-import {locales} from '@/i18n/config';
-import {ToggleGroup, ToggleGroupItem} from "@/components/ui/toggle-group";
-import {GlobeIcon} from "lucide-react";
-import {setCookie} from 'cookies-next';
+import {useLocale} from "next-intl";
+import {useRouter} from "next/navigation";
+import {locales} from "@/i18n/config";
+import {setCookie} from "cookies-next";
+import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue,} from "@/components/ui/select";
 
 export function LanguageSwitcher() {
     const locale = useLocale();
     const router = useRouter();
 
+    const flags = {
+        en: "🇺🇸",
+        es: "🇪🇸",
+    };
+
     const switchLocale = (newLocale: string) => {
         // Set the locale cookie
-        setCookie('locale', newLocale, {
-            path: '/',
+        setCookie("locale", newLocale, {
+            path: "/",
             maxAge: 60 * 60 * 24 * 365, // 1 year
         });
 
@@ -23,35 +27,43 @@ export function LanguageSwitcher() {
     };
 
     return (
-        <div className="flex items-center gap-3">
-            <span className="text-xl text-primary"><GlobeIcon/></span>
-            <ToggleGroup
-                type="single"
+        <div className="flex items-center">
+            <Select
                 value={locale}
-                onValueChange={(val) => {
-                    if (val && val !== locale) {
-                        switchLocale(val);
+                onValueChange={(value) => {
+                    if (value !== locale) {
+                        switchLocale(value);
                     }
                 }}
-                variant="outline"
-                size="sm"
-                className="bg-white shadow rounded-md border border-gray-200"
             >
-                {locales.map((loc) => (
-                    <ToggleGroupItem
-                        key={loc}
-                        value={loc}
-                        aria-label={loc}
-                        className={
-                            locale === loc
-                                ? "bg-primary text-primary-foreground font-bold scale-105 transition-all"
-                                : "bg-gray-100 text-gray-700 hover:bg-primary/10 transition-all"
-                        }
-                    >
-                        {loc.toUpperCase()}
-                    </ToggleGroupItem>
-                ))}
-            </ToggleGroup>
+                <SelectTrigger
+                    className="bg-background border-border focus-visible:!ring-0"
+                >
+                    <SelectValue>
+                        <span className="flex items-center gap-2">
+                          <span className="text-base">
+                            {flags[locale as keyof typeof flags]}
+                          </span>
+                          <span>{locale.toUpperCase()}</span>
+                        </span>
+                    </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                    {locales.map((loc) => (
+                        <SelectItem
+                            key={loc}
+                            value={loc}
+                        >
+                          <span className="flex items-center gap-2">
+                            <span className="text-base">
+                              {flags[loc as keyof typeof flags]}
+                            </span>
+                            <span>{loc.toUpperCase()}</span>
+                          </span>
+                        </SelectItem>
+                    ))}
+                </SelectContent>
+            </Select>
         </div>
     );
 }

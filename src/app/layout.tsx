@@ -4,6 +4,7 @@ import "./globals.css";
 import {Header} from "@/partials/home/header";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+import React from "react";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",

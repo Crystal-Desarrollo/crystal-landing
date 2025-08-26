@@ -1,18 +1,21 @@
+'use client';
+
 import React from 'react'
 import Link from 'next/link'
 import {Button} from '@/components/ui/button'
 import Image from 'next/image'
 import {InfiniteSlider} from '@/components/ui/infinite-slider'
 import {ProgressiveBlur} from '@/components/ui/progressive-blur'
-import SplashCursor from "@/animations/SplashCursor/SplashCursor"
+import SplashCursor from "@/animations/SplashCursor/SplashCursor";
 
 export function HeroSection() {
+    const sectionRef = React.useRef<HTMLElement>(null);
+
     return (
         <>
-            <main className="overflow-x-hidden">
-                <section>
-                    <SplashCursor/>
-                    <div className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44">
+            <main ref={sectionRef} className="overflow-x-hidden">
+                <section className="relative">
+                    <div className="pb-24 pt-12 md:pb-32 lg:pb-24 lg:pt-32">
                         <div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
                             <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
                                 <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">Ship
@@ -56,7 +59,7 @@ export function HeroSection() {
                         </div>
                     </div>
                 </section>
-                <section className="bg-background pb-16 md:pb-32">
+                <section className="">
                     <div className="group relative m-auto max-w-6xl px-6">
                         <div className="flex flex-col items-center md:flex-row">
                             <div className="md:max-w-44 md:border-r md:pr-6">
@@ -160,6 +163,12 @@ export function HeroSection() {
                         </div>
                     </div>
                 </section>
+                <SplashCursor
+                    SPLAT_RADIUS={0.25}
+                    SPLAT_FORCE={7000}
+                    DENSITY_DISSIPATION={2.5}
+                    COLOR_UPDATE_SPEED={15}
+                />
             </main>
         </>
     )
