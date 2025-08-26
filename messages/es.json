@@ -1,0 +1,35 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "welcome": "Bienvenido",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "members": "Miembros"
+  },
+  "navigation": {
+    "menu": "Menú",
+    "close": "Cerrar",
+    "features": "Características",
+    "solution": "Solución",
+    "pricing": "Precios",
+    "about": "Acerca de",
+    "contact": "Trabajemos juntos"
+  },
+  "hero": {
+    "title": "Bienvenido a Crystal Desarrollo",
+    "subtitle": "Construyendo experiencias digitales increíbles",
+    "cta": "Comenzar"
+  },
+  "projects": {
+    "title": "Nuestros Proyectos",
+    "viewAll": "Ver Todos los Proyectos",
+    "viewProject": "Ver Proyecto"
+  },
+  "members": {
+    "title": "Nuestro Equipo",
+    "viewProfile": "Ver Perfil"
+  }
+}

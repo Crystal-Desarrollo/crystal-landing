@@ -1,5 +1,5 @@
 "use client";
-import {ThreeDMarquee} from "@/src/components/ui/3d-marquee";
+import {ThreeDMarquee} from "@/components/ui/3d-marquee";
 
 export function Projects() {
     const images = [

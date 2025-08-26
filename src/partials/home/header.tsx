@@ -1,19 +1,24 @@
 'use client'
 import Link from 'next/link'
-import {Logo} from '@/src/components/logo'
+import {Logo} from '@/components/logo'
 import {Menu, X} from 'lucide-react'
-import {Button} from '@/src/components/ui/button'
+import {Button} from '@/components/ui/button'
+import {LanguageSwitcher} from '@/components/LanguageSwitcher'
+import {useCommonTranslations, useNavigationTranslations} from '@/hooks/useTranslations'
 import React from 'react'
 
 const menuItems = [
-    {name: 'Features', href: '#link'},
-    {name: 'Solution', href: '#link'},
-    {name: 'Pricing', href: '#link'},
-    {name: 'About', href: '#link'},
+    {nameKey: 'features', href: '#link'},
+    {nameKey: 'solution', href: '#link'},
+    {nameKey: 'pricing', href: '#link'},
+    {nameKey: 'about', href: '#link'},
 ]
 
 export const Header = () => {
     const [menuState, setMenuState] = React.useState(false)
+    const navT = useNavigationTranslations()
+    const commonT = useCommonTranslations()
+
     return (
         <header>
             <nav
@@ -25,7 +30,7 @@ export const Header = () => {
                         <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
                             <Link
                                 href="/"
-                                aria-label="home"
+                                aria-label={commonT('home')}
                                 className="flex items-center space-x-2"
                             >
                                 <Logo/>
@@ -33,7 +38,7 @@ export const Header = () => {
 
                             <button
                                 onClick={() => setMenuState(!menuState)}
-                                aria-label={menuState ? 'Close Menu' : 'Open Menu'}
+                                aria-label={menuState ? navT('close') : navT('menu')}
                                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
                             >
                                 <Menu
@@ -50,7 +55,7 @@ export const Header = () => {
                                                 href={item.href}
                                                 className="text-muted-foreground hover:text-accent-foreground block duration-150"
                                             >
-                                                <span>{item.name}</span>
+                                                <span>{navT(item.nameKey)}</span>
                                             </Link>
                                         </li>
                                     ))}
@@ -69,28 +74,19 @@ export const Header = () => {
                                                 href={item.href}
                                                 className="text-muted-foreground hover:text-accent-foreground block duration-150"
                                             >
-                                                <span>{item.name}</span>
+                                                <span>{navT(item.nameKey)}</span>
                                             </Link>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                                <LanguageSwitcher/>
                                 <Button
                                     asChild
-                                    variant="outline"
-                                    size="sm"
                                 >
                                     <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                >
-                                    <Link href="#">
-                                        <span>Sign Up</span>
+                                        <span>{navT('contact')}</span>
                                     </Link>
                                 </Button>
                             </div>

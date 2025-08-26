@@ -1,7 +1,7 @@
 'use client';
 
-import {Section} from "@/src/components/craft";
-import ProfileCard from "@/src/components/ProfileCard/ProfileCard";
+import {Section} from "@/components/craft";
+import ProfileCard from "@/components/ProfileCard/ProfileCard";
 
 export const Members = () => {
 

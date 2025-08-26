@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import {Button} from '@/src/components/ui/button'
+import {Button} from '@/components/ui/button'
 import Image from 'next/image'
-import {InfiniteSlider} from '@/src/components/ui/infinite-slider'
-import {ProgressiveBlur} from '@/src/components/ui/progressive-blur'
-import SplashCursor from "@/src/animations/SplashCursor/SplashCursor";
+import {InfiniteSlider} from '@/components/ui/infinite-slider'
+import {ProgressiveBlur} from '@/components/ui/progressive-blur'
+import SplashCursor from "@/animations/SplashCursor/SplashCursor"
 
-export default function HeroSection() {
+export function HeroSection() {
     return (
         <>
             <main className="overflow-x-hidden">

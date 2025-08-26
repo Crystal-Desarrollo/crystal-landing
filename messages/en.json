@@ -1,0 +1,35 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "welcome": "Welcome",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects",
+    "members": "Members"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "close": "Close",
+    "features": "Features",
+    "solution": "Solution",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Let's Work Together"
+  },
+  "hero": {
+    "title": "Welcome to Crystal Desarrollo",
+    "subtitle": "Building amazing digital experiences",
+    "cta": "Get Started"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project"
+  },
+  "members": {
+    "title": "Our Team",
+    "viewProfile": "View Profile"
+  }
+}
