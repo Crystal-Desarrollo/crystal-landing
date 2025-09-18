@@ -20,8 +20,6 @@ function initHeroAnimations() {
     gsap.set('.hero-title', {opacity: 0, y: 30});
     gsap.set('.hero-subtitle', {opacity: 0, y: 20});
     gsap.set('.hero-image-container', {opacity: 0, scale: 0.9});
-    gsap.set('.hero-stats-card', {opacity: 0, x: -50});
-    gsap.set('.hero-button', {opacity: 0, y: 20});
     gsap.set('.hero-bottom-text', {opacity: 0, y: 30});
     gsap.set('.purple-section', {opacity: 0, x: -100});
 
@@ -58,19 +56,7 @@ function initHeroAnimations() {
             opacity: 1,
             x: '5%',
             ease: 'power2.out',
-        }, '-=0.5') // Adjusted to ensure image appears before purple section
-        .to('.hero-stats-card', {
-            duration: 0.8,
-            opacity: 1,
-            x: 0,
-            ease: 'power2.out'
-        }, '-=0.4')
-        .to('.hero-button', {
-            duration: 0.6,
-            opacity: 1,
-            y: 0,
-            ease: 'power2.out'
-        }, '-=0.3');
+        }, '-=0.5');
 
     // Scroll-triggered animation for bottom text
     gsap.to('.hero-bottom-text', {
@@ -84,45 +70,5 @@ function initHeroAnimations() {
         opacity: 1,
         y: 0,
         ease: 'power2.out'
-    });
-
-    // Add hover animations for buttons
-    document.querySelectorAll('.hero-button').forEach(button => {
-        button.addEventListener('mouseenter', () => {
-            gsap.to(button, {
-                duration: 0.3,
-                scale: 1.05,
-                ease: 'power2.out'
-            });
-        });
-
-        button.addEventListener('mouseleave', () => {
-            gsap.to(button, {
-                duration: 0.3,
-                scale: 1,
-                ease: 'power2.out'
-            });
-        });
-    });
-
-    // Parallax effect for the image
-    gsap.to('.hero-image', {
-        scrollTrigger: {
-            trigger: '.hero-image-container',
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: true
-        },
-        y: -50,
-        ease: 'none'
-    });
-
-    // Floating animation for stats card
-    gsap.to('.hero-stats-card', {
-        duration: 3,
-        y: -10,
-        ease: 'power2.inOut',
-        repeat: -1,
-        yoyo: true
     });
 }
