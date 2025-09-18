@@ -68,6 +68,7 @@
                 <img
                   src="{{asset('assets/hero-woman.png')}}" alt="{{ __('pages/home.hero.image_alt') }}"
                   class="h-[120%] w-full object-cover absolute bottom-0"
+                  {{--                  style="mask-image: linear-gradient(black 95%, transparent);"--}}
                 >
             </div>
             
