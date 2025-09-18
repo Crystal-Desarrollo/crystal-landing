@@ -5,20 +5,19 @@
             <div
               class="hero-badge text-gray-600 text-sm lg:text-xl rounded-full border border-gray-400 max-w-max px-4 py-0.5 mx-auto"
             >
-                Desarrollo de software a la medida
+                {{ __('pages/home.hero.badge') }}
             </div>
             
             <h1
               size="xl"
               class="hero-title text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold  text-gray-900 text-pretty"
             >
-                <span class="text-accent">Transformamos</span>
-                ideas en soluciones de software
+                <span class="text-accent">{{ __('pages/home.hero.title_highlight') }}</span>
+                {{ __('pages/home.hero.title') }}
             </h1>
             
             <flux:subheading class="hero-subtitle text-base sm:text-xl text-gray-600 max-w-3xl mx-auto text-pretty">
-                Somos tu socio estratégico en desarrollo de software, estamos
-                comprometidos con la calidad, seguridad e innovación continua.
+                {{ __('pages/home.hero.subtitle') }}
             </flux:subheading>
         </div>
         
@@ -36,7 +35,7 @@
                       rel="noopener noreferrer"
                     >
                         <span class="flex items-center justify-center gap-2">
-                            Get started
+                            {{ __('pages/home.hero.button') }}
                             <x-heroicon-c-arrow-up-right class="size-6"/>
                         </span>
                     </a>
@@ -67,7 +66,7 @@
                 ></div>
                 
                 <img
-                  src="{{asset('assets/hero-woman.png')}}" alt="A woman using a laptop"
+                  src="{{asset('assets/hero-woman.png')}}" alt="{{ __('pages/home.hero.image_alt') }}"
                   class="h-[120%] w-full object-cover absolute bottom-0"
                 >
             </div>
@@ -81,11 +80,12 @@
               class="purple-section w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 absolute hidden lg:flex top-1/2  justify-between overflow-hidden animate-fade-in"
             >
                 <div class="flex flex-col items-start max-w-2/3 p-6 gap-2">
-                    <p class="text-gray-400 text-base xl:text-xl text-pretty text-left">Simplifica tu camino al
-                        éxito</p>
-                    <h3 class="text-white font-bold text-xl xl:text-2xl text-left text-pretty">Convierte tus ideas
-                        en
-                        realidad.</h3>
+                    <p
+                      class="text-gray-400 text-base xl:text-xl text-pretty text-left"
+                    >{{ __('pages/home.hero.purple_section_text') }}</p>
+                    <h3
+                      class="text-white font-bold text-xl xl:text-2xl text-left text-pretty"
+                    >{{ __('pages/home.hero.purple_section_title') }}</h3>
                 </div>
                 
                 <div class="flex items-end">
@@ -98,8 +98,6 @@
             <div
               class="bg-white w-60 h-60 absolute drop-shadow-2xl -right-10 -top-10 rounded-2xl p-6 hidden lg:flex animate-fade-in"
             >
-                
-                asdasda
             </div>
             
             <div
@@ -113,10 +111,10 @@
             <p
               class="text-3xl sm:text-4xl lg:text-6xl text-accent-content leading-tight text-left font-extrabold mt-12 lg:mt-24 hero-bottom-text"
             >
-                Acelera tu éxito tecnológico
+                {{ __('pages/home.hero.bottom_section_title') }}
                 <span
                   class="block text-gray-500"
-                >con la forma más eficiente de ampliar tu equipo de desarrollo de software.</span>
+                >{{ __('pages/home.hero.bottom_section_subtitle') }}</span>
             </p>
             
             <a href="https://cal.com/crystal-desarrollo/contanos-tu-idea" target="_blank" rel="noopener noreferrer">
@@ -125,7 +123,7 @@
                   class="lg:hidden! text-3xl! w-full max-w-sm h-14 cursor-pointer active:bg-accent/90"
                 >
                 <span class="flex items-center justify-center gap-2">
-                    Get started
+                    {{ __('pages/home.hero.bottom_section_button') }}
                     <x-heroicon-c-arrow-up-right class="size-6"/>
                 </span>
                 </flux:button>

@@ -18,4 +18,18 @@ return [
         'nav_blog' => 'Blog',
         'nav_contact' => 'Contáctanos',
     ],
+    'hero' => [
+        'badge' => 'Desarrollo de software a la medida',
+        'title_highlight' => 'Transformamos',
+        'title' => 'ideas en soluciones de software',
+        'subtitle' => 'Somos tu socio estratégico en desarrollo de software, estamos
+                comprometidos con la calidad, seguridad e innovación continua.',
+        'button' => 'Contactanos',
+        'image_alt' => 'Una mujer trabajando en una laptop',
+        'purple_section_text' => 'Simplifica tu camino al éxito',
+        'purple_section_title' => 'Convierte tus ideas en realidad.',
+        'bottom_section_title' => 'Acelera tu éxito tecnológico',
+        'bottom_section_subtitle' => 'con la forma más eficiente de ampliar tu equipo de desarrollo de software.',
+        'bottom_section_button' => 'Contáctanos',
+    ],
 ];
