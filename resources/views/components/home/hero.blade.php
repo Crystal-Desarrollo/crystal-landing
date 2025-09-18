@@ -23,7 +23,7 @@
                 </div>
                 
                 <h1
-                  size="xl" class="text-3xl sm:text-4xl lg:text-6xl font-extrabold  text-gray-900"
+                  size="xl" class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold  text-gray-900"
                 >
                     <span class="text-accent">Transformamos</span>
                     ideas en soluciones de software
@@ -53,7 +53,7 @@
                 
                 <!-- macOS-style frame container -->
                 <div
-                  class="absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-md left-1/2 -translate-x-1/2 lg:mt-32"
+                  class="absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-xl left-1/2 -translate-x-1/2 lg:mt-32"
                 >
                     <!-- macOS title bar with buttons -->
                     <div class=" px-4 py-3 flex items-center border-b border-b-slate-300">
@@ -71,8 +71,24 @@
                     <div>
                         <img
                           src="{{asset('assets/hero-woman.png')}}" alt="A woman using a laptop"
-                          class="h-[60vh] w-full object-contain scale-150 bottom-0 lg:bottom-1 -right-4 absolute"
+                          class="h-[40vh] w-full object-contain scale-150 top-0 -right-4 absolute"
                         >
+                    </div>
+                </div>
+                
+                <div
+                  class="w-full max-w-lg bg-black rounded-2xl h-40 z-40 absolute hidden lg:flex -translate-x-1/3 top-1/2  justify-between"
+                >
+                    <div class="flex flex-col items-start max-w-2/3 p-6">
+                        <p class="text-gray-400 text-xl text-pretty">Simplifica tu camino al éxito</p>
+                        <h3 class="text-white font-bold text-2xl text-left text-pretty">Convierte tus ideas en
+                            realidad.</h3>
+                    </div>
+                    
+                    <div class="flex items-end">
+                        <div class="bg-accent-content/40 h-[40%] w-16 rounded-t-lg"></div>
+                        <div class="bg-accent-content/60 h-[60%] w-16 rounded-t-lg"></div>
+                        <div class="bg-accent-content h-[80%] w-16 rounded-t-lg"></div>
                     </div>
                 </div>
             
@@ -80,7 +96,7 @@
             
             <!-- Bottom section with secondary headline -->
             <p
-              class="text-2xl sm:text-2xl lg:text-4xl text-gray-900 leading-tight text-left font-extrabold mt-12 lg:mt-24"
+              class="text-2xl sm:text-2xl lg:text-5xl text-gray-900 leading-tight text-left font-extrabold mt-12 lg:mt-24"
             >
                 Acelera tu éxito tecnológico
                 <span class="block text-stone-400">con la forma más eficiente de ampliar tu equipo de desarrollo de software.</span>
