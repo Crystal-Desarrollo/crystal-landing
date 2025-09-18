@@ -1,4 +1,3 @@
-import './bootstrap';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
@@ -24,6 +23,7 @@ function initHeroAnimations() {
     gsap.set('.hero-stats-card', {opacity: 0, x: -50});
     gsap.set('.hero-button', {opacity: 0, y: 20});
     gsap.set('.hero-bottom-text', {opacity: 0, y: 30});
+    gsap.set('.purple-section', {opacity: 0, x: -100});
 
     // Create main timeline for hero animations
     const heroTimeline = gsap.timeline({delay: 0.2});
@@ -118,5 +118,19 @@ function initHeroAnimations() {
         ease: 'power2.inOut',
         repeat: -1,
         yoyo: true
+    });
+
+    // Purple section animation - animate the entire black container as a single unit
+    gsap.to('.purple-section', {
+        scrollTrigger: {
+            trigger: '.purple-section',
+            start: 'top 80%',
+            end: 'bottom 80%',
+            toggleActions: 'play none none reverse'
+        },
+        duration: 1,
+        opacity: 1,
+        x: '5%',
+        ease: 'power2.out',
     });
 }
