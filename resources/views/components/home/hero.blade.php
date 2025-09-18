@@ -77,11 +77,13 @@
                 </div>
                 
                 <div
-                  class="w-full max-w-lg bg-black rounded-2xl h-40 z-40 absolute hidden lg:flex -translate-x-1/3 top-1/2  justify-between"
+                  class="w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 z-40 absolute hidden lg:flex -translate-x-1/3 top-1/2  justify-between"
                 >
-                    <div class="flex flex-col items-start max-w-2/3 p-6">
-                        <p class="text-gray-400 text-xl text-pretty">Simplifica tu camino al éxito</p>
-                        <h3 class="text-white font-bold text-2xl text-left text-pretty">Convierte tus ideas en
+                    <div class="flex flex-col items-start max-w-2/3 p-6 gap-2">
+                        <p class="text-gray-400 text-base xl:text-xl text-pretty text-left">Simplifica tu camino al
+                            éxito</p>
+                        <h3 class="text-white font-bold text-xl xl:text-2xl text-left text-pretty">Convierte tus ideas
+                            en
                             realidad.</h3>
                     </div>
                     
