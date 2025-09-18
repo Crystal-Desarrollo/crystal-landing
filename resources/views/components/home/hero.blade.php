@@ -1,4 +1,4 @@
-<div class="relative flex items-center overflow-hidden container mx-auto">
+<div class="relative flex items-center container mx-auto">
     <!-- Main Content -->
     <div class="space-y-16 w-full text-center">
         <div class="space-y-6">
@@ -26,20 +26,26 @@
             <div
               class="h-[50vh] border border-slate-300 rounded-2xl absolute w-full mt-6 hidden lg:flex animate-fade-in"
             >
+                
                 <flux:button
                   variant="primary"
                   class="!hidden lg:block! mx-auto -translate-y-1/2 text-xl cursor-pointer"
                 >
+                    <a
+                      href="https://cal.com/crystal-desarrollo/contanos-tu-idea" target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <span class="flex items-center justify-center gap-2">
                             Get started
                             <x-heroicon-c-arrow-up-right class="size-6"/>
                         </span>
+                    </a>
                 </flux:button>
             </div>
             
             <!-- macOS-style frame container -->
             <div
-              class="hero-image-container absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl left-1/2 -translate-x-1/2  lg:mt-32 bg-white shadow-xl animate-slide-in"
+              class="hero-image-container absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl left-1/2 -translate-x-1/2  lg:mt-32 bg-white shadow-xl"
             >
                 <!-- macOS title bar with buttons -->
                 <div class="flex px-4 py-3  items-center border-b border-b-slate-300">
@@ -54,15 +60,25 @@
                 </div>
                 
                 <!-- Image content -->
+                
+                <div
+                  class="absolute inset-0 rounded-full blur-3xl opacity-40"
+                  style="background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);"
+                ></div>
+                
                 <img
                   src="{{asset('assets/hero-woman.png')}}" alt="A woman using a laptop"
-                  class="h-[120%] w-full object-cover rounded-b-xl absolute bottom-0"
+                  class="h-[120%] w-full object-cover absolute bottom-0"
                 >
             </div>
             
+            <div
+              class="bg-white w-48 h-48 absolute drop-shadow-2xl left-10 -top-12 rounded-2xl p-6 hidden lg:flex animate-fade-in"
+            ></div>
+            
             {{-- Purple bars --}}
             <div
-              class="purple-section w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 absolute hidden lg:flex -translate-x-1/4 top-1/2  justify-between overflow-hidden animate-fade-in"
+              class="purple-section w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 absolute hidden lg:flex top-1/2  justify-between overflow-hidden animate-fade-in"
             >
                 <div class="flex flex-col items-start max-w-2/3 p-6 gap-2">
                     <p class="text-gray-400 text-base xl:text-xl text-pretty text-left">Simplifica tu camino al
@@ -78,6 +94,17 @@
                     <div class="bg-accent-content h-[80%] w-16 rounded-t-lg"></div>
                 </div>
             </div>
+            
+            <div
+              class="bg-white w-60 h-60 absolute drop-shadow-2xl -right-10 -top-10 rounded-2xl p-6 hidden lg:flex animate-fade-in"
+            >
+                
+                asdasda
+            </div>
+            
+            <div
+              class="bg-white w-48 h-48 absolute drop-shadow-2xl right-10 bottom-10 rounded-2xl p-6 hidden lg:flex animate-fade-in"
+            ></div>
         </div>
         
         <!-- Bottom section with secondary headline -->
@@ -92,15 +119,17 @@
                 >con la forma más eficiente de ampliar tu equipo de desarrollo de software.</span>
             </p>
             
-            <flux:button
-              variant="primary"
-              class="lg:hidden! text-3xl! w-full max-w-sm h-14 cursor-pointer"
-            >
+            <a href="https://cal.com/crystal-desarrollo/contanos-tu-idea" target="_blank" rel="noopener noreferrer">
+                <flux:button
+                  variant="primary"
+                  class="lg:hidden! text-3xl! w-full max-w-sm h-14 cursor-pointer active:bg-accent/90"
+                >
                 <span class="flex items-center justify-center gap-2">
                     Get started
                     <x-heroicon-c-arrow-up-right class="size-6"/>
                 </span>
-            </flux:button>
+                </flux:button>
+            </a>
         </div>
     </div>
 </div>
