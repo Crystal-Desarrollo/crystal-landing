@@ -74,7 +74,51 @@
             
             <div
               class="bg-white w-48 h-48 absolute drop-shadow-2xl left-10 -top-12 rounded-2xl p-6 hidden lg:flex animate-fade-in"
-            ></div>
+            >
+                <div id="pie-chart" class="w-full h-full">
+                    <canvas id="pieChartCanvas"></canvas>
+                </div>
+                
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const ctx = document.getElementById('pieChartCanvas').getContext('2d');
+                        const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary').trim();
+
+                        // Generate lighter and darker tones of the primary color
+                        const lightenColor = (color, percent) => {
+                            const [l, c, h] = color.match(/oklch\(([^)]+)\)/)[1].split(' ').map(parseFloat);
+                            return `oklch(${Math.min(l + percent, 1)} ${c} ${h})`;
+                        };
+
+                        const darkenColor = (color, percent) => {
+                            const [l, c, h] = color.match(/oklch\(([^)]+)\)/)[1].split(' ').map(parseFloat);
+                            return `oklch(${Math.max(l - percent, 0)} ${c} ${h})`;
+                        };
+
+                        const lighterPrimary = lightenColor(primaryColor, 0.1);
+                        const darkerPrimary = darkenColor(primaryColor, 0.1);
+
+                        new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                                datasets: [{
+                                    data: [30, 70],
+                                    backgroundColor: [primaryColor, lighterPrimary, darkerPrimary],
+                                    borderWidth: 0, // Remove spacing between chart portions
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        display: false,
+                                    },
+                                },
+                            },
+                        });
+                    });
+                </script>
+            </div>
             
             {{-- Purple bars --}}
             <div
@@ -97,13 +141,24 @@
             </div>
             
             <div
-              class="bg-white w-60 h-60 absolute drop-shadow-2xl -right-10 -top-10 rounded-2xl p-6 hidden lg:flex animate-fade-in"
+              class="bg-white w-auto h-40 aspect-video absolute drop-shadow-2xl -right-10 -top-10 rounded-2xl hidden lg:flex hero-project-1"
             >
+                <img src="{{asset('assets/hero-project-1.png')}}" alt="Hero project image">
             </div>
             
             <div
-              class="bg-white w-48 h-48 absolute drop-shadow-2xl right-10 bottom-10 rounded-2xl p-6 hidden lg:flex animate-fade-in"
-            ></div>
+              class="bg-white w-48 h-48 absolute drop-shadow-2xl right-10 bottom-10 rounded-2xl p-6 hidden lg:flex flex-col justify-between metrics-block"
+            >
+                <div>
+                    <h4 class="text-4xl text-accent-content font-bold text-left">+100</h4>
+                    <p class="text-sm text-gray-500 text-left">Projects delivered</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-4xl text-accent-content font-bold text-left">+30</h4>
+                    <p class="text-sm text-gray-500 text-left">Happy customers</p>
+                </div>
+            </div>
         </div>
         
         <!-- Bottom section with secondary headline -->

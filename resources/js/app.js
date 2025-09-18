@@ -1,8 +1,12 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import Chart from 'chart.js/auto';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
+
+// Ensure Chart.js is globally available
+window.Chart = Chart;
 
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function () {
@@ -22,6 +26,8 @@ function initHeroAnimations() {
     gsap.set('.hero-image-container', {opacity: 0, scale: 0.9});
     gsap.set('.hero-bottom-text', {opacity: 0, y: 30});
     gsap.set('.purple-section', {opacity: 0, x: -100});
+    gsap.set('.hero-project-1', {opacity: 0, x: 50});
+    gsap.set('.metrics-block', {opacity: 0, y: 50});
 
     // Create main timeline for hero animations
     const heroTimeline = gsap.timeline({delay: 0.2});
@@ -56,7 +62,19 @@ function initHeroAnimations() {
             opacity: 1,
             x: '5%',
             ease: 'power2.out',
-        }, '-=0.5');
+        }, '-=0.5')
+        .to('.hero-project-1', {
+            duration: 0.8,
+            opacity: 1,
+            x: 0,
+            ease: 'power2.out'
+        }, '-=0.4')
+        .to('.metrics-block', {
+            duration: 0.8,
+            opacity: 1,
+            y: 0,
+            ease: 'power2.out'
+        }, '-=0.3');
 
     // Scroll-triggered animation for bottom text
     gsap.to('.hero-bottom-text', {
