@@ -53,6 +53,12 @@ function initHeroAnimations() {
             scale: 1,
             ease: 'power2.out'
         }, '-=0.2')
+        .to('.purple-section', {
+            duration: 1,
+            opacity: 1,
+            x: '5%',
+            ease: 'power2.out',
+        }, '-=0.5') // Adjusted to ensure image appears before purple section
         .to('.hero-stats-card', {
             duration: 0.8,
             opacity: 1,
@@ -118,19 +124,5 @@ function initHeroAnimations() {
         ease: 'power2.inOut',
         repeat: -1,
         yoyo: true
-    });
-
-    // Purple section animation - animate the entire black container as a single unit
-    gsap.to('.purple-section', {
-        scrollTrigger: {
-            trigger: '.purple-section',
-            start: 'top 80%',
-            end: 'bottom 80%',
-            toggleActions: 'play none none reverse'
-        },
-        duration: 1,
-        opacity: 1,
-        x: '5%',
-        ease: 'power2.out',
     });
 }
