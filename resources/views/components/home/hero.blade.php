@@ -28,7 +28,7 @@
             >
                 <flux:button
                   variant="primary"
-                  class="!hidden lg:block! mx-auto -translate-y-1/2 text-xl"
+                  class="!hidden lg:block! mx-auto -translate-y-1/2 text-xl cursor-pointer"
                 >
                         <span class="flex items-center justify-center gap-2">
                             Get started
