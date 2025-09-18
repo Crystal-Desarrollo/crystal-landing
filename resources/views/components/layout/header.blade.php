@@ -1,5 +1,5 @@
 <header
-  class="h-16 flex items-center  w-full px-4 bg-white drop-shadow sticky top-0 z-30"
+  class="h-16 flex items-center  w-full px-4 bg-white drop-shadow lg:sticky top-0 z-30"
 >
     <div class="container mx-auto flex w-full items-center  justify-between ">
         
