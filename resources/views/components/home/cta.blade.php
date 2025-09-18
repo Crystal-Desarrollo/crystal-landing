@@ -11,7 +11,7 @@
     </div>
     
     <button
-      class="cursor-pointer border border-slate-600 px-6 py-4 rounded-full text-slate-400 hover:bg-slate-800 text-xl lg:text-2xl"
+      class="cursor-pointer border border-slate-600 px-6 py-4 rounded-full text-slate-400 hover:bg-slate-800 active:bg-slate-800 text-xl lg:text-2xl"
     >
         Contactanos
     </button>
