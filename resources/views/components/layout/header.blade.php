@@ -5,7 +5,7 @@
         
         <div class="flex items-center space-x-2">
             
-            <img src="{{ asset('assets/logo.svg') }}" alt="{{ __('pages/home.header.logo_alt') }}" class="h-8"/>
+            <img src="{{ asset('assets/logo.svg') }}" alt="{{ __('pages/home.header.logo_alt') }}" class="h-10"/>
             
             <span class="font-bold text-3xl">{{ __('pages/home.header.logo_text') }}</span>
         </div>
