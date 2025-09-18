@@ -34,10 +34,12 @@
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen pb-4">
 <x-layout.header/>
 
 <x-home.hero/>
+
+<x-home.cta/>
 
 @fluxScripts
 </body>
