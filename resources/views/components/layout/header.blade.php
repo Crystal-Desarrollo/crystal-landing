@@ -5,12 +5,14 @@
         
         <div class="flex items-center space-x-2">
             
-            <img src="{{ asset('assets/logo.svg') }}" alt="Logo" class="h-8"/>
+            <img src="{{ asset('assets/logo.svg') }}" alt="{{ __('pages/home.header.logo_alt') }}" class="h-8"/>
             
-            <span class="font-bold text-3xl">Crystal.</span>
+            <span class="font-bold text-3xl">{{ __('pages/home.header.logo_text') }}</span>
         </div>
         
-        <button class="text-accent-content md:hidden cursor-pointer">
+        <button
+          class="text-accent-content md:hidden cursor-pointer" aria-label="{{ __('pages/home.header.menu_button') }}"
+        >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8">
                 <path
                   fill-rule="evenodd"
@@ -21,14 +23,16 @@
         </button>
         
         <nav class="items-center space-x-4 hidden md:flex">
-            <a href="#features" class="px-4 py-2 hover:text-accent">Inicio</a>
-            <a href="#features" class="px-4 py-2 hover:text-accent">Soluciones</a>
-            <a href="#features" class="px-4 py-2 hover:text-accent">Blog</a>
+            <a href="#features" class="px-4 py-2 hover:text-accent">{{ __('pages/home.header.nav_home') }}</a>
+            <a href="#features" class="px-4 py-2 hover:text-accent">{{ __('pages/home.header.nav_solutions') }}</a>
+            <a href="#features" class="px-4 py-2 hover:text-accent">{{ __('pages/home.header.nav_blog') }}</a>
             <a
               href="#features"
               class="px-4 py-2 rounded-full bg-accent hover:bg-accent/90 text-white inline-flex items-center gap-2 w-min"
             >
-                Contactanos
+                <span class="text-nowrap">
+                    {{ __('pages/home.header.nav_contact') }}
+                </span>
                 
                 <svg
                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -42,6 +46,5 @@
                 </svg>
             </a>
         </nav>
-    
     </div>
 </header>

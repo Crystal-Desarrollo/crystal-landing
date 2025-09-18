@@ -3,16 +3,16 @@
 >
     <div class="flex flex-col items-center md:items-start gap-2">
         <h4 class="text-white font-bold text-xl lg:text-4xl text-center md:text-left md:text-pretty">
-            Acelera tu camino al éxito
+            {{ __('pages/home.cta.header') }}
         </h4>
         <p class="text-gray-400 text-base lg:text-2xl text-center md:text-pretty md:text-left">
-            Trabajemos juntos para convertir tus ideas en realidad.
+            {{ __('pages/home.cta.subheader') }}
         </p>
     </div>
     
     <button
       class="cursor-pointer border border-slate-600 px-6 py-4 rounded-full text-slate-400 hover:bg-slate-800 active:bg-slate-800 text-xl lg:text-2xl"
     >
-        Contactanos
+        {{ __('pages/home.cta.button') }}
     </button>
 </header>
