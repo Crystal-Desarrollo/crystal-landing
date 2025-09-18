@@ -35,28 +35,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="flex flex-col min-h-screen">
-
-<header
-  class="h-16 flex w-full items-center justify-between px-4 bg-white drop-shadow sticky top-0 z-30"
->
-    <div class="flex items-center space-x-2">
-        
-        <img src="{{ asset('assets/logo.svg') }}" alt="Logo" class="h-8"/>
-        
-        <span class="font-bold text-3xl">Crystal.</span>
-    </div>
-    
-    <button class="text-accent-content">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8">
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-        </svg>
-    </button>
-
-</header>
+<x-layout.header/>
 
 <x-home.hero/>
 
