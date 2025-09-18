@@ -18,9 +18,9 @@
         <!-- Main Content -->
         <div class="space-y-8 w-full max-w-4xl text-center">
             <div class="space-y-6">
-                <flux:badge size="xl" color="slate" class="text-accent!">
+                <div class="text-gray-600 rounded-full border border-gray-400 max-w-max px-4 py-0.5 mx-auto">
                     Desarrollo de software a la medida
-                </flux:badge>
+                </div>
                 
                 <h1
                   size="xl" class="text-3xl sm:text-4xl lg:text-6xl font-extrabold  text-gray-900"
