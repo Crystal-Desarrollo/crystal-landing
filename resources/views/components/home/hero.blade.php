@@ -39,10 +39,10 @@
             
             <!-- macOS-style frame container -->
             <div
-              class="hero-image-container absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl left-1/2 -translate-x-1/2 mt-8 lg:mt-32 bg-white shadow-xl animate-slide-in"
+              class="hero-image-container absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl left-1/2 -translate-x-1/2  lg:mt-32 bg-white shadow-xl animate-slide-in"
             >
                 <!-- macOS title bar with buttons -->
-                <div class=" px-4 py-3 flex items-center border-b border-b-slate-300">
+                <div class="flex px-4 py-3  items-center border-b border-b-slate-300">
                     <div class="flex space-x-2">
                         <!-- Red button -->
                         <div class="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -54,17 +54,15 @@
                 </div>
                 
                 <!-- Image content -->
-                <div>
-                    <img
-                      src="{{asset('assets/hero-woman.png')}}" alt="A woman using a laptop"
-                      class="h-[40vh] w-full object-contain scale-150 top-0 -right-4 absolute animate-zoom-in"
-                    >
-                </div>
+                <img
+                  src="{{asset('assets/hero-woman.png')}}" alt="A woman using a laptop"
+                  class="h-[120%] w-full object-cover rounded-b-xl absolute bottom-0"
+                >
             </div>
             
             {{-- Purple bars --}}
             <div
-              class="purple-section w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 z-40 absolute hidden lg:flex -translate-x-1/4 top-1/3  justify-between overflow-hidden animate-fade-in"
+              class="purple-section w-full max-w-md xl:max-w-lg bg-black rounded-2xl h-40 absolute hidden lg:flex -translate-x-1/4 top-1/2  justify-between overflow-hidden animate-fade-in"
             >
                 <div class="flex flex-col items-start max-w-2/3 p-6 gap-2">
                     <p class="text-gray-400 text-base xl:text-xl text-pretty text-left">Simplifica tu camino al
@@ -83,23 +81,26 @@
         </div>
         
         <!-- Bottom section with secondary headline -->
-        <p
-          class="text-2xl sm:text-4xl lg:text-6xl text-accent-content leading-tight text-left font-extrabold mt-12 lg:mt-24"
-        >
-            Acelera tu éxito tecnológico
-            <span
-              class="block text-gray-500"
-            >con la forma más eficiente de ampliar tu equipo de desarrollo de software.</span>
-        </p>
-        
-        <flux:button
-          variant="primary"
-          class="lg:hidden! text-xl"
-        >
+        <div class="space-y-12">
+            
+            <p
+              class="text-3xl sm:text-4xl lg:text-6xl text-accent-content leading-tight text-left font-extrabold mt-12 lg:mt-24 hero-bottom-text"
+            >
+                Acelera tu éxito tecnológico
+                <span
+                  class="block text-gray-500"
+                >con la forma más eficiente de ampliar tu equipo de desarrollo de software.</span>
+            </p>
+            
+            <flux:button
+              variant="primary"
+              class="lg:hidden! text-3xl! w-full max-w-sm h-14 cursor-pointer"
+            >
                 <span class="flex items-center justify-center gap-2">
                     Get started
                     <x-heroicon-c-arrow-up-right class="size-6"/>
                 </span>
-        </flux:button>
+            </flux:button>
+        </div>
     </div>
 </div>
