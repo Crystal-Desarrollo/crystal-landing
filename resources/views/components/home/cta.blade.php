@@ -1,5 +1,5 @@
 <header
-  class="w-full rounded-xl bg-black  p-16 flex flex-col md:flex-row items-center justify-between container mx-auto gap-24"
+  class="w-full rounded-xl bg-black p-8 xl:p-16 flex flex-col md:flex-row items-center justify-between container mx-auto gap-4 xl:gap-24"
 >
     <div class="flex flex-col items-center md:items-start gap-2">
         <h4 class="text-white font-bold text-xl lg:text-4xl text-center md:text-left md:text-pretty">
