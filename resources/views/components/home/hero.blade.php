@@ -19,20 +19,20 @@
         <div class="space-y-8 w-full max-w-4xl text-center">
             <div class="space-y-6">
                 <div
-                  class="text-gray-600 text-sm lg:text-xl rounded-full border border-gray-400 max-w-max px-4 py-0.5 mx-auto"
+                  class="hero-badge text-gray-600 text-sm lg:text-xl rounded-full border border-gray-400 max-w-max px-4 py-0.5 mx-auto"
                 >
                     Desarrollo de software a la medida
                 </div>
                 
                 <h1
                   size="xl"
-                  class="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold  text-gray-900 text-pretty"
+                  class="hero-title text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold  text-gray-900 text-pretty"
                 >
                     <span class="text-accent">Transformamos</span>
                     ideas en soluciones de software
                 </h1>
                 
-                <flux:subheading class="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto text-pretty">
+                <flux:subheading class="hero-subtitle text-base sm:text-xl text-gray-600 max-w-3xl mx-auto text-pretty">
                     Somos tu socio estratégico en desarrollo de software, estamos
                     comprometidos con la calidad, seguridad e innovación continua.
                 </flux:subheading>
@@ -56,7 +56,7 @@
                 
                 <!-- macOS-style frame container -->
                 <div
-                  class="absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-xl left-1/2 -translate-x-1/2 lg:mt-32"
+                  class="hero-image-container absolute w-full rounded-xl border h-[50vh] border-slate-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl left-1/2 -translate-x-1/2 mt-8 lg:mt-32 bg-white shadow-xl"
                 >
                     <!-- macOS title bar with buttons -->
                     <div class=" px-4 py-3 flex items-center border-b border-b-slate-300">
