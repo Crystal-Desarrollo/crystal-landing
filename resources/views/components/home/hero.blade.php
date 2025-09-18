@@ -2,10 +2,10 @@
     <!-- Main Content -->
     <div class="space-y-16 w-full text-center">
         <div class="space-y-6">
-            <div
-              class="hero-badge text-gray-600 text-sm lg:text-xl rounded-full border border-gray-400 max-w-max px-4 py-0.5 mx-auto"
-            >
-                {{ __('pages/home.hero.badge') }}
+            <div>
+                <x-ui.badge class="hero-badge">
+                    {{ __('pages/home.hero.badge') }}
+                </x-ui.badge>
             </div>
             
             <h1
