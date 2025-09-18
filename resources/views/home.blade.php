@@ -1,5 +1,8 @@
 <x-layout.layout>
-    <x-home.hero/>
     
-    <x-home.cta/>
+    <div class="flex flex-col gap-8">
+        <x-home.hero/>
+        
+        <x-home.cta/>
+    </div>
 </x-layout.layout>
