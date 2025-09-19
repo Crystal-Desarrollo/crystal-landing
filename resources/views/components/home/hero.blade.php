@@ -143,7 +143,7 @@
             <div
               class="bg-white w-auto h-40 aspect-video absolute drop-shadow-2xl -right-10 -top-10 rounded-2xl hidden lg:flex hero-project-1"
             >
-                <img src="{{asset('assets/hero-project-1.png')}}" alt="Hero project image">
+                <img src="{{asset('assets/hero-project-1.png')}}" alt="{{ __('pages/home.hero.project_image_alt') }}">
             </div>
             
             <div
@@ -151,12 +151,12 @@
             >
                 <div>
                     <h4 class="text-4xl text-accent-content font-bold text-left">+100</h4>
-                    <p class="text-sm text-gray-500 text-left">Projects delivered</p>
+                    <p class="text-sm text-gray-500 text-left">{{ __('pages/home.hero.projects_delivered') }}</p>
                 </div>
                 
                 <div>
                     <h4 class="text-4xl text-accent-content font-bold text-left">+30</h4>
-                    <p class="text-sm text-gray-500 text-left">Happy customers</p>
+                    <p class="text-sm text-gray-500 text-left">{{ __('pages/home.hero.happy_customers') }}</p>
                 </div>
             </div>
         </div>
