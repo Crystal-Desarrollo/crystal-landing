@@ -104,56 +104,6 @@
 <meta name="msapplication-navbutton-color" content="#ffffff">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-{{-- Schema.org Structured Data --}}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Crystal",
-    "url": "{{ config('app.url') }}",
-    "logo": "{{ asset('assets/logo.png') }}",
-    "description": "{{ $finalDescription }}",
-    "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "AR"
-    },
-    "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+54-9-388-480-4401",
-        "contactType": "customer service",
-        "availableLanguage": ["English", "Spanish"]
-    },
-    "sameAs": [
-        "https://www.linkedin.com/company/crystal-desarrollo",
-        "https://x.com/CrystalDevelop_",
-        "https://github.com/Crystal-Desarrollo",
-        "https://www.instagram.com/crystaldesarrollo/",
-        "https://www.facebook.com/crystaldesarrollo"
-    ]
-}
-</script>
-
-{{-- Website Schema for current page --}}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "{{ $finalTitle }}",
-    "description": "{{ $finalDescription }}",
-    "url": "{{ $canonicalUrl }}",
-    "inLanguage": "{{ app()->getLocale() }}",
-    "isPartOf": {
-        "@type": "WebSite",
-        "name": "{{ config('app.name') }}",
-        "url": "{{ config('app.url') }}"
-    },
-    "about": {
-        "@type": "Thing",
-        "name": "Software Development Services"
-    }
-}
-</script>
-
 {{-- Preconnect to external domains for performance --}}
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
