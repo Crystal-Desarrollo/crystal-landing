@@ -1,5 +1,7 @@
-<!doctype html>
-<html lang="en">
+@props(['page' => 'default', 'title' => null, 'description' => null, 'keywords' => null, 'image' => null])
+  
+  <!doctype html>
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="UTF-8">
     <meta
@@ -7,6 +9,15 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{-- Comprehensive SEO Component --}}
+    <x-seo
+      :page="$page"
+      :title="$title"
+      :description="$description"
+      :keywords="$keywords"
+      :image="$image"
+    />
     
     {{--    Favicon --}}
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('apple-icon-57x57.png') }}">
@@ -27,8 +38,6 @@
     <meta name="msapplication-TileImage" content="{{ asset('ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
     
-    <title>{{__('pages/home.title')}}</title>
-    
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,900&display=swap" rel="stylesheet"/>
     
@@ -41,6 +50,5 @@
     {{ $slot }}
 </main>
 
-@fluxScripts
 </body>
 </html>
