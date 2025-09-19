@@ -90,3 +90,52 @@ function initHeroAnimations() {
         ease: 'power2.out'
     });
 }
+
+function initInfiniteMarquee() {
+    const marqueeContainer = document.querySelector('.testimonials-marquee');
+
+    if (!marqueeContainer) return;
+
+    // Clone the original content to create seamless loop
+    const originalContent = marqueeContainer.innerHTML;
+    marqueeContainer.innerHTML = originalContent + originalContent;
+
+    // Get all testimonial items for width calculation
+    const testimonials = marqueeContainer.children;
+    let totalWidth = 0;
+
+    // Calculate total width including gaps
+    for (let i = 0; i < testimonials.length / 2; i++) {
+        totalWidth += testimonials[i].offsetWidth + 32; // 32px for gap-8
+    }
+
+    // Set initial position to 0
+    gsap.set(marqueeContainer, {x: 0});
+
+    // Create the infinite loop animation
+    const tl = gsap.timeline({repeat: -1});
+
+    tl.to(marqueeContainer, {
+        x: -totalWidth,
+        duration: 30, // Adjust speed (higher = slower)
+        ease: 'none',
+        onComplete: () => {
+            // Reset position seamlessly
+            gsap.set(marqueeContainer, {x: 0});
+        }
+    });
+
+    // Pause animation on hover for better UX
+    marqueeContainer.addEventListener('mouseenter', () => {
+        tl.pause();
+    });
+
+    marqueeContainer.addEventListener('mouseleave', () => {
+        tl.resume();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    initializeAnimations();
+    initInfiniteMarquee();
+});

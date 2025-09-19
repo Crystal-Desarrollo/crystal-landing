@@ -4,5 +4,7 @@
         <x-home.hero/>
         
         <x-home.cta/>
+        
+        <x-home.testimonials/>
     </div>
 </x-layout.layout>
