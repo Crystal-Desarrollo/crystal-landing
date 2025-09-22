@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeAnimations() {
     // Hero section animations
     initHeroAnimations();
+    // Team section animations
+    initTeamSectionAnimations();
 }
 
 function initHeroAnimations() {
@@ -88,6 +90,39 @@ function initHeroAnimations() {
         opacity: 1,
         y: 0,
         ease: 'power2.out'
+    });
+}
+
+function initTeamSectionAnimations() {
+    // Set initial states
+    gsap.set('.team-title', {opacity: 0, y: 30});
+    gsap.set('.team-member-card', {opacity: 0, y: 40});
+
+    // Animate title when section enters viewport
+    gsap.to('.team-title', {
+        scrollTrigger: {
+            trigger: '.team-section',
+            start: 'top 80%',
+            once: true
+        },
+        duration: 0.7,
+        opacity: 1,
+        y: 0,
+        ease: 'power2.out'
+    });
+
+    // Animate team member cards with stagger
+    gsap.to('.team-member-card', {
+        scrollTrigger: {
+            trigger: '.team-section',
+            start: 'top 80%',
+            once: true
+        },
+        duration: 0.7,
+        opacity: 1,
+        y: 0,
+        ease: 'power2.out',
+        stagger: 0.15
     });
 }
 

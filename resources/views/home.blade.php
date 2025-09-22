@@ -6,5 +6,7 @@
         <x-home.cta/>
         
         <x-home.testimonials/>
+        
+        <x-home.team/>
     </div>
 </x-layout.layout>
