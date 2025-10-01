@@ -87,4 +87,22 @@ return [
             'position' => 'Director, Company E',
         ],
     ],
+    'team' => [
+        'badge' => 'Our Team',
+        'title' => 'Meet our team of experts leading your project',
+        'members' => [
+            'facundo' => [
+                'name' => 'Facundo',
+                'role' => 'Project Manager',
+            ],
+            'agustin' => [
+                'name' => 'Agustin',
+                'role' => 'Full Stack Developer',
+            ],
+            'nicolas' => [
+                'name' => 'Nicolás',
+                'role' => 'Full Stack Developer',
+            ],
+        ],
+    ],
 ];
