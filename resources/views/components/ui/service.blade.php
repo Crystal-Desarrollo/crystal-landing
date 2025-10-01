@@ -1,5 +1,6 @@
 @props(['title', 'description', 'descriptionHighlight', 'image', 'href'])
 
+<a href="{{$href}}"">
 <div
   class="shadow-lg rounded-4xl w-full flex flex-col p-10 relative hover:scale-105 transition duration-300 bg-accent/5 hover:bg-gradient-to-b from-accent/10 to-accent/30"
 >
@@ -21,10 +22,9 @@
           variant="primary"
           class="w-full max-w-xs active:bg-accent/90 mt-6"
         >
-            <a href="{{$href}}" target="_blank" class="flex items-center">
-                {{ __('pages/home.services.button') }}
-                <x-heroicon-c-arrow-up-right class="size-5 ml-2"/>
-            </a>
+            {{ __('pages/home.services.button') }}
+            <x-heroicon-c-arrow-up-right class="size-5 ml-2"/>
         </flux:button>
     </div>
 </div>
+</a>
