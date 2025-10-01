@@ -18,6 +18,8 @@ function initializeAnimations() {
     initHeroAnimations();
     // Team section animations
     initTeamSectionAnimations();
+    // Project section animations
+    initProjectSectionAnimations();
 }
 
 function initHeroAnimations() {
@@ -123,6 +125,25 @@ function initTeamSectionAnimations() {
         y: 0,
         ease: 'power2.out',
         stagger: 0.15
+    });
+}
+
+function initProjectSectionAnimations() {
+    // Set initial states for project cards
+    gsap.set('.project-card', {opacity: 0, y: 50});
+
+    // Animate project cards on scroll
+    gsap.to('.project-card', {
+        scrollTrigger: {
+            trigger: '.projects-section',
+            start: 'top 80%',
+            once: true
+        },
+        duration: 0.7,
+        opacity: 1,
+        y: 0,
+        ease: 'power2.out',
+        stagger: 0.2
     });
 }
 
