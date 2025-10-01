@@ -1,7 +1,7 @@
 @props(['title', 'description', 'descriptionHighlight', 'image', 'href'])
 
 <div
-  class="shadow-lg rounded-4xl w-full aspect-video flex flex-col p-10 relative hover:scale-105 transition duration-300 bg-accent/5 hover:bg-gradient-to-b from-accent/10 to-accent/30"
+  class="shadow-lg rounded-4xl w-full flex flex-col p-10 relative hover:scale-105 transition duration-300 bg-accent/5 hover:bg-gradient-to-b from-accent/10 to-accent/30"
 >
     <img
       src="{{$image}}" class="h-32 w-auto self-start"
