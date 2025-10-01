@@ -58,4 +58,33 @@ return [
             'description' => 'solve specific needs without the cost of custom development.',
         ],
     ],
+    'testimonials' => [
+        'badge' => 'Testimonials',
+        'title' => 'Results that speak for themselves',
+        'testimonial_1' => [
+            'quote' => 'Crystal Desarrollo transformed our outdated system into a modern, efficient platform. Their attention to detail and technical expertise exceeded our expectations. The project was delivered on time and within budget.',
+            'name' => 'John Doe',
+            'position' => 'CEO, Company A',
+        ],
+        'testimonial_2' => [
+            'quote' => 'Working with Crystal was a game-changer for our startup. They understood our vision and built a scalable solution that grew with our business. Their ongoing support has been invaluable.',
+            'name' => 'Jane Smith',
+            'position' => 'CTO, Company B',
+        ],
+        'testimonial_3' => [
+            'quote' => 'The team at Crystal delivered a beautiful, user-friendly application that our customers love. Their UI/UX design skills are exceptional, and the final product perfectly represents our brand.',
+            'name' => 'Alice Johnson',
+            'position' => 'Manager, Company C',
+        ],
+        'testimonial_4' => [
+            'quote' => 'Crystal helped us streamline our operations with custom software that automated our most time-consuming processes. The ROI was immediate and substantial.',
+            'name' => 'Bob Brown',
+            'position' => 'Founder, Company D',
+        ],
+        'testimonial_5' => [
+            'quote' => 'Professional, reliable, and innovative. Crystal Desarrollo delivered exactly what we needed when we needed it. Their technical support continues to be outstanding.',
+            'name' => 'Charlie Green',
+            'position' => 'Director, Company E',
+        ],
+    ],
 ];

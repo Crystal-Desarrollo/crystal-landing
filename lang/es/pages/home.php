@@ -59,4 +59,33 @@ return [
             'description' => 'resuelven necesidades específicas sin el costo del desarrollo a medida.',
         ],
     ],
+    'testimonials' => [
+        'badge' => 'Testimonios',
+        'title' => 'Resultados que hablan por sí mismos',
+        'testimonial_1' => [
+            'quote' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'name' => 'John Doe',
+            'position' => 'CEO, Company A',
+        ],
+        'testimonial_2' => [
+            'quote' => 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.',
+            'name' => 'Jane Smith',
+            'position' => 'CTO, Company B',
+        ],
+        'testimonial_3' => [
+            'quote' => 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.',
+            'name' => 'Alice Johnson',
+            'position' => 'Manager, Company C',
+        ],
+        'testimonial_4' => [
+            'quote' => 'Fusce fermentum. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae.',
+            'name' => 'Bob Brown',
+            'position' => 'Founder, Company D',
+        ],
+        'testimonial_5' => [
+            'quote' => 'Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.',
+            'name' => 'Charlie Green',
+            'position' => 'Director, Company E',
+        ],
+    ],
 ];
