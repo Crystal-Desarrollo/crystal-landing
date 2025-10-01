@@ -14,7 +14,7 @@ return [
         'logo_text' => 'Crystal.',
         'menu_button' => 'Open navigation menu',
         'nav_home' => 'Home',
-        'nav_solutions' => 'Solutions',
+        'nav_solutions' => 'Services',
         'nav_blog' => 'Blog',
         'nav_contact' => 'Contact Us',
     ],

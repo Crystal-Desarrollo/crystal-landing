@@ -1,4 +1,7 @@
-<div class="relative flex items-center container mx-auto">
+<div
+  id="hero"
+  class="relative flex items-center container mx-auto"
+>
     <!-- Main Content -->
     <div class="space-y-16 w-full text-center">
         <div class="space-y-6">
