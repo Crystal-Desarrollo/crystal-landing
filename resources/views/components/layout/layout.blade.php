@@ -46,7 +46,7 @@
 <body class="flex flex-col min-h-screen">
 <x-layout.header/>
 
-<main class="flex-1 pb-4 pt-16 mx-4 sm:mx-6 lg:mx-8">
+<main class="flex-1">
     {{ $slot }}
 </main>
 

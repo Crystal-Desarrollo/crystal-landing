@@ -1,6 +1,6 @@
 <x-layout.layout>
     
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-8 pb-4 pt-16 mx-4 sm:mx-6 lg:mx-8">
         <x-home.hero/>
         
         <x-home.cta/>
