@@ -58,6 +58,8 @@ return [
             'description_highlight' => 'Nuestras soluciones listas',
             'description' => 'resuelven necesidades específicas sin el costo del desarrollo a medida.',
         ],
+        'button' => 'Conocer más',
+        'image_alt' => 'Ilustración de :service',
     ],
     'testimonials' => [
         'badge' => 'Testimonios',

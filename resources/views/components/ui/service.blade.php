@@ -5,7 +5,7 @@
 >
     <img
       src="{{$image}}" class="h-32 w-auto self-start"
-      alt="Custom software illustration"
+      alt="{{ __('pages/home.services.image_alt', ['service' => $title]) }}"
     >
     <div class="mt-auto flex flex-col">
         <x-ui.badge class="text-xs! lg:text-base!">
@@ -22,7 +22,7 @@
           class="w-full max-w-xs active:bg-accent/90 mt-6"
         >
             <a href="{{$href}}" target="_blank" class="flex items-center">
-                Conocer más
+                {{ __('pages/home.services.button') }}
                 <x-heroicon-c-arrow-up-right class="size-5 ml-2"/>
             </a>
         </flux:button>

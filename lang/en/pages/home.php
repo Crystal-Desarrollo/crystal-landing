@@ -57,6 +57,8 @@ return [
             'description_highlight' => 'Our ready-made solutions',
             'description' => 'solve specific needs without the cost of custom development.',
         ],
+        'button' => 'Learn more',
+        'image_alt' => ':service illustration',
     ],
     'testimonials' => [
         'badge' => 'Testimonials',
