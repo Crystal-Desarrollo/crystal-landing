@@ -5,6 +5,8 @@
         
         <x-home.cta/>
         
+        <x-home.services/>
+        
         <x-home.testimonials/>
         
         <x-home.team/>
