@@ -8,6 +8,18 @@ html {
     scroll-behavior: smooth;
 }
 
+#page-header {
+    animation: adjust-header linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+}
+
+@keyframes adjust-header {
+    to {
+        transform: translateY(-100%);
+    }
+}
+
 @theme {
     --font-sans: Inter, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --primary: oklch(0.5393 0.2713 286.7462);
