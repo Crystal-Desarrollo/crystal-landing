@@ -4,6 +4,10 @@
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 
+html {
+    scroll-behavior: smooth;
+}
+
 @theme {
     --font-sans: Inter, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --primary: oklch(0.5393 0.2713 286.7462);
