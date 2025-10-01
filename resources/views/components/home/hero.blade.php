@@ -147,7 +147,7 @@
             </div>
             
             <div
-              class="bg-white w-48 h-48 absolute drop-shadow-2xl right-10 bottom-10 rounded-2xl p-6 hidden lg:flex flex-col justify-between metrics-block"
+              class="bg-white w-full max-w-max h-48 absolute drop-shadow-2xl right-10 bottom-10 rounded-2xl p-6 hidden lg:flex flex-col justify-between metrics-block"
             >
                 <div>
                     <h4 class="text-4xl text-accent-content font-bold text-left">+100</h4>
