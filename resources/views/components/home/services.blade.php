@@ -6,7 +6,7 @@
         {{ __('pages/home.services.title') }}
     </x-ui.title>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full auto-rows-max">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-16 w-full auto-rows-max">
         <x-ui.service
           title="{{ __('pages/home.services.custom_software.title') }}"
           descriptionHighlight="{{ __('pages/home.services.custom_software.description_highlight') }}"
