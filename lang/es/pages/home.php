@@ -15,6 +15,7 @@ return [
         'menu_button' => 'Abrir menú de navegación',
         'nav_home' => 'Inicio',
         'nav_solutions' => 'Servicios',
+        'nav_projects' => 'Proyectos',
         'nav_blog' => 'Blog',
         'nav_contact' => 'Contáctanos',
     ],

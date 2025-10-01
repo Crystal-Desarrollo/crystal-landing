@@ -30,6 +30,9 @@
             <a
               href="{{route('home')}}#services" class="px-4 py-2 hover:text-accent"
             >{{ __('pages/home.header.nav_solutions') }}</a>
+            <a
+              href="{{route('projects.index')}}" class="px-4 py-2 hover:text-accent"
+            >{{ __('pages/home.header.nav_projects') }}</a>
             <a href="/blog" class="px-4 py-2 hover:text-accent">{{ __('pages/home.header.nav_blog') }}</a>
             <a
               href="https://api.whatsapp.com/send?phone=543884804401&text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios%20y%20c%C3%B3mo%20podr%C3%ADan%20ayudarme.%20%C2%A1Gracias!"
