@@ -1,10 +1,13 @@
 <x-layout.layout>
     <div class="container mx-auto">
+        <x-ui.title badge-text="Servicio">
+            Software Factory
+        </x-ui.title>
         
-        <x-ui.title badge-text="Metodología">
+        <p class="text-gray-800 text-xl xl:text-4xl mt-2">
             Conocé nuestra metodología que garantiza <span class="text-accent-content">calidad y eficiencia</span> en el
             desarrollo de soluciones de software.
-        </x-ui.title>
+        </p>
         
         <div
           class="flex flex-col items-center gap-8 rounded-full h-[50vw] w-[50vw] mx-auto my-6 xl:my-24 relative"
