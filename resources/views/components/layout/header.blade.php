@@ -25,7 +25,7 @@
         
         <nav class="items-center space-x-4 hidden md:flex">
             <a
-              href="{{route('home')}}#hero" class="px-4 py-2 hover:text-accent"
+              href="{{route('home')}}#page-header" class="px-4 py-2 hover:text-accent"
             >{{ __('pages/home.header.nav_home') }}</a>
             <a
               href="{{route('home')}}#services" class="px-4 py-2 hover:text-accent"

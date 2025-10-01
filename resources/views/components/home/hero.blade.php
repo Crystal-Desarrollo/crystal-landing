@@ -1,5 +1,4 @@
 <div
-  id="hero"
   class="relative flex items-center container mx-auto"
 >
     <!-- Main Content -->
