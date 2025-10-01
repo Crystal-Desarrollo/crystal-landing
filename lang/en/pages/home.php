@@ -34,4 +34,28 @@ return [
         'bottom_section_subtitle' => 'with the most efficient way to expand your software development team.',
         'bottom_section_button' => 'Contact us',
     ],
+    'services' => [
+        'badge' => 'Services',
+        'title' => 'We know every business is unique. Discover how our tailored solutions help you achieve your specific goals.',
+        'custom_software' => [
+            'title' => 'Custom Software',
+            'description_highlight' => 'Tailored software solutions',
+            'description' => "that adapt to your company's unique needs.",
+        ],
+        'branding' => [
+            'title' => 'Branding & UI/UX Design',
+            'description_highlight' => 'We build brands',
+            'description' => 'that tell compelling stories and design digital experiences that captivate.',
+        ],
+        'technical_support' => [
+            'title' => 'Comprehensive Technical Support',
+            'description_highlight' => 'We keep your infrastructure',
+            'description' => 'running securely and reliably so your business never stops.',
+        ],
+        'express_solutions' => [
+            'title' => 'Express Solutions',
+            'description_highlight' => 'Our ready-made solutions',
+            'description' => 'solve specific needs without the cost of custom development.',
+        ],
+    ],
 ];

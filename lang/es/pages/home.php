@@ -35,4 +35,28 @@ return [
         'bottom_section_subtitle' => 'con la forma más eficiente de ampliar tu equipo de desarrollo de software.',
         'bottom_section_button' => 'Contáctanos',
     ],
+    'services' => [
+        'badge' => 'Servicios',
+        'title' => 'Sabemos que cada empresa es única. Descubre cómo nuestras soluciones personalizadas ayudan a alcanza tus objetivos específicos.',
+        'custom_software' => [
+            'title' => 'Software a medida',
+            'description_highlight' => 'Soluciones de software',
+            'description' => 'a la medida que se adaptan a las necesidades únicas de tu empresa.',
+        ],
+        'branding' => [
+            'title' => 'Branding & Diseño UI/UX',
+            'description_highlight' => 'Construimos marcas',
+            'description' => 'que cuentan historias y diseñamos experiencias digitales que enamoran.',
+        ],
+        'technical_support' => [
+            'title' => 'Soporte Técnico Integral',
+            'description_highlight' => 'Mantenemos tu infraestructura',
+            'description' => 'funcionando de forma segura y estable para que tu empresa no se detenga nunca.',
+        ],
+        'express_solutions' => [
+            'title' => 'Soluciones Express',
+            'description_highlight' => 'Nuestras soluciones listas',
+            'description' => 'resuelven necesidades específicas sin el costo del desarrollo a medida.',
+        ],
+    ],
 ];
