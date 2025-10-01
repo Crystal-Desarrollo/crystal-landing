@@ -23,7 +23,7 @@
       class="absolute -bottom-1/4 lg:-bottom-1/4 -right-[1%] lg:-right-1/9 h-60 group-hover:-translate-y-1/12 duration-300"
     >
         <img
-          alt="Proyecto {{$title}}" src="{{$src}}" class="h-60 w-full object-contain rounded-xl lg:h-48"
+          alt="Proyecto {{$title}}" src="{{$src}}" class="h-44 w-full object-contain rounded-xl lg:h-48"
         />
     </div>
 </a>
