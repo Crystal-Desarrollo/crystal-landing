@@ -5,6 +5,8 @@
         
         <x-home.cta/>
         
+        <x-home.projects :projects="$projects"/>
+        
         <x-home.services/>
         
         <x-home.testimonials/>

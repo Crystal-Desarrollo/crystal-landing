@@ -1,12 +1,11 @@
 @props([
     'title',
-    'href',
     'src',
     'class' => '',
 ])
 
 <a
-  href="{{$href ?? '#'}}"
+  href="{{route('projects.show', ['project' => Str::slug($title)])}}"
   class="relative overflow-hidden group rounded-2xl drop-shadow-2xl w-full max-w-md h-80 lg:min-h-80 p-8 flex flex-col justify-start lg:flex-row gap-4 lg:gap-6 {{$class}}"
 >
     <div class="flex items-center justify-between h-min w-full">
