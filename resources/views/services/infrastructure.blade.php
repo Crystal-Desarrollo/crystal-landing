@@ -1,5 +1,5 @@
 <x-layout.layout>
-    <div class="container mx-auto">
+    <div class="container mx-auto py-8 lg:py-16">
         <x-ui.title badge-text="Servicio">
             Soporte Técnico Integral
         </x-ui.title>
