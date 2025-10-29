@@ -7,14 +7,15 @@
 @endphp
 
 <div
-  class="projects-section flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 w-full max-w-4xl mx-auto my-8 lg:my-16"
+  class="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 w-full max-w-4xl mx-auto my-8 lg:my-16"
 >
     <div class="flex flex-col gap-10 lg:gap-20">
         @foreach($leftColumn as $project)
             <x-projects.project-card
               :title="$project['title']"
-              :class="$project['class'] . ' project-card'"
+              :class="$project['class']"
               :src="$project['src']"
+              :route-name="$project['routeName']"
             />
         @endforeach
     </div>
@@ -22,8 +23,9 @@
         @foreach($rightColumn as $project)
             <x-projects.project-card
               :title="$project['title']"
-              :class="$project['class'] . ' project-card'"
+              :class="$project['class']"
               :src="$project['src']"
+              :route-name="$project['routeName']"
             />
         @endforeach
     </div>
