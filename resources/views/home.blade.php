@@ -9,8 +9,8 @@
         
         <x-home.services/>
         
-        <x-home.testimonials/>
+        {{--        <x-home.testimonials/>--}}
         
-        <x-home.team/>
+        {{--        <x-home.team/>--}}
     </div>
 </x-layout.layout>
