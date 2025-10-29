@@ -28,9 +28,9 @@
               class="h-[50vh] border border-slate-300 rounded-2xl absolute w-full mt-6 hidden lg:flex animate-fade-in"
             >
                 
-                <flux:button
+                <button
                   variant="primary"
-                  class="!hidden lg:block! mx-auto -translate-y-1/2 text-xl cursor-pointer"
+                  class="hidden lg:flex mx-auto h-min py-1 px-4 text-white rounded-2xl -translate-y-1/2 text-xl cursor-pointer bg-accent hover:bg-accent/90 active:bg-accent/80"
                 >
                     <a
                       href="https://cal.com/crystal-desarrollo/contanos-tu-idea" target="_blank"
@@ -41,7 +41,7 @@
                             <x-heroicon-c-arrow-up-right class="size-6"/>
                         </span>
                     </a>
-                </flux:button>
+                </button>
             </div>
             
             <!-- macOS-style frame container -->
@@ -176,15 +176,15 @@
             </p>
             
             <a href="https://cal.com/crystal-desarrollo/contanos-tu-idea" target="_blank" rel="noopener noreferrer">
-                <flux:button
+                <button
                   variant="primary"
-                  class="lg:hidden! text-3xl! w-full max-w-sm h-14 cursor-pointer active:bg-accent/90"
+                  class="flex lg:hidden mx-auto h-min py-1 px-4 text-white rounded-2xl -translate-y-1/2 text-xl cursor-pointer bg-accent hover:bg-accent/90 active:bg-accent/80"
                 >
-                <span class="flex items-center justify-center gap-2">
-                    {{ __('pages/home.hero.bottom_section_button') }}
-                    <x-heroicon-c-arrow-up-right class="size-6"/>
-                </span>
-                </flux:button>
+                    <span class="flex items-center justify-center gap-2">
+                        {{ __('pages/home.hero.bottom_section_button') }}
+                        <x-heroicon-c-arrow-up-right class="size-6"/>
+                    </span>
+                </button>
             </a>
         </div>
     </div>
