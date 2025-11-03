@@ -8,9 +8,9 @@
     </div>
     
     <div class="py-6 lg:py-16">
-        <div class="container mx-auto flex flex-col  lg:gap-32">
-            <div class="flex justify-center items-center gap-8">
-                <div class="grow max-w-1/2 ">
+        <div class="container mx-auto flex flex-col  lg:gap-32 px-8 md:px-0">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div class="grow md:max-w-1/2 ">
                     <h4 class="text-lg xl:text-xl font-semibold">
                         {{__("pages/projects/jujuy-models.about_title")}}
                     </h4>
@@ -22,21 +22,21 @@
                 <img
                   alt="Project image"
                   src="{{asset('assets/projects/jujuymodels-cover.png')}}"
-                  class="max-h-96 w-max"
+                  class="w-[80%] md:w-1/2 max-h-96"
                 />
             </div>
         </div>
     </div>
     
     <div class="py-6 lg:py-16 bg-gradient-to-br  from-[#ba59b6]/80 to-[#ba59b6]">
-        <div class="container mx-auto flex flex-col  lg:gap-32">
-            <div class="flex justify-between items-center gap-8">
+        <div class="container mx-auto flex flex-col  lg:gap-32 px-8 md:px-0">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
                 <img
                   alt="Project image"
                   src="{{asset('assets/projects/jujuymodels.png')}}"
-                  class="max-h-96 w-max"
+                  class="w-[80%] md:w-1/2 max-h-96"
                 />
-                <div class="grow max-w-1/2 text-white">
+                <div class="grow md:max-w-1/2 text-white">
                     <h4
                       class="text-lg xl:text-xl font-semibold"
                     >{{__("pages/projects/jujuy-models.project_title")}}</h4>
