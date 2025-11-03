@@ -7,7 +7,7 @@
 @endphp
 
 <div
-  class="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 w-full max-w-4xl mx-auto my-8 lg:my-16"
+  class="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 w-full max-w-4xl mx-auto my-8 lg:my-16 projects-section"
 >
     <div class="flex flex-col gap-10 lg:gap-20">
         @foreach($leftColumn as $project)
