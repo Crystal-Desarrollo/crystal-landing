@@ -109,4 +109,9 @@ return [
             ],
         ],
     ],
+    'projects' => [
+        'badge' => 'Clientes',
+        'title' => 'Conocé los <span class="text-accent-content">casos de éxito</span> de quienes ya confían en nosotros.',
+        'view_all' => 'Ver todos',
+    ],
 ];

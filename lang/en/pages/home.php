@@ -108,4 +108,9 @@ return [
             ],
         ],
     ],
+    'projects' => [
+        'badge' => 'Clients',
+        'title' => 'Discover the <span class="text-accent-content">success stories</span> of those who already trust us.',
+        'view_all' => 'View all',
+    ],
 ];
