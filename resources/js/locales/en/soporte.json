@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Technical support",
+    "title": "On-site support in Jujuy and NOA",
+    "subtitle": "Preventive maintenance, networks, hardware and remote assistance for regional businesses.",
+    "cta": "Get a quote"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "What do we do?",
+    "items": [
+      { "title": "PC maintenance", "desc": "Cleaning, diagnosis, repair and hardware/software upgrades." },
+      { "title": "Networks & infrastructure", "desc": "Installation and configuration of LAN/WAN networks, enterprise WiFi and structured cabling." },
+      { "title": "Servers", "desc": "Installation, configuration and maintenance of physical and virtual servers." },
+      { "title": "Remote support", "desc": "Immediate assistance via TeamViewer or AnyDesk for problems that don't require physical presence." },
+      { "title": "Backup & security", "desc": "Automatic backup setup, corporate antivirus and security policies." },
+      { "title": "IT consulting", "desc": "Advisory for technology decision-making in your company." }
+    ]
+  },
+  "plans": {
+    "badge": "Plans",
+    "title": "Monthly support plans",
+    "subtitle": "Choose the plan that best fits your company size.",
+    "basic": {
+      "name": "Basic",
+      "price": "Inquire",
+      "desc": "Ideal for small businesses with few computers.",
+      "features": [
+        "Up to 5 covered devices",
+        "2 monthly visits",
+        "Unlimited remote support",
+        "Preventive maintenance"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "Inquire",
+      "desc": "For medium-sized companies with more complex infrastructure.",
+      "features": [
+        "Up to 15 covered devices",
+        "4 monthly visits",
+        "Unlimited remote support",
+        "Preventive maintenance",
+        "Network monitoring",
+        "Configurable backup"
+      ],
+      "recommended": "Most popular"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "desc": "For companies with high support demand and multiple locations.",
+      "features": [
+        "Unlimited devices",
+        "Unlimited visits",
+        "Priority remote support",
+        "Preventive maintenance",
+        "24/7 monitoring",
+        "Backup & recovery",
+        "Guaranteed SLA"
+      ]
+    },
+    "cta": "Inquire about plan"
+  },
+  "coverage": {
+    "badge": "Coverage",
+    "title": "Coverage area",
+    "desc": "We operate in San Salvador de Jujuy and provide on-site support throughout the province and the NOA region.",
+    "cities": ["San Salvador de Jujuy", "Palpalá", "San Pedro", "Libertador Gral. San Martín", "Tilcara", "Humahuaca", "Salta capital"]
+  },
+  "faq": {
+    "badge": "Frequently asked questions",
+    "title": "FAQ",
+    "items": [
+      { "q": "How quickly do you respond to emergencies?", "a": "For clients with an active plan, remote response time is under 2 hours. Urgent visits are coordinated same-day in San Salvador de Jujuy." },
+      { "q": "Do you work with companies without a monthly plan?", "a": "Yes, we handle one-time calls. Monthly plan clients have priority and preferential pricing." },
+      { "q": "What if the problem can't be solved remotely?", "a": "We coordinate an on-site visit the same day or next business day depending on urgency." },
+      { "q": "Do you cover specific hardware brands?", "a": "We work with any brand of PCs, laptops, printers and network equipment. No brand restrictions." },
+      { "q": "Can you handle the complete setup of a new office?", "a": "Yes. We design and install the network, configure servers, PCs and printers from scratch." }
+    ]
+  },
+  "cta": {
+    "title": "Need support now?",
+    "subtitle": "Call us or message us and we'll assist you shortly.",
+    "button_call": "Call",
+    "button_whatsapp": "WhatsApp"
+  }
+}

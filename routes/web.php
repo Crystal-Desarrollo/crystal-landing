@@ -4,6 +4,8 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use LaravelLang\Routes\Facades\LocalizationRoute;
 
+// Crystal Desarrollo — React SPA (catch-all at end of file)
+
 $projects = [
     [
         'slug' => 'jujuy-models',
@@ -54,8 +56,15 @@ $projects = [
 ];
 
 
+// React SPA — Crystal Desarrollo new site
+Route::get('/', fn() => view('crystal'))->name('home');
+Route::get('/desarrollo', fn() => view('crystal'))->name('desarrollo');
+Route::get('/productos', fn() => view('crystal'))->name('productos');
+Route::get('/soporte', fn() => view('crystal'))->name('soporte');
+
 LocalizationRoute::group(function () use ($projects) {
-    Route::view('', 'home', ['projects' => Arr::take($projects, 4)])->name('home');
+    // Legacy routes kept for reference
+    Route::view('legacy', 'home', ['projects' => Arr::take($projects, 4)])->name('home.legacy');
 
     Route::view('projects', 'projects', ['projects' => $projects])->name('projects.index');
     Route::view('projects/jujuy-models', 'projects.jujuy-models')->name('projects.jujuymodels');

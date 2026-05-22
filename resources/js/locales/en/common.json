@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "desarrollo": "Development",
+    "productos": "Products",
+    "soporte": "Tech Support",
+    "cta": "Let's talk"
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us what you need and we'll reply in under 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company (optional)",
+    "area": "Area of interest",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success_title": "Message sent!",
+    "success_body": "We'll get back to you shortly.",
+    "error": "There was an error sending. Please try again.",
+    "areas": {
+      "desarrollo": "Software development",
+      "saas": "SaaS products",
+      "soporte": "Technical support",
+      "otro": "Other"
+    }
+  },
+  "footer": {
+    "tagline": "Custom software for companies that want to grow.",
+    "areas": "Areas",
+    "contact": "Contact",
+    "rights": "© 2025 Crystal Desarrollo. All rights reserved.",
+    "address": "Ramírez de Velasco 565, 3A · San Salvador de Jujuy"
+  },
+  "whatsapp": "Chat with us"
+}

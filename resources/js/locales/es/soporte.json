@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Soporte técnico",
+    "title": "Soporte presencial en Jujuy y el NOA",
+    "subtitle": "Mantenimiento preventivo, redes, hardware y asistencia remota para empresas de la región.",
+    "cta": "Consultar ahora"
+  },
+  "services": {
+    "badge": "Servicios",
+    "title": "¿Qué hacemos?",
+    "items": [
+      { "title": "Mantenimiento de PCs", "desc": "Limpieza, diagnóstico, reparación y actualización de hardware y software." },
+      { "title": "Redes e infraestructura", "desc": "Instalación y configuración de redes LAN/WAN, WiFi empresarial y cableado estructurado." },
+      { "title": "Servidores", "desc": "Instalación, configuración y mantenimiento de servidores físicos y virtuales." },
+      { "title": "Soporte remoto", "desc": "Asistencia inmediata por TeamViewer o AnyDesk para problemas que no requieren presencia física." },
+      { "title": "Backup y seguridad", "desc": "Configuración de backups automáticos, antivirus corporativo y políticas de seguridad." },
+      { "title": "Consultoría IT", "desc": "Asesoramiento para la toma de decisiones tecnológicas en tu empresa." }
+    ]
+  },
+  "plans": {
+    "badge": "Planes",
+    "title": "Planes de soporte mensual",
+    "subtitle": "Elegí el plan que mejor se adapta al tamaño de tu empresa.",
+    "basic": {
+      "name": "Básico",
+      "price": "Consultar",
+      "desc": "Ideal para pequeñas empresas con pocas computadoras.",
+      "features": [
+        "Hasta 5 equipos cubiertos",
+        "2 visitas mensuales",
+        "Soporte remoto ilimitado",
+        "Mantenimiento preventivo"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "Consultar",
+      "desc": "Para empresas medianas con infraestructura más compleja.",
+      "features": [
+        "Hasta 15 equipos cubiertos",
+        "4 visitas mensuales",
+        "Soporte remoto ilimitado",
+        "Mantenimiento preventivo",
+        "Monitoreo de red",
+        "Backup configurable"
+      ],
+      "recommended": "Más elegido"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "A medida",
+      "desc": "Para empresas con alta demanda de soporte y múltiples sedes.",
+      "features": [
+        "Equipos ilimitados",
+        "Visitas ilimitadas",
+        "Soporte remoto prioritario",
+        "Mantenimiento preventivo",
+        "Monitoreo 24/7",
+        "Backup y recuperación",
+        "SLA garantizado"
+      ]
+    },
+    "cta": "Consultar plan"
+  },
+  "coverage": {
+    "badge": "Cobertura",
+    "title": "Zona de cobertura",
+    "desc": "Operamos en San Salvador de Jujuy y brindamos soporte presencial en toda la provincia y región NOA.",
+    "cities": ["San Salvador de Jujuy", "Palpalá", "San Pedro", "Libertador Gral. San Martín", "Tilcara", "Humahuaca", "Salta capital"]
+  },
+  "faq": {
+    "badge": "Preguntas frecuentes",
+    "title": "FAQ",
+    "items": [
+      { "q": "¿En cuánto tiempo responden ante una urgencia?", "a": "Para clientes con plan activo, el tiempo de respuesta remota es de menos de 2 horas. Las visitas urgentes se coordinan el mismo día en San Salvador de Jujuy." },
+      { "q": "¿Trabajan con empresas sin plan mensual?", "a": "Sí, atendemos llamadas puntuales. El plan mensual tiene prioridad y precio preferencial." },
+      { "q": "¿Qué pasa si el problema no se resuelve remotamente?", "a": "Coordinamos una visita presencial en el mismo día o el siguiente hábil dependiendo de la urgencia." },
+      { "q": "¿Cubren marcas específicas de hardware?", "a": "Trabajamos con cualquier marca de PC, notebook, impresoras y equipos de red. No hay restricciones de marca." },
+      { "q": "¿Pueden encargarse de la instalación completa de una oficina nueva?", "a": "Sí. Diseñamos e instalamos la red, configuramos servidores, PCs e impresoras desde cero." }
+    ]
+  },
+  "cta": {
+    "title": "¿Necesitás soporte ahora?",
+    "subtitle": "Llamanos o escribinos y te asistimos a la brevedad.",
+    "button_call": "Llamar",
+    "button_whatsapp": "WhatsApp"
+  }
+}

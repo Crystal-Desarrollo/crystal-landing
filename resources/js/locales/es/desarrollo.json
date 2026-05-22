@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "badge": "Desarrollo a medida",
+    "title": "Software que se adapta a tu negocio, no al revés",
+    "subtitle": "Construimos sistemas, aplicaciones web y soluciones digitales a medida para empresas que necesitan más que una plantilla.",
+    "cta": "Hablemos de tu proyecto"
+  },
+  "services": {
+    "badge": "Servicios",
+    "title": "¿Qué construimos?",
+    "items": [
+      { "title": "Sistemas de gestión", "desc": "ERP, CRM, portales de administración y herramientas internas para optimizar tus operaciones." },
+      { "title": "Aplicaciones web", "desc": "Plataformas SaaS, marketplaces, intranets y cualquier aplicación web que necesite tu empresa." },
+      { "title": "APIs e integraciones", "desc": "Conectamos tus sistemas existentes con terceros: pasarelas de pago, ERPs, servicios externos." },
+      { "title": "Apps móviles", "desc": "Aplicaciones nativas e híbridas para iOS y Android con foco en experiencia de usuario." },
+      { "title": "Automatizaciones", "desc": "Reducí el trabajo manual con flujos automatizados, bots y procesos inteligentes." },
+      { "title": "Consultoría técnica", "desc": "Arquitectura de software, revisión de código y asesoramiento para equipos técnicos." }
+    ]
+  },
+  "process": {
+    "badge": "Proceso",
+    "title": "Cómo trabajamos",
+    "steps": [
+      { "num": "01", "title": "Descubrimiento", "desc": "Entendemos tu problema, tus procesos y tus objetivos antes de escribir una línea de código." },
+      { "num": "02", "title": "Propuesta", "desc": "Te presentamos una propuesta técnica clara con alcance, tecnologías y estimación de tiempos." },
+      { "num": "03", "title": "Desarrollo", "desc": "Iteraciones cortas con demos frecuentes. Vos ves el avance y podés dar feedback en todo momento." },
+      { "num": "04", "title": "Entrega", "desc": "Deploy en producción, documentación y capacitación del equipo para que todo funcione desde el día uno." },
+      { "num": "05", "title": "Soporte", "desc": "Mantenimiento continuo, corrección de bugs y evolución del sistema según tus necesidades." }
+    ]
+  },
+  "stack": {
+    "badge": "Tecnologías",
+    "title": "Stack que usamos"
+  },
+  "cta": {
+    "title": "Contanos tu proyecto",
+    "subtitle": "Primera consulta sin costo. Te respondemos en menos de 24 horas.",
+    "button": "Iniciar conversación"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "badge": "SaaS Products",
+    "title": "Solutions that already work for your industry",
+    "subtitle": "We develop our own products that solve concrete problems. Ready to use, no development from scratch."
+  },
+  "intro": {
+    "title": "Software ready for your business",
+    "desc": "Each Crystal product is built with the same quality we apply to custom development. Battle-tested in production, with local support and continuous improvements."
+  },
+  "parkify": {
+    "badge": "Parking",
+    "name": "Parkify",
+    "tagline": "Total control of your parking lot",
+    "desc": "Complete system for parking lot management. Barrier access control, hourly or subscription rates, real-time reports and operator app.",
+    "url": "parkify.com.ar",
+    "features": [
+      "Access control with automatic barrier",
+      "Dynamic rates and monthly subscriptions",
+      "Real-time revenue reports",
+      "Operator app on tablet",
+      "Vehicle history",
+      "Multi-branch"
+    ],
+    "cta": "Learn about Parkify"
+  },
+  "obsidian": {
+    "badge": "Point of sale",
+    "name": "Obsidian POS",
+    "tagline": "The POS that doesn't complicate things",
+    "desc": "Modern POS for food service and retail. Table management, digital orders, stock, cash register and reports. No outrageous monthly fees.",
+    "url": "getobsidian.app",
+    "features": [
+      "Table and order management",
+      "Real-time stock control",
+      "Cash register with multiple payment methods",
+      "Sales and profitability reports",
+      "Offline mode (no internet needed)",
+      "Ticket and invoice printing"
+    ],
+    "cta": "Learn about Obsidian"
+  },
+  "mifit": {
+    "badge": "Gyms",
+    "name": "Mifit",
+    "tagline": "Manage your gym without headaches",
+    "desc": "Comprehensive management platform for gyms and fitness centers. Appointments, access control, payments, member tracking and routines.",
+    "url": "getmifit.app",
+    "features": [
+      "Member and membership management",
+      "Access control via QR or fingerprint",
+      "Fee collection and online payments",
+      "Routine and progress tracking",
+      "Class scheduling and reservations",
+      "Member communication via app"
+    ],
+    "cta": "Learn about Mifit"
+  },
+  "cta": {
+    "title": "None of them fit exactly?",
+    "subtitle": "We can customize them or build one from scratch for you.",
+    "button": "Let's talk"
+  }
+}

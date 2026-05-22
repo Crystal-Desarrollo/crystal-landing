@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "badge": "Custom development",
+    "title": "Software that adapts to your business, not the other way around",
+    "subtitle": "We build custom systems, web applications and digital solutions for companies that need more than a template.",
+    "cta": "Let's talk about your project"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "What do we build?",
+    "items": [
+      { "title": "Management systems", "desc": "ERP, CRM, admin portals and internal tools to optimize your operations." },
+      { "title": "Web applications", "desc": "SaaS platforms, marketplaces, intranets and any web app your company needs." },
+      { "title": "APIs & integrations", "desc": "We connect your existing systems with third parties: payment gateways, ERPs, external services." },
+      { "title": "Mobile apps", "desc": "Native and hybrid apps for iOS and Android focused on user experience." },
+      { "title": "Automations", "desc": "Reduce manual work with automated workflows, bots and smart processes." },
+      { "title": "Technical consulting", "desc": "Software architecture, code review and advisory for technical teams." }
+    ]
+  },
+  "process": {
+    "badge": "Process",
+    "title": "How we work",
+    "steps": [
+      { "num": "01", "title": "Discovery", "desc": "We understand your problem, processes and goals before writing a line of code." },
+      { "num": "02", "title": "Proposal", "desc": "We present a clear technical proposal with scope, technologies and time estimates." },
+      { "num": "03", "title": "Development", "desc": "Short iterations with frequent demos. You see progress and can give feedback at any time." },
+      { "num": "04", "title": "Delivery", "desc": "Production deploy, documentation and team training so everything works from day one." },
+      { "num": "05", "title": "Support", "desc": "Ongoing maintenance, bug fixes and system evolution according to your needs." }
+    ]
+  },
+  "stack": {
+    "badge": "Technologies",
+    "title": "Stack we use"
+  },
+  "cta": {
+    "title": "Tell us about your project",
+    "subtitle": "First consultation free. We'll reply in under 24 hours.",
+    "button": "Start conversation"
+  }
+}
