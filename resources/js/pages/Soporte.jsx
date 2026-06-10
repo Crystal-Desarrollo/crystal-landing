@@ -57,7 +57,7 @@ export default function Soporte() {
                         <motion.h1
                             variants={fadeUp}
                             className="text-4xl md:text-6xl font-light text-[#F0EEF8] max-w-3xl leading-tight mb-5"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('hero.title')}
                         </motion.h1>
@@ -86,7 +86,7 @@ export default function Soporte() {
                         <motion.h2
                             variants={fadeUp}
                             className="text-3xl md:text-4xl font-light text-[#F0EEF8]"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('services.title')}
                         </motion.h2>
@@ -119,7 +119,7 @@ export default function Soporte() {
                         <motion.h2
                             variants={fadeUp}
                             className="text-3xl md:text-4xl font-light text-[#F0EEF8]"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('plans.title')}
                         </motion.h2>
@@ -186,7 +186,7 @@ export default function Soporte() {
                             <motion.h2
                                 variants={fadeUp}
                                 className="text-3xl font-light text-[#F0EEF8] mb-4"
-                                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                                style={{ fontFamily: "'Syne', sans-serif" }}
                             >
                                 {t('coverage.title')}
                             </motion.h2>
@@ -229,7 +229,7 @@ export default function Soporte() {
                         <motion.h2
                             variants={fadeUp}
                             className="text-3xl font-light text-[#F0EEF8]"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('faq.title')}
                         </motion.h2>
@@ -249,7 +249,7 @@ export default function Soporte() {
                         whileInView="visible"
                         viewport={viewportOnce}
                         className="text-4xl font-light text-[#F0EEF8] mb-3"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Syne', sans-serif" }}
                     >
                         {t('cta.title')}
                     </motion.h2>

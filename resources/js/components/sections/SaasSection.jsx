@@ -28,7 +28,7 @@ export default function SaasSection() {
                     <motion.h2
                         variants={fadeUp}
                         className="text-3xl md:text-4xl font-light text-[#F0EEF8]"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Syne', sans-serif" }}
                     >
                         {t('saas.title')}
                     </motion.h2>

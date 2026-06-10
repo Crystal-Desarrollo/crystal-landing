@@ -23,7 +23,7 @@ export default function WhySection() {
                         <motion.h2
                             variants={fadeUp}
                             className="text-3xl md:text-4xl font-light text-[#F0EEF8] mb-4"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('why.title')}
                         </motion.h2>

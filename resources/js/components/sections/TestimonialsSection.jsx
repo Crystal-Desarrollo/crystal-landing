@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
                     </span>
                     <h2
                         className="text-3xl md:text-4xl font-light text-[#F0EEF8]"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Syne', sans-serif" }}
                     >
                         {t('testimonials.title')}
                     </h2>

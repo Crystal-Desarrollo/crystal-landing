@@ -22,7 +22,7 @@ export default function CtaSection() {
                     <motion.h2
                         variants={fadeUp}
                         className="text-4xl md:text-5xl font-light text-[#F0EEF8] mb-4"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Syne', sans-serif" }}
                     >
                         {t('cta.title')}
                     </motion.h2>

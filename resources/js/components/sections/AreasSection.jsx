@@ -21,7 +21,7 @@ export default function AreasSection() {
                     whileInView="visible"
                     viewport={viewportOnce}
                     className="text-3xl md:text-4xl font-light text-[#F0EEF8] text-center mb-14"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Syne', sans-serif" }}
                 >
                     {t('areas.title')}
                 </motion.h2>

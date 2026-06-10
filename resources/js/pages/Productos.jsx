@@ -37,7 +37,7 @@ function ProductCard({ productKey }) {
                 </span>
                 <h2
                     className="text-3xl md:text-4xl font-light text-[#F0EEF8] mb-2"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Syne', sans-serif" }}
                 >
                     {t(`${productKey}.name`)}
                 </h2>
@@ -83,7 +83,7 @@ export default function Productos() {
                         <motion.h1
                             variants={fadeUp}
                             className="text-4xl md:text-6xl font-light text-[#F0EEF8] max-w-3xl leading-tight mb-5"
-                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                            style={{ fontFamily: "'Syne', sans-serif" }}
                         >
                             {t('hero.title')}
                         </motion.h1>
@@ -110,7 +110,7 @@ export default function Productos() {
                         whileInView="visible"
                         viewport={viewportOnce}
                         className="text-4xl font-light text-[#F0EEF8] mb-4"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Syne', sans-serif" }}
                     >
                         {t('cta.title')}
                     </motion.h2>

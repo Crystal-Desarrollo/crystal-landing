@@ -29,7 +29,7 @@ export default function HeroSection() {
                 <motion.h1
                     variants={fadeUp}
                     className="text-5xl md:text-7xl font-light text-[#F0EEF8] leading-tight mb-6"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Syne', sans-serif" }}
                 >
                     {t('hero.title')}
                 </motion.h1>

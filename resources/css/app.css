@@ -1,9 +1,10 @@
 @import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme {
     --font-sans: 'DM Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-display: 'Syne', sans-serif;
     --color-crystal-black: #0D0D12;
     --color-crystal-white: #F0EEF8;
     --color-crystal-violet: #7F46F0;
