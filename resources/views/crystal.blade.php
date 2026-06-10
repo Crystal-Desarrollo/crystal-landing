@@ -6,8 +6,8 @@
 
     <!-- Primary SEO -->
     <title>Crystal Desarrollo | Software a Medida · Apps · Sistemas · Jujuy, Argentina</title>
-    <meta name="description" content="Crystal Desarrollo: empresa de software a medida, productos SaaS y soporte técnico en Jujuy y el NOA. Sistemas web, apps móviles, POS, gestión de estacionamientos y más." />
-    <meta name="keywords" content="software a medida jujuy, desarrollo de software noa, sistemas de gestión jujuy, soporte técnico jujuy, aplicaciones web argentina, crystal desarrollo" />
+    <meta name="description" content="Crystal Desarrollo: empresa de software a medida, productos SaaS y soporte técnico. Sistemas web, apps móviles, POS, gestión de estacionamientos y más." />
+    <meta name="keywords" content="software a medida jujuy, desarrollo de software, sistemas de gestión, soporte técnico jujuy, aplicaciones web argentina, crystal desarrollo" />
     <link rel="canonical" href="{{ config('app.url') }}" />
 
     <!-- Open Graph -->
