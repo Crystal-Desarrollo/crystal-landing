@@ -1,64 +1,61 @@
 {
-  "hero": {
-    "badge": "Productos SaaS",
-    "title": "Soluciones que ya funcionan para tu industria",
-    "subtitle": "Desarrollamos productos propios que resuelven problemas concretos. Listos para usar, sin desarrollo desde cero."
-  },
-  "intro": {
-    "title": "Software listo para tu negocio",
-    "desc": "Cada producto Crystal está construido con la misma calidad que aplicamos al desarrollo a medida. Probados en producción, con soporte local y mejoras continuas."
-  },
-  "parkify": {
-    "badge": "Estacionamientos",
-    "name": "Parkify",
-    "tagline": "Control total de tu estacionamiento",
-    "desc": "Sistema completo para la gestión de playas de estacionamiento. Control de acceso por barrera, tarifas por hora o abono, reportes en tiempo real y app para operadores.",
-    "url": "parkify.com.ar",
-    "features": [
-      "Control de acceso con barrera automática",
-      "Tarifas dinámicas y abonos mensuales",
-      "Reportes de ingresos en tiempo real",
-      "App para operadores en tablet",
-      "Historial de vehículos",
-      "Multi-sucursal"
-    ],
-    "cta": "Conocer Parkify"
-  },
-  "obsidian": {
-    "badge": "Punto de venta",
-    "name": "Obsidian POS",
-    "tagline": "El punto de venta que no te complica",
-    "desc": "POS moderno para gastronomía y comercio minorista. Gestión de mesas, comandas digitales, stock, caja y reportes. Sin cuotas mensuales abusivas.",
-    "url": "getobsidian.app",
-    "features": [
-      "Gestión de mesas y comandas",
-      "Control de stock en tiempo real",
-      "Caja con múltiples medios de pago",
-      "Reportes de ventas y rentabilidad",
-      "Modo offline (sin internet)",
-      "Impresión de tickets y facturas"
-    ],
-    "cta": "Conocer Obsidian"
-  },
-  "mifit": {
-    "badge": "Gimnasios",
-    "name": "Mifit",
-    "tagline": "Gestioná tu gimnasio sin dolores de cabeza",
-    "desc": "Plataforma de gestión integral para gimnasios y centros de fitness. Turnos, control de acceso, pagos, seguimiento de socios y rutinas.",
-    "url": "getmifit.app",
-    "features": [
-      "Gestión de socios y membresías",
-      "Control de acceso por QR o huella",
-      "Cobro de cuotas y pagos online",
-      "Seguimiento de rutinas y progreso",
-      "Turnos y reservas de clases",
-      "Comunicación con socios vía app"
-    ],
-    "cta": "Conocer Mifit"
-  },
-  "cta": {
-    "title": "¿Ninguno se adapta exactamente?",
-    "subtitle": "Podemos personalizarlos o construir uno desde cero para vos.",
-    "button": "Hablemos"
-  }
+    "hero": {
+        "badge": "Productos SaaS",
+        "title": "Soluciones que ya funcionan para tu industria",
+        "subtitle": "Desarrollamos productos propios que resuelven problemas concretos. Listos para usar, sin desarrollo desde cero."
+    },
+    "intro": {
+        "title": "Software listo para tu negocio",
+        "desc": "Cada producto Crystal está construido con la misma calidad que aplicamos al desarrollo a medida. Probados en producción, con soporte local y mejoras continuas."
+    },
+    "parkify": {
+        "badge": "Estacionamientos",
+        "name": "Parkify",
+        "tagline": "Control total de tu estacionamiento",
+        "desc": "Sistema completo para la gestión de playas de estacionamiento. Control de acceso de vehículos, tarifas por hora o abono, reportes en tiempo real y app para operadores.",
+        "url": "parkify.com.ar",
+        "features": [
+            "Control de acceso de vehículos por hora",
+            "Tarifas dinámicas y abonos mensuales",
+            "Reportes de ingresos en tiempo real",
+            "App para operadores en tablet",
+            "Historial de vehículos",
+            "Multi-sucursal"
+        ],
+        "cta": "Conocer Parkify"
+    },
+    "obsidian": {
+        "badge": "Punto de venta",
+        "name": "Obsidian POS",
+        "tagline": "El punto de venta que no te complica",
+        "desc": "POS moderno para comercios minoristas. Gestión de comandas digitales, stock, caja y reportes. Sin cuotas mensuales abusivas.",
+        "url": "getobsidian.app",
+        "features": [
+            "Control de stock en tiempo real",
+            "Caja con múltiples medios de pago",
+            "Reportes de ventas y rentabilidad",
+            "Impresión de tickets y facturas"
+        ],
+        "cta": "Conocer Obsidian"
+    },
+    "mifit": {
+        "badge": "Gimnasios",
+        "name": "Mifit",
+        "tagline": "Gestioná tu gimnasio sin dolores de cabeza",
+        "desc": "Plataforma de gestión integral para gimnasios y centros de fitness. Turnos, control de acceso, pagos, seguimiento de socios y rutinas.",
+        "url": "getmifit.app",
+        "features": [
+            "Gestión de socios y membresías",
+            "Control de acceso por QR o huella",
+            "Cobro de cuotas y pagos online",
+            "App para socios con seguimiento de clases",
+            "Ficha médica actualizada y a mano"
+        ],
+        "cta": "Conocer Mifit"
+    },
+    "cta": {
+        "title": "¿Ninguno se adapta exactamente?",
+        "subtitle": "Podemos personalizarlos o construir uno desde cero para vos.",
+        "button": "Hablemos"
+    }
 }
