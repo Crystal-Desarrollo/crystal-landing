@@ -1,67 +1,79 @@
 {
-  "hero": {
-    "badge": "Custom software · Jujuy, Argentina",
-    "title": "We build the software your company needs",
-    "subtitle": "Custom development, SaaS products and technical support for companies in NOA.",
-    "cta_primary": "See our work",
-    "cta_secondary": "Let's talk"
-  },
-  "areas": {
-    "title": "How can we help you?",
-    "desarrollo": {
-      "title": "Custom development",
-      "desc": "Web systems, apps and automations built exactly for your business."
+    "hero": {
+        "badge": "Custom software · Jujuy, Argentina",
+        "title": "We build the software your company needs",
+        "subtitle": "Custom development, SaaS products and technical support for companies.",
+        "cta_primary": "See our work",
+        "cta_secondary": "Let's talk"
+    },
+    "areas": {
+        "title": "How can we help you?",
+        "desarrollo": {
+            "title": "Custom development",
+            "desc": "Web systems, apps and automations built exactly for your business."
+        },
+        "saas": {
+            "title": "SaaS products",
+            "desc": "Ready-to-use solutions: parking management, point of sale and more."
+        },
+        "soporte": {
+            "title": "Technical support",
+            "desc": "Maintenance, networks and on-site support in Jujuy and the NOA region."
+        }
     },
     "saas": {
-      "title": "SaaS products",
-      "desc": "Ready-to-use solutions: parking management, point of sale and more."
+        "badge": "Our products",
+        "title": "SaaS solutions, ready for your industry",
+        "subtitle": "Products developed by Crystal that are already solving real problems.",
+        "parkify": {
+            "name": "Parkify",
+            "desc": "Parking management system with access control, dynamic pricing and real-time reports.",
+            "cta": "View Parkify"
+        },
+        "obsidian": {
+            "name": "Obsidian POS",
+            "desc": "Modern point of sale for food service and retail. Intuitive, fast and no monthly fees.",
+            "cta": "View Obsidian"
+        },
+        "mifit": {
+            "name": "Mifit",
+            "desc": "Management platform for gyms and fitness centers. Appointments, payments and member tracking.",
+            "cta": "View Mifit"
+        }
     },
-    "soporte": {
-      "title": "Technical support",
-      "desc": "Maintenance, networks and on-site support in Jujuy and the NOA region."
+    "clients": {
+        "title": "Companies that trust Crystal"
+    },
+    "why": {
+        "badge": "Why Crystal",
+        "title": "The technical team your company needs",
+        "subtitle": "We combine development experience, our own products and local support to give you a complete solution.",
+        "items": [
+            {
+                "title": "Local team",
+                "desc": "We're in Jujuy. We know the regional market and can meet in person."
+            },
+            {
+                "title": "Own code",
+                "desc": "We don't use templates. Every project is built from scratch for your use case."
+            },
+            {
+                "title": "Real delivery",
+                "desc": "Projects that go to production. No empty promises."
+            },
+            {
+                "title": "Ongoing support",
+                "desc": "We don't disappear after launch. We're available when you need us."
+            }
+        ]
+    },
+    "testimonials": {
+        "badge": "Testimonials",
+        "title": "What our clients say"
+    },
+    "cta": {
+        "title": "Ready to start?",
+        "subtitle": "Tell us your idea and we'll put together a free proposal.",
+        "button": "Let's talk now"
     }
-  },
-  "saas": {
-    "badge": "Our products",
-    "title": "SaaS solutions for your industry",
-    "subtitle": "Products developed by Crystal that are already solving real problems.",
-    "parkify": {
-      "name": "Parkify",
-      "desc": "Parking management system with access control, dynamic pricing and real-time reports.",
-      "cta": "View Parkify"
-    },
-    "obsidian": {
-      "name": "Obsidian POS",
-      "desc": "Modern point of sale for food service and retail. Intuitive, fast and no monthly fees.",
-      "cta": "View Obsidian"
-    },
-    "mifit": {
-      "name": "Mifit",
-      "desc": "Management platform for gyms and fitness centers. Appointments, payments and member tracking.",
-      "cta": "View Mifit"
-    }
-  },
-  "clients": {
-    "title": "Companies that trust Crystal"
-  },
-  "why": {
-    "badge": "Why Crystal",
-    "title": "The technical team your company needs",
-    "subtitle": "We combine development experience, our own products and local support to give you a complete solution.",
-    "items": [
-      { "title": "Local team", "desc": "We're in Jujuy. We know the regional market and can meet in person." },
-      { "title": "Own code", "desc": "We don't use templates. Every project is built from scratch for your use case." },
-      { "title": "Real delivery", "desc": "Projects that go to production. No empty promises." },
-      { "title": "Ongoing support", "desc": "We don't disappear after launch. We're available when you need us." }
-    ]
-  },
-  "testimonials": {
-    "badge": "Testimonials",
-    "title": "What our clients say"
-  },
-  "cta": {
-    "title": "Ready to start?",
-    "subtitle": "Tell us your idea and we'll put together a free proposal.",
-    "button": "Let's talk now"
-  }
 }

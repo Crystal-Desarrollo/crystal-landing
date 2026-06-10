@@ -4,11 +4,27 @@ import { useTranslation } from 'react-i18next';
 import { useContactModal } from '../hooks/useContactModal';
 import { fadeUp, staggerContainer, viewportOnce } from '../lib/motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+    SiReact, SiNextdotjs, SiVuedotjs, SiLaravel, SiNodedotjs,
+    SiPostgresql, SiMysql, SiRedis, SiDocker, SiKubernetes,
+    SiTypescript, SiPython, SiTailwindcss,
+} from 'react-icons/si';
 
 const STACK = [
-    'React', 'Next.js', 'Vue', 'Laravel', 'Node.js',
-    'PostgreSQL', 'MySQL', 'Redis', 'Docker', 'AWS',
-    'TypeScript', 'Python', 'React Native', 'Tailwind CSS',
+    { name: 'React',        Icon: SiReact,        color: '#61DAFB' },
+    { name: 'Next.js',      Icon: SiNextdotjs,    color: '#FFFFFF' },
+    { name: 'Vue',          Icon: SiVuedotjs,     color: '#42B883' },
+    { name: 'Laravel',      Icon: SiLaravel,      color: '#FF2D20' },
+    { name: 'Node.js',      Icon: SiNodedotjs,    color: '#339933' },
+    { name: 'PostgreSQL',   Icon: SiPostgresql,   color: '#4169E1' },
+    { name: 'MySQL',        Icon: SiMysql,        color: '#4479A1' },
+    { name: 'Redis',        Icon: SiRedis,        color: '#DC382D' },
+    { name: 'Docker',       Icon: SiDocker,       color: '#2496ED' },
+    { name: 'Kubernetes',   Icon: SiKubernetes,   color: '#326CE5' },
+    { name: 'TypeScript',   Icon: SiTypescript,   color: '#3178C6' },
+    { name: 'Python',       Icon: SiPython,       color: '#3776AB' },
+    { name: 'React Native', Icon: SiReact,        color: '#61DAFB' },
+    { name: 'Tailwind CSS', Icon: SiTailwindcss,  color: '#06B6D4' },
 ];
 
 export default function Desarrollo() {
@@ -151,7 +167,7 @@ export default function Desarrollo() {
             </section>
 
             {/* Stack */}
-            <section className="py-20 bg-[#1A1A24]">
+            <section className="py-20 bg-[#1A1A24] overflow-hidden">
                 <div className="max-w-6xl mx-auto px-6">
                     <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce} className="text-center mb-10">
                         <motion.span variants={fadeUp} className="inline-block text-xs font-semibold text-[#7F46F0] uppercase tracking-widest mb-2">
@@ -165,23 +181,41 @@ export default function Desarrollo() {
                             {t('stack.title')}
                         </motion.h2>
                     </motion.div>
-                    <motion.div
-                        variants={staggerContainer}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={viewportOnce}
-                        className="flex flex-wrap gap-3 justify-center"
-                    >
-                        {STACK.map((tech) => (
-                            <motion.span
-                                key={tech}
-                                variants={fadeUp}
-                                className="px-4 py-2 rounded-full bg-[#0D0D12] border border-white/5 text-sm text-[#F0EEF8]/60 hover:border-[#7F46F0]/30 hover:text-[#F0EEF8]/80 transition-colors"
+                </div>
+
+                {/* Infinite marquee */}
+                <div
+                    className="relative"
+                    style={{
+                        maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+                        WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+                    }}
+                >
+                    <style>{`
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to   { transform: translateX(-50%); }
+                        }
+                        .marquee-track {
+                            display: flex;
+                            width: max-content;
+                            animation: marquee 20s linear infinite;
+                        }
+                        .marquee-track:hover {
+                            animation-play-state: paused;
+                        }
+                    `}</style>
+                    <div className="marquee-track" style={{ gap: '1.25rem' }}>
+                        {[...STACK, ...STACK].map(({ name, Icon, color }, i) => (
+                            <div
+                                key={i}
+                                className="flex flex-col items-center gap-2 px-5 py-4 rounded-xl bg-[#0D0D12] border border-white/5 hover:border-[#7F46F0]/20 transition-colors whitespace-nowrap mx-1"
                             >
-                                {tech}
-                            </motion.span>
+                                <Icon size={28} style={{ color }} />
+                                <span className="text-xs text-[#F0EEF8]/50">{name}</span>
+                            </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
