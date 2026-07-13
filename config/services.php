@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'discord' => [
+        'contact_webhook_url' => env('DISCORD_CONTACT_WEBHOOK_URL'),
+    ],
+
 ];
