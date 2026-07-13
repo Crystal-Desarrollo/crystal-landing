@@ -53,7 +53,7 @@ export default function AreasSection() {
                                         </p>
                                     </div>
                                     <span className="mt-auto text-xs text-[#7F46F0]/70 group-hover:text-[#7F46F0] transition-colors">
-                                        Conocer más →
+                                        {t('areas.cta')} →
                                     </span>
                                 </Link>
                             </motion.div>

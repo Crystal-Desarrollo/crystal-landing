@@ -8,6 +8,7 @@
     },
     "areas": {
         "title": "How can we help you?",
+        "cta": "Learn more",
         "desarrollo": {
             "title": "Custom development",
             "desc": "Web systems, apps and automations built exactly for your business."

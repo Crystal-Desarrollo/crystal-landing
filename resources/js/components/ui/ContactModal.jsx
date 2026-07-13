@@ -106,7 +106,7 @@ export default function ContactModal() {
                                         onClick={close}
                                         className="mt-4 px-6 py-2.5 rounded-lg bg-[#7F46F0] text-white text-sm font-medium hover:bg-[#6b35d4] transition-colors"
                                     >
-                                        Cerrar
+                                        {t('contact.success_close')}
                                     </button>
                                 </div>
                             ) : (
@@ -123,21 +123,33 @@ export default function ContactModal() {
                                             <input
                                                 {...register('name', { required: true })}
                                                 placeholder={t('contact.name')}
+                                                aria-label={t('contact.name')}
                                                 className={inputCls(errors.name)}
                                             />
+                                            {errors.name && (
+                                                <p className="mt-1.5 text-xs text-red-400">{t('contact.errors.name_required')}</p>
+                                            )}
                                         </div>
                                         <div>
                                             <input
                                                 {...register('email', { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })}
                                                 type="email"
                                                 placeholder={t('contact.email')}
+                                                aria-label={t('contact.email')}
                                                 className={inputCls(errors.email)}
                                             />
+                                            {errors.email?.type === 'required' && (
+                                                <p className="mt-1.5 text-xs text-red-400">{t('contact.errors.email_required')}</p>
+                                            )}
+                                            {errors.email?.type === 'pattern' && (
+                                                <p className="mt-1.5 text-xs text-red-400">{t('contact.errors.email_invalid')}</p>
+                                            )}
                                         </div>
                                         <div>
                                             <input
                                                 {...register('company')}
                                                 placeholder={t('contact.company')}
+                                                aria-label={t('contact.company')}
                                                 className={inputCls(false)}
                                             />
                                         </div>
@@ -146,20 +158,28 @@ export default function ContactModal() {
                                                 {...register('area', { required: true })}
                                                 className={cn(inputCls(errors.area), 'cursor-pointer')}
                                                 defaultValue=""
+                                                aria-label={t('contact.area')}
                                             >
-                                                <option value="" disabled>{t('contact.area')}</option>
+                                                <option value="" disabled>{t('contact.area_select')}</option>
                                                 {areas.map((a) => (
                                                     <option key={a} value={a}>{t(`contact.areas.${a}`)}</option>
                                                 ))}
                                             </select>
+                                            {errors.area && (
+                                                <p className="mt-1.5 text-xs text-red-400">{t('contact.errors.area_required')}</p>
+                                            )}
                                         </div>
                                         <div>
                                             <textarea
                                                 {...register('message', { required: true })}
                                                 placeholder={t('contact.message')}
                                                 rows={4}
+                                                aria-label={t('contact.message')}
                                                 className={cn(inputCls(errors.message), 'resize-none')}
                                             />
+                                            {errors.message && (
+                                                <p className="mt-1.5 text-xs text-red-400">{t('contact.errors.message_required')}</p>
+                                            )}
                                         </div>
 
                                         {errors.root && (

@@ -84,6 +84,7 @@
         "badge": "Coverage",
         "title": "Coverage area",
         "desc": "We operate in San Salvador de Jujuy and provide on-site support throughout the province and the NOA region.",
+        "view_map": "View on map",
         "cities": [
             "San Salvador de Jujuy",
             "Palpalá",

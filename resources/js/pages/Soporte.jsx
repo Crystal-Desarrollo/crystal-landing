@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useContactModal } from "../hooks/useContactModal";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { fadeUp, staggerContainer, viewportOnce } from "../lib/motion";
 import { CheckCircle2, ChevronDown, MapPin, Phone } from "lucide-react";
 
@@ -47,6 +48,7 @@ function FaqItem({ q, a }) {
 
 export default function Soporte() {
     const { t } = useTranslation("soporte");
+    usePageTitle('soporte');
     const { open } = useContactModal();
     const services = t("services.items", { returnObjects: true });
     const faqItems = t("faq.items", { returnObjects: true });
@@ -281,7 +283,7 @@ export default function Soporte() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-sm text-[#7F46F0] hover:text-[#9b6df7] transition-colors"
                                 >
-                                    <MapPin size={14} /> Ver en mapa
+                                    <MapPin size={14} /> {t('coverage.view_map')}
                                 </a>
                             </motion.div>
                         </div>
@@ -373,7 +375,7 @@ export default function Soporte() {
                         </motion.a> */}
                         <motion.a
                             variants={fadeUp}
-                            href="https://wa.me/543884092771"
+                            href="https://wa.me/5493884092771"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#25D366] text-white text-sm font-medium hover:bg-[#20bc59] transition-colors"

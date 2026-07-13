@@ -13,12 +13,21 @@
     "email": "Email",
     "company": "Empresa (opcional)",
     "area": "Área de interés",
+    "area_select": "Seleccioná un área",
     "message": "Mensaje",
     "send": "Enviar mensaje",
     "sending": "Enviando...",
     "success_title": "¡Mensaje enviado!",
     "success_body": "Te contactamos a la brevedad.",
+    "success_close": "Cerrar",
     "error": "Hubo un error al enviar. Intentá de nuevo.",
+    "errors": {
+      "name_required": "Ingresá tu nombre",
+      "email_required": "Ingresá tu email",
+      "email_invalid": "Ingresá un email válido",
+      "area_required": "Seleccioná un área",
+      "message_required": "Contanos en qué podemos ayudarte"
+    },
     "areas": {
       "desarrollo": "Desarrollo de software",
       "saas": "Productos SaaS",
@@ -29,9 +38,16 @@
   "footer": {
     "tagline": "Software a medida para empresas que quieren crecer.",
     "areas": "Áreas",
+    "products": "Productos",
     "contact": "Contacto",
     "rights": "© 2025 Crystal Desarrollo. Todos los derechos reservados.",
     "address": "Ramírez de Velasco 565, 3A · San Salvador de Jujuy"
+  },
+  "titles": {
+    "home": "Software a medida · Apps · Sistemas",
+    "desarrollo": "Desarrollo de Software a Medida",
+    "productos": "Productos SaaS",
+    "soporte": "Soporte Técnico en Jujuy"
   },
   "whatsapp": "Chateá con nosotros"
 }

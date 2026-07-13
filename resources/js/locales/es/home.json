@@ -8,6 +8,7 @@
     },
     "areas": {
         "title": "¿En qué podemos ayudarte?",
+        "cta": "Conocer más",
         "desarrollo": {
             "title": "Desarrollo a medida",
             "desc": "Sistemas web, apps y automatizaciones construidas exactamente para tu negocio."
