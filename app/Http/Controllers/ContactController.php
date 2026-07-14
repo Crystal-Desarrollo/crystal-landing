@@ -23,7 +23,7 @@ class ContactController extends Controller
 
         $contact = Contact::create($validated);
 
-        Mail::to(config('mail.from.address'))
+        Mail::to('contacto@crystal-desarrollo.com')
             ->send(new ContactLeadMail($contact));
 
         (new DiscordLeadNotifier)->notify($contact);
