@@ -64,6 +64,7 @@ jobs:
         with:
           src: ./public/*
           host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
           remote: domains/crystaldesarrollo.com/public_html/public
           user: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
