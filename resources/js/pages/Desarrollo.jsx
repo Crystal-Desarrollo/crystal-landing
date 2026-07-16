@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useContactModal } from '../hooks/useContactModal';
+import { usePageTitle } from '../hooks/usePageTitle';
 import { fadeUp, staggerContainer, viewportOnce } from '../lib/motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import {
@@ -30,6 +31,7 @@ const STACK = [
 export default function Desarrollo() {
     const { t } = useTranslation('desarrollo');
     const { open } = useContactModal();
+    usePageTitle('desarrollo');
     const services = t('services.items', { returnObjects: true });
     const steps = t('process.steps', { returnObjects: true });
     const [step, setStep] = useState(0);

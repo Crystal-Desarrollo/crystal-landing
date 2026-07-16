@@ -79,7 +79,7 @@ export default function Footer() {
 
                     <div>
                         <h4 className="text-xs font-semibold text-[#F0EEF8]/30 uppercase tracking-widest mb-4">
-                            Productos
+                            {t("footer.products")}
                         </h4>
                         <ul className="flex flex-col gap-2.5">
                             {[

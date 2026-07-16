@@ -15,7 +15,7 @@
     <meta property="og:url" content="{{ config('app.url') }}" />
     <meta property="og:title" content="Crystal Desarrollo | Software a Medida · Jujuy, Argentina" />
     <meta property="og:description" content="Desarrollo de software a medida, productos SaaS y soporte técnico para empresas del NOA." />
-    <meta property="og:image" content="{{ asset('og-image.png') }}" />
+    <meta property="og:image" content="{{ asset('og_image.png') }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="es_AR" />
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Crystal Desarrollo | Software a Medida · Jujuy" />
     <meta name="twitter:description" content="Desarrollo de software, SaaS y soporte técnico en Jujuy, Argentina." />
-    <meta name="twitter:image" content="{{ asset('og-image.png') }}" />
+    <meta name="twitter:image" content="{{ asset('og_image.png') }}" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />

@@ -1,6 +1,46 @@
 {
+  "_circle-check-CwjA52tB.js": {
+    "file": "assets/circle-check-CwjA52tB.js",
+    "name": "circle-check",
+    "imports": [
+      "resources/js/main.jsx"
+    ]
+  },
+  "_external-link-DmWrgTWa.js": {
+    "file": "assets/external-link-DmWrgTWa.js",
+    "name": "external-link",
+    "imports": [
+      "resources/js/main.jsx"
+    ]
+  },
+  "_i18n-vendor-CgOxFCnc.js": {
+    "file": "assets/i18n-vendor-CgOxFCnc.js",
+    "name": "i18n-vendor",
+    "imports": [
+      "_react-vendor-CYzCRT2J.js"
+    ]
+  },
+  "_motion-vendor-DoK05qMY.js": {
+    "file": "assets/motion-vendor-DoK05qMY.js",
+    "name": "motion-vendor",
+    "imports": [
+      "_react-vendor-CYzCRT2J.js"
+    ]
+  },
+  "_react-vendor-CYzCRT2J.js": {
+    "file": "assets/react-vendor-CYzCRT2J.js",
+    "name": "react-vendor"
+  },
+  "_usePageTitle-G5UfAP70.js": {
+    "file": "assets/usePageTitle-G5UfAP70.js",
+    "name": "usePageTitle",
+    "imports": [
+      "_react-vendor-CYzCRT2J.js",
+      "_i18n-vendor-CgOxFCnc.js"
+    ]
+  },
   "resources/css/app.css": {
-    "file": "assets/app-BPeyTXVX.css",
+    "file": "assets/app-_zSiXjhu.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -8,9 +48,77 @@
     ]
   },
   "resources/js/main.jsx": {
-    "file": "assets/main-BjZRraBD.js",
+    "file": "assets/main-IuwXgPG3.js",
     "name": "main",
     "src": "resources/js/main.jsx",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_motion-vendor-DoK05qMY.js",
+      "_i18n-vendor-CgOxFCnc.js",
+      "_react-vendor-CYzCRT2J.js"
+    ],
+    "dynamicImports": [
+      "resources/js/pages/Home.jsx",
+      "resources/js/pages/Desarrollo.jsx",
+      "resources/js/pages/Productos.jsx",
+      "resources/js/pages/Soporte.jsx"
+    ]
+  },
+  "resources/js/pages/Desarrollo.jsx": {
+    "file": "assets/Desarrollo-DA5bUNTb.js",
+    "name": "Desarrollo",
+    "src": "resources/js/pages/Desarrollo.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_motion-vendor-DoK05qMY.js",
+      "_react-vendor-CYzCRT2J.js",
+      "resources/js/main.jsx",
+      "_usePageTitle-G5UfAP70.js",
+      "_i18n-vendor-CgOxFCnc.js"
+    ]
+  },
+  "resources/js/pages/Home.jsx": {
+    "file": "assets/Home-DNRhwI5v.js",
+    "name": "Home",
+    "src": "resources/js/pages/Home.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_motion-vendor-DoK05qMY.js",
+      "resources/js/main.jsx",
+      "_usePageTitle-G5UfAP70.js",
+      "_i18n-vendor-CgOxFCnc.js",
+      "_react-vendor-CYzCRT2J.js",
+      "_external-link-DmWrgTWa.js",
+      "_circle-check-CwjA52tB.js"
+    ]
+  },
+  "resources/js/pages/Productos.jsx": {
+    "file": "assets/Productos-ppA1CH_O.js",
+    "name": "Productos",
+    "src": "resources/js/pages/Productos.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_motion-vendor-DoK05qMY.js",
+      "resources/js/main.jsx",
+      "_usePageTitle-G5UfAP70.js",
+      "_i18n-vendor-CgOxFCnc.js",
+      "_external-link-DmWrgTWa.js",
+      "_circle-check-CwjA52tB.js",
+      "_react-vendor-CYzCRT2J.js"
+    ]
+  },
+  "resources/js/pages/Soporte.jsx": {
+    "file": "assets/Soporte-XfyfYFRr.js",
+    "name": "Soporte",
+    "src": "resources/js/pages/Soporte.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_motion-vendor-DoK05qMY.js",
+      "_react-vendor-CYzCRT2J.js",
+      "resources/js/main.jsx",
+      "_usePageTitle-G5UfAP70.js",
+      "_i18n-vendor-CgOxFCnc.js",
+      "_circle-check-CwjA52tB.js"
+    ]
   }
 }

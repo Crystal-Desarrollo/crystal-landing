@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-const WA_URL = 'https://wa.me/543884804401';
+const WA_URL = 'https://wa.me/5493884804401';
 
 export default function WhatsAppButton() {
     const { t } = useTranslation('common');

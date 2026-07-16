@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useContactModal } from '../hooks/useContactModal';
+import { usePageTitle } from '../hooks/usePageTitle';
 import { fadeUp, staggerContainer, viewportOnce } from '../lib/motion';
 import { CheckCircle2, ExternalLink } from 'lucide-react';
 
@@ -69,6 +70,7 @@ function ProductCard({ productKey }) {
 export default function Productos() {
     const { t } = useTranslation('productos');
     const { open } = useContactModal();
+    usePageTitle('productos');
 
     return (
         <>
