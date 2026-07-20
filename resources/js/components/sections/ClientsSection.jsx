@@ -8,7 +8,7 @@ const CLIENTS = [
     "Las Marías Proyectos",
     "Gobierno de Jujuy",
     "Cámara de Comercio Exterior",
-    "ExoJuy",
+    "ExpoJuy",
     "Cañada Húmeda S.A.",
     "BSD Ingeniería y Servicios",
     "Centro Cultural Lola Mora",
@@ -26,7 +26,7 @@ export default function ClientsSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={viewportOnce}
-                    className="text-xs font-semibold text-[#F0EEF8]/25 uppercase tracking-widest text-center mb-10"
+                    className="text-xs font-semibold text-[#F0EEF8]/85 uppercase tracking-widest text-center mb-10"
                 >
                     {t("clients.title")}
                 </motion.p>
@@ -35,7 +35,7 @@ export default function ClientsSection() {
                         {[...CLIENTS, ...CLIENTS].map((name, i) => (
                             <span
                                 key={i}
-                                className="text-[#F0EEF8]/20 font-medium text-sm shrink-0"
+                                className="text-[#F0EEF8]/80 font-medium text-sm shrink-0"
                             >
                                 {name}
                             </span>
