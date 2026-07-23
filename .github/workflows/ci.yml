@@ -12,7 +12,24 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  lockfiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+      - name: Validate composer.lock
+        run: composer validate --strict --no-check-publish
+      - name: Verify composer.lock is installable
+        run: composer install --dry-run --no-interaction --quiet
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Verify package-lock.json is in sync
+        run: npm ci --ignore-scripts
   build:
+    needs: [ 'lockfiles' ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
